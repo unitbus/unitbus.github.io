@@ -1,3 +1,8 @@
+---
+layout: default
+title: Python
+---
+
 # Python
 
 ## sub title
