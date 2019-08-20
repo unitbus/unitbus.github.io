@@ -6,7 +6,7 @@ title: PySide
 <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
 <link rel="stylesheet" href="../unitbus.css" type="text/css">
 
-# PySide
+# pyside
 
 ## sub title
 

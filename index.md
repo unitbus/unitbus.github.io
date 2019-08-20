@@ -1,6 +1,6 @@
 ---
 layout: default
-title: トップページ
+title: UnitBus
 ---
 
 <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
