@@ -1,6 +1,6 @@
 ---
 layout: default
-title: download
+title: Download
 ---
 
 <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
