@@ -1,10 +1,10 @@
 # markdown: redcarpet
-# redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 
-# auto: true
-# server: true
+auto: true
+server: true
 # markdown: kramdown
 
-markdown: kramdown
+# markdown: kramdown
 highlighter: rouge
