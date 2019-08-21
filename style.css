@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* default */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 全体設定 */
+html {
+}
+body {
+	font: 12px arial,"MS UI Gothic";
+	*font-size:small;
+	*font:x-small;
+	color:#333;
+	line-height:1.2;
+	background-color:#FDFDFC;
+}
+
+/* テーブル */
+table {
+	border: solid 1px #CCCCCA;
+	border-collapse:collapse;
+	font-size: 100%;
+}
+tr {
+	border: solid 0px #CCCCCA;
+	border-collapse: collapse;
+}
+th {
+	border: solid 1px #BBBBBA;
+	border-collapse: collapse;
+	background-color: #CCCCCA;
+	color: #14449A;
+	text-align:center;
+}
+td {
+	border: solid 1px #CCCCCA;
+	border-collapse: collapse;
+	empty-cells: show;
+}
+caption{
+	text-align:left;
+	font-style:normal;
+	font-weight:normal;
+}
+
+/* タイトル */
+h1 {
+	font-size: 160%;
+	color: #14449A;
+	padding: 0.3em 0.2em 1em 0.2em;
+	letter-spacing: 0.2em;
+}
+h2 {
+	font-size: 140%;
+	color: #6474BA;
+	border-bottom: solid 1px #CCCCCA;
+	padding: 1em 0.2em 0.2em 0.2em;
+	letter-spacing: 0.2em;
+}
+h3 {
+	padding: 1em 0.2em 0.2em 0.2em;
+	font-size:130%;
+	letter-spacing: 0.1em;
+}
+h4 {
+	padding: 1em 0em 0em 0em;
+	font-size:120%;
+	letter-spacing: 0.1em;
+}
+h5 {
+	padding: 0.1em;
+	font-size:110%;
+}
+h6 {
+	padding: 0.1em;
+	font-size:105%;
+}
+hr {
+	/*display: none;*/
+}
+
+/* リンク */
+a:link {
+	color: #414191;
+}
+a:visited {
+	color: #414161;
+}
+a:hover {
+	color: #914141;
+}
+a:active {
+	color: #914141;
+}
+
+/* リスト */
+dl {
+}
+dt {
+	margin: 0 0 4px 8px;
+	border-bottom: solid 1px #cccccc;
+}
+dd {
+	margin: 0 0 4px 8px;
+}
+ol{
+	
+}
+ul {
+	margin: 0 0 4px 8px;
+	list-style-type: square;
+}
+li {
+	margin: 0 0 4px 8px;
+}
+
+/* フォーム */
+input {
+	text-align: center;
+	font: 99% arial,helvetica,clean,sans-serif;
+	font-size: 90%;
+	font-family: Verdana, Arial, sans-serif;
+	border:1px solid #CCCCCA;
+	background-color:#ffffff;
+	margin-top: 1px;
+	margin-right: 1px;
+	padding: 1px;
+}
+textarea {
+	font: 99% arial,helvetica,clean,sans-serif;
+	font-size: 90%;
+	font-family: 'ＭＳ ゴシック', Osaka, monospace;
+	font-family: Verdana, Arial, sans-serif;
+	border: solid 1px #CCCCCA;
+	background-color:#ffffff;
+	margin-top: 0px;
+	margin-right: 1px;
+	padding: 1px;
+	line-height: 1.2;
+}
+select {
+	font: 99% arial,helvetica,clean,sans-serif;
+	font-size: 90%;
+	font-family: Verdana, Arial, sans-serif;
+	border: solid 1px #CCCCCA;
+	background-color:#ffffff;
+	margin-top: 1px;
+	margin-right: 1px;
+	padding: 1px;
+}
+
+/* リンク */
+img{
+	border:0;
+}
+address {
+	font-style:normal;font-weight:normal;
+	display: inline;
+}
+
+/* 物理要素 */
+b { font-weight: bold; } /* 太字 */
+i { font-style: italic; } /* 斜体 */
+big { font-size: 107%; } /* 文字大 */
+small { font-size: 85%; } /* 文字小 */
+tt { font-family: monospace; } /* 等幅 */
+
+/* 強調・追加・削除 */
+em {
+	font-style:normal;font-weight:normal;
+	font-weight: bold;
+}
+strong{
+	font-style:normal;font-weight:normal;
+	font-weight: bold;
+	color: #814121;
+}
+ins {
+	text-decoration: underline;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* 整形済みテキスト */
+pre {
+	padding: 0.3em;
+	border: solid 1px #DADADC;
+	font-size: 92%;
+	font-family: monospace;
+}
+q:before{
+	content:'';
+}
+q:after{
+	content:'';
+}
+/* 引用 */
+blockquote {
+	padding-left: 0.8em;
+	margin: 1em;
+	border-left: 2px dashed #EAEAED;
+}
+cite,q {
+	text-decoration: underline;
+}
+
+/* その他 */
+fieldset {
+	border: 0px solid #000000;
+}
+legend {
+	display: none;
+}
+cite{
+	font-style:normal;
+	font-weight:normal;
+}
+code{
+	font-style:normal;
+	font-weight:normal;
+}
+dfn{
+	font-style:normal;
+	font-weight:normal;
+}
+var{
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+/*-- 各ID ----------------------------------------------------------*/
+body#INDEX {
+}
+div#PAGETOP {
+	width: 100%;
+	font-size: 100%;
+	color: #414345;
+}
+
+/* ヘッダー */
+div#HEADER {
+	width: 100%;
+	min-width: 500px;
+	padding: 10px 0 10px 0;
+	margin-bottom: 0px;
+	border-top: solid 6px #595956;
+	border-bottom: double 3px #CCCCCA;
+	background: #DCDCDA;
+	vertical-align:middle;
+}
+
+#HEADER h1 {
+	display: inline;
+	padding: 0 0 0 18px;
+}
+#HEADER a {
+	text-decoration: none;
+}
+#HEADER form {
+	display: inline;
+	float: right;
+	float: top;
+	text-align: right;
+	padding: 0 8px 0 0;
+}
+
+/* フッター */
+div#FOOTER {
+	clear:left;
+	width: 100%;
+	min-width: 500px;
+	padding: 10px 0 10px 0;
+	margin-top: 0px;
+	border-top: double 3px #CCCCCA;
+	border-bottom: solid 6px #595956;
+	background: #DCDCDA;
+	vertical-align:middle;
+	text-align: right;
+}
+#FOOTER h2 {
+	display: none;
+}
+#FOOTER ul {
+	padding: 0 0 0 0;
+}
+#FOOTER li {
+	display: inline;
+	padding: 0 0.5em;
+	font-size: 92%;
+}
+#FOOTER a{
+	text-decoration: none;
+}
+
+
+/* メニュー */
+div#MENU {
+	width: 120px;
+	float: left;
+}
+#MENU h2{
+	width: 100px;
+	margin: 0 20px 1em 20px;
+	padding: 0.2em 10px;
+	border: none;
+	font-size: 107%;
+	letter-spacing: 0.2em;
+	display: none;
+}
+#MENU ul{
+	width: 110px;
+	margin: 10px 20px 1em 10px;
+	border-bottom: double 3px #FDFDFC;
+	list-style-type: none;
+}
+#MENU li{
+	margin-bottom: 10px;
+	padding-top: 0.1em;
+	background: #FDFDFC;
+}
+#MENU li.menu-on {
+	background: #ECECEA;
+}
+#MENU li a{
+	display: block;
+	width: 100px;
+	padding: 0.4em 10px 0.4em 10px;
+	border-bottom: dotted 2px #DCDCDA;
+	font-weight: bold;
+	text-decoration: none;
+}
+#MENU li a:hover,#MENU li a:active{
+	border-bottom: solid 2px #BA8474;
+	text-decoration: none;
+}
+
+
+/* 内容 */
+div#CONTENT {
+	float: left;
+	width: auto;
+	min-width: 728px;
+	margin: 0 10px 0 10px;/*領域間スペース*/
+	padding: 0 10px 0 10px;/*領域内スペース*/
+	border-left: solid 10px #FDFDFC;
+}
+
+input#TEXT {
+	border: solid 1px #CCCCCA;
+}
+input#BUTTON {
+	padding: 1px 0.5em;
+	border: double 3px #CCCCCA;
+	background: #EDEDEA;
+}
+
+
+/*-- スタイル ----------------------------------------------------------*/
+div.text {
+	margin: 0.5em 0.5em 1.5em 1.0em;
+	line-height: 1.2;
+}
+.text p {
+	margin-bottom: 1em;
+}
+.text ul{
+	font-size: 100%;
+	text-align: left;
+	margin: 0 0 1em 35px;
+	list-style: square;
+}
+.text ol {
+	margin: 0 0 1em 35px;
+	list-style: decimal;
+}
+.text ul.pagetop {
+	text-align: right;
+	font-size: 85%;
+	list-style: none;
+}
+.pagetop a:link{
+	color: #BA7464;
+}
+.pagetop a:visited{
+	color: #BA7464;
+}
+
+div.monospace {
+	font: 0.875em "Courier New";	
+}
+
+div.CSS_Design {
+	text-align: right;
+	font-size: 70%;
+	padding: 0 0 1em 1em;
+	top: 0px;
+}
+
+div.Warrnig {
+	color: #9A5434;
+}
+.Warrnig a:link {
+	color: #AA4424;
+}
+.Warrnig a:visited {
+	color: #AA4424;
+}
+
+table.none {
+	border: solid 0px #CCCCCA;
+	border-collapse: separate;
+	font-size: 100%;
+	width: 100%;
+}
+.none tr {
+	border: solid 0px #CCCCCA;
+}
+.none td {
+	border: solid 0px #CCCCCA;
+	empty-cells: show;
+}
+
+table.B {
+	border: solid 2px #CCCCCA;
+	border-collapse: collapse;
+	font-size: 100%;
+	table-layout: auto;
+}
+.B tr {
+	border: solid 2px #CCCCCA;
+	border-collapse: collapse;
+}
+.B td {
+	border: solid 2px #CCCCCA;
+	border-collapse: collapse;
+	empty-cells: show;
+	background-color: #FFFFFF;
+}
