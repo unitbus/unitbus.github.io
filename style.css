@@ -1,18 +1,7 @@
-@charset "utf-8";
-/* default */
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
 /* 全体設定 */
 body {
-	font: 12px arial,"MS UI Gothic";
-	*font-size:small;
-	*font:x-small;
-	color:#333;
 	line-height:1.2;
-	background-color:#FDFDFC;
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
 }
 
 p {
