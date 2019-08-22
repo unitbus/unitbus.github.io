@@ -1,6 +1,6 @@
 /* 全体設定 */
 body {
-	font-family: "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-family: "Meiryo";
 }
 
 p {
@@ -39,32 +39,23 @@ caption{
 h1 {
 	font-size: 160%;
 	color: #14449A;
-	padding: 0.3em 0.2em 1em 0.2em;
-	letter-spacing: 0.2em;
 }
 h2 {
 	font-size: 140%;
 	color: #6474BA;
 	border-bottom: solid 1px #CCCCCA;
-	padding: 1em 0.2em 0.2em 0.2em;
-	letter-spacing: 0.2em;
+	margin-left: 10px;
 }
 h3 {
-	padding: 1em 0.2em 0.2em 0.2em;
 	font-size:130%;
-	letter-spacing: 0.1em;
 }
 h4 {
-	padding: 1em 0em 0em 0em;
 	font-size:120%;
-	letter-spacing: 0.1em;
 }
 h5 {
-	padding: 0.1em;
 	font-size:110%;
 }
 h6 {
-	padding: 0.1em;
 	font-size:105%;
 }
 hr {
@@ -87,6 +78,7 @@ a:active {
 
 /* リスト */
 dl {
+	margin-left: 20px;
 }
 dt {
 	margin: 0 0 4px 8px;
@@ -96,7 +88,7 @@ dd {
 	margin: 0 0 4px 8px;
 }
 ol{
-	
+	margin-left: 20px;
 }
 ul {
 	margin: 0 0 4px 8px;
@@ -220,134 +212,6 @@ var{
 	font-style:normal;
 	font-weight:normal;
 }
-
-
-/*-- 各ID ----------------------------------------------------------*/
-body#INDEX {
-}
-div#PAGETOP {
-	width: 100%;
-	font-size: 100%;
-	color: #414345;
-}
-
-/* ヘッダー */
-div#HEADER {
-	width: 100%;
-	min-width: 500px;
-	padding: 10px 0 10px 0;
-	margin-bottom: 0px;
-	border-top: solid 6px #595956;
-	border-bottom: double 3px #CCCCCA;
-	background: #DCDCDA;
-	vertical-align:middle;
-}
-
-#HEADER h1 {
-	display: inline;
-	padding: 0 0 0 18px;
-}
-#HEADER a {
-	text-decoration: none;
-}
-#HEADER form {
-	display: inline;
-	float: right;
-	float: top;
-	text-align: right;
-	padding: 0 8px 0 0;
-}
-
-/* フッター */
-div#FOOTER {
-	clear:left;
-	width: 100%;
-	min-width: 500px;
-	padding: 10px 0 10px 0;
-	margin-top: 0px;
-	border-top: double 3px #CCCCCA;
-	border-bottom: solid 6px #595956;
-	background: #DCDCDA;
-	vertical-align:middle;
-	text-align: right;
-}
-#FOOTER h2 {
-	display: none;
-}
-#FOOTER ul {
-	padding: 0 0 0 0;
-}
-#FOOTER li {
-	display: inline;
-	padding: 0 0.5em;
-	font-size: 92%;
-}
-#FOOTER a{
-	text-decoration: none;
-}
-
-
-/* メニュー */
-div#MENU {
-	width: 120px;
-	float: left;
-}
-#MENU h2{
-	width: 100px;
-	margin: 0 20px 1em 20px;
-	padding: 0.2em 10px;
-	border: none;
-	font-size: 107%;
-	letter-spacing: 0.2em;
-	display: none;
-}
-#MENU ul{
-	width: 110px;
-	margin: 10px 20px 1em 10px;
-	border-bottom: double 3px #FDFDFC;
-	list-style-type: none;
-}
-#MENU li{
-	margin-bottom: 10px;
-	padding-top: 0.1em;
-	background: #FDFDFC;
-}
-#MENU li.menu-on {
-	background: #ECECEA;
-}
-#MENU li a{
-	display: block;
-	width: 100px;
-	padding: 0.4em 10px 0.4em 10px;
-	border-bottom: dotted 2px #DCDCDA;
-	font-weight: bold;
-	text-decoration: none;
-}
-#MENU li a:hover,#MENU li a:active{
-	border-bottom: solid 2px #BA8474;
-	text-decoration: none;
-}
-
-
-/* 内容 */
-div#CONTENT {
-	float: left;
-	width: auto;
-	min-width: 728px;
-	margin: 0 10px 0 10px;/*領域間スペース*/
-	padding: 0 10px 0 10px;/*領域内スペース*/
-	border-left: solid 10px #FDFDFC;
-}
-
-input#TEXT {
-	border: solid 1px #CCCCCA;
-}
-input#BUTTON {
-	padding: 1px 0.5em;
-	border: double 3px #CCCCCA;
-	background: #EDEDEA;
-}
-
 
 /*-- スタイル ----------------------------------------------------------*/
 div.text {

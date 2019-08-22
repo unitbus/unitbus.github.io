@@ -1,5 +1,3 @@
 # UnitBus
 
-web site.
-
-test.
+[GitHub Pages.](https://unitbus.github.io/)
