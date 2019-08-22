@@ -7,6 +7,6 @@ title: UnitBus
 
 Index Pages.
 
-- [download](https://unitbus.github.io/page/download)
-- [python](https://unitbus.github.io/page/python)
-- [pyside](https://unitbus.github.io/page/pyside)
+- [Download](https://unitbus.github.io/page/download)
+- [Python](https://unitbus.github.io/page/python)
+- [Pyside](https://unitbus.github.io/page/pyside)
