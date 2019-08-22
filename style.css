@@ -1,5 +1,28 @@
+
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  height: 40px;
+  width: 100%;
+  color: #333;
+  border-top: double 4px #CCCCCA;
+  border-bottom: solid 6px #595956;
+  background: #DCDCDA;
+  vertical-align: middle;
+  text-align: right;
+  margin-top: -50px;
+}
+
 /* 全体設定 */
-body {
+html, body {
+    height: 100%;
+    margin: 0;
 	font-family: "Meiryo";
 }
 
@@ -211,86 +234,4 @@ dfn{
 var{
 	font-style:normal;
 	font-weight:normal;
-}
-
-/*-- スタイル ----------------------------------------------------------*/
-div.text {
-	margin: 0.5em 0.5em 1.5em 1.0em;
-	line-height: 1.2;
-}
-.text p {
-	margin-bottom: 1em;
-}
-.text ul{
-	font-size: 100%;
-	text-align: left;
-	margin: 0 0 1em 35px;
-	list-style: square;
-}
-.text ol {
-	margin: 0 0 1em 35px;
-	list-style: decimal;
-}
-.text ul.pagetop {
-	text-align: right;
-	font-size: 85%;
-	list-style: none;
-}
-.pagetop a:link{
-	color: #BA7464;
-}
-.pagetop a:visited{
-	color: #BA7464;
-}
-
-div.monospace {
-	font: 0.875em "Courier New";	
-}
-
-div.CSS_Design {
-	text-align: right;
-	font-size: 70%;
-	padding: 0 0 1em 1em;
-	top: 0px;
-}
-
-div.Warrnig {
-	color: #9A5434;
-}
-.Warrnig a:link {
-	color: #AA4424;
-}
-.Warrnig a:visited {
-	color: #AA4424;
-}
-
-table.none {
-	border: solid 0px #CCCCCA;
-	border-collapse: separate;
-	font-size: 100%;
-	width: 100%;
-}
-.none tr {
-	border: solid 0px #CCCCCA;
-}
-.none td {
-	border: solid 0px #CCCCCA;
-	empty-cells: show;
-}
-
-table.B {
-	border: solid 2px #CCCCCA;
-	border-collapse: collapse;
-	font-size: 100%;
-	table-layout: auto;
-}
-.B tr {
-	border: solid 2px #CCCCCA;
-	border-collapse: collapse;
-}
-.B td {
-	border: solid 2px #CCCCCA;
-	border-collapse: collapse;
-	empty-cells: show;
-	background-color: #FFFFFF;
 }
