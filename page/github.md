@@ -62,14 +62,41 @@ md置くだけで、github側に、jekyllというツールがインストール
 vscodeで書いてるが、previewでは大丈夫でも、htmlで見ると乱れる所がチラホラ…。
 githubで、mdを直接見ると大丈夫だったりする。
 
-- details内のコードブロックが効かない
-- markdown-breaksが適用されない
+**details内のコードブロックが効かない**
+
+<details>
+<summary>畳むタイトル</summary>
+
+```
+コードブロック
+```
+
+</details>
+
+**markdown-breaksが適用されない**
 
 ダブルスペースで改行するのは嫌なので、breaksオプションが使えないのはツライ。
 そもそも、書いてるときに読みづらいから改行して書いてるのに、
 *「ブラウザの幅に合わせて改行すべき」* って、本家の謎の思想が意味わからん。
 書いたままの見た目で出せ。と毎回思う。
 
+## markdownで、書いた通り改行させる方法
+
+markdownの場合、markdown-breaksという設定なのですが、
+githubは、普通のmarkdownじゃないらしい。ここを見ると、
+
+https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
+
+*「GitHub Pages は、Markdown プロセッサとして kramdown だけをサポートします。」*
+だそうです。
+
+で、設定方法は、
+
+```
+kramdown:
+    input: GFM
+    hard_wrap: true
+```
 
 ## 除外ファイル、フォルダ
 
@@ -82,20 +109,17 @@ githubで、mdを直接見ると大丈夫だったりする。
 
 必要なファイルと、階層はこんな感じ。
 
-<details>
-<summary>階層例</summary>
+```
+■ フォルダ、◻ ファイル
 
-    ■ フォルダ、◻ ファイル
-
-    ■ site.github.io
-        ■ _layouts
-            ◻ defaut.html
-        ◻ _config.yml
-        ◻ favicon.ico
-        ◻ style.css
-        ◻ index.md
-
-</details>
+■ site.github.io
+    ■ _layouts
+        ◻ defaut.html
+    ◻ _config.yml
+    ◻ favicon.ico
+    ◻ style.css
+    ◻ index.md
+```
 
 ## ページのスタイル
 
