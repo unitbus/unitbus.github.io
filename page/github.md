@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Github
+title: GitHub
 ---
 
-# Github
+# GitHub
 
 オンラインでサブバージョン管理できるサービス？
 アカウント作るだけ作って放置してた。
 
-# Github Pages
+# GitHub Pages
 
-Githubを利用して、静的ページなサイトを作れるらしいので調査とメモ。
+GitHubを利用して、静的ページなサイトを作れるらしいので調査とメモ。
 wordpress的なのを、動的ページと言うらしい。
 
 まず、調べても、gitがなんなのかピンとこなかったので、git自体の理解は保留。
@@ -26,7 +26,7 @@ wordpress的なのを、動的ページと言うらしい。
 
 ### window10環境
 
-Githubのページ見てもいまいち感覚がわからず、そもそもアップロードの仕方もわからん。
+GitHubのページ見てもいまいち感覚がわからず、そもそもアップロードの仕方もわからん。
 **GitHub Desktop** というアプリを入れれば、色々問題が解決した。
 
 ローカルのフォルダを指定し、ローカルリポジトリにすることで同期が可能に。
@@ -74,7 +74,7 @@ md置くだけで、github側に、jekyllというツールがインストール
     ■ _layouts
         ◻ defaut.html
         ◻ favicon.ico
-        ◻ style.ico
+        ◻ style.css
     ◻ _config.yml
     ◻ index.md
 ```

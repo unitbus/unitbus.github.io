@@ -70,15 +70,19 @@ h2 {
 	margin-left: 10px;
 }
 h3 {
+	margin-left: 12px;
 	font-size:130%;
 }
 h4 {
+	margin-left: 14px;
 	font-size:120%;
 }
 h5 {
+	margin-left: 16px;
 	font-size:110%;
 }
 h6 {
+	margin-left: 18px;
 	font-size:105%;
 }
 hr {
@@ -191,10 +195,10 @@ del {
 
 /* 整形済みテキスト */
 pre {
-	padding: 0.3em;
 	border: solid 1px #DADADC;
-	font-size: 92%;
+	padding: 0px;
 	font-family: monospace;
+	margin-left: 10px;
 }
 q:before{
 	content:'';
