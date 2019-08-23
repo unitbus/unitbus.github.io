@@ -69,9 +69,13 @@ md置くだけで、github側に、jekyllというツールがインストール
 # jekyll
 
 必要なファイルと、階層はこんな感じ。
-■ フォルダ、◻ ファイル
+
+<details>
+<summary>階層例</summary>
 
 ```
+■ フォルダ、◻ ファイル
+
 ■ site.github.io
     ■ _layouts
         ◻ defaut.html
@@ -80,6 +84,8 @@ md置くだけで、github側に、jekyllというツールがインストール
     ◻ style.css
     ◻ index.md
 ```
+
+</details>
 
 ## ページのスタイル
 
