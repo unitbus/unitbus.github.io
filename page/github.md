@@ -76,27 +76,12 @@ githubで、mdを直接見ると大丈夫だったりする。
 **markdown-breaksが適用されない**
 
 ダブルスペースで改行するのは嫌なので、breaksオプションが使えないのはツライ。
+
 そもそも、書いてるときに読みづらいから改行して書いてるのに、
 *「ブラウザの幅に合わせて改行すべき」* って、本家の謎の思想が意味わからん。
 書いたままの見た目で出せ。と毎回思う。
 
-## markdownで、書いた通り改行させる方法
-
-markdownの場合、markdown-breaksという設定なのですが、
-githubは、普通のmarkdownじゃないらしい。ここを見ると、
-
-https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
-
-*「GitHub Pages は、Markdown プロセッサとして kramdown だけをサポートします。」*
-だそうです。
-
-で、設定方法は、
-
-```
-kramdown:
-    input: GFM
-    hard_wrap: true
-```
+[markdownで、書いた通り改行させる方法](#markdownで、書いた通り改行させる方法)
 
 ## 除外ファイル、フォルダ
 
@@ -129,3 +114,24 @@ kramdown:
 
 `content` の部分に、markdownが変換され挿入される。
 デザイン変更、スタイルシート等ここで設定しておく感じ。
+
+## markdownで、書いた通り改行させる方法
+
+markdownの場合、markdown-breaksという設定で切り替え可能なのだが、
+githubは、普通のmarkdownじゃないらしい。ここを見ると、
+
+https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
+
+*「GitHub Pages は、Markdown プロセッサとして kramdown だけをサポートします。」*
+だそうです。
+
+で、設定方法は、
+
+```
+kramdown:
+    input: GFM
+    hard_wrap: true
+```
+
+と、 `kramdown` の `hard_wrap` として設定してあげる。
+ちなみに、GFMは、 `GitHub Flavored Markdown` らしい。
