@@ -14,3 +14,7 @@ google_analytics: UA-50817371-1
 marked:
     gfm: true
     breaks: true
+
+kramdown:
+    input: GFM
+    hard_wrap: true
