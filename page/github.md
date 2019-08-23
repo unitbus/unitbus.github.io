@@ -73,9 +73,9 @@ md置くだけで、github側に、jekyllというツールがインストール
 ■ site.github.io
     ■ _layouts
         ◻ defaut.html
-        ◻ favicon.ico
-        ◻ style.css
     ◻ _config.yml
+    ◻ favicon.ico
+    ◻ style.css
     ◻ index.md
 ```
 
