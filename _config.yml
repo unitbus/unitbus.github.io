@@ -10,3 +10,6 @@ highlighter: rouge
 
 theme: jekyll-theme-slate
 google_analytics: UA-50817371-1
+
+marked:
+    breaks: true
