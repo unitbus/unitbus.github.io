@@ -65,6 +65,12 @@ githubで、mdを直接見ると大丈夫だったりする。
 - details内のコードブロックが効かない
 - markdown-breaksが適用されない
 
+ダブルスペースで改行するのは嫌なので、breaksオプションが使えないのはツライ。
+そもそも、書いてるときに読みづらいから改行して書いてるのに、
+*「ブラウザの幅に合わせて改行すべき」* って、本家の謎の思想が意味わからん。
+書いたままの見た目で出せ。と毎回思う。
+
+
 ## 除外ファイル、フォルダ
 
 `.gitignore` を置いて、ファイル名等を書くだけ。
@@ -79,17 +85,15 @@ githubで、mdを直接見ると大丈夫だったりする。
 <details>
 <summary>階層例</summary>
 
-```
-■ フォルダ、◻ ファイル
+    ■ フォルダ、◻ ファイル
 
-■ site.github.io
-    ■ _layouts
-        ◻ defaut.html
-    ◻ _config.yml
-    ◻ favicon.ico
-    ◻ style.css
-    ◻ index.md
-```
+    ■ site.github.io
+        ■ _layouts
+            ◻ defaut.html
+        ◻ _config.yml
+        ◻ favicon.ico
+        ◻ style.css
+        ◻ index.md
 
 </details>
 
