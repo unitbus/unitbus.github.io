@@ -36,9 +36,11 @@ GitHubのページ見てもいまいち感覚がわからず、そもそもア�
 最近この手のアプリが増えて、管理面倒…。
 
 **インストール先**
+
 `C:\Users\%USERNAME%\AppData\Local\GitHubDesktop`
 
 **データ保存先**
+
 `C:\Users\%USERNAME%\AppData\Roaming\GitHub Desktop`
 
 個人的には、この手のは `mklink` でジャンクション作って、別の場所で管理。
