@@ -12,5 +12,5 @@ theme: jekyll-theme-slate
 google_analytics: UA-50817371-1
 
 marked:
-    # gfm: true
-    breaks: false
+    gfm: true
+    breaks: true
