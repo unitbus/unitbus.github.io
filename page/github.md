@@ -125,7 +125,7 @@ https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
 *「GitHub Pages は、Markdown プロセッサとして kramdown だけをサポートします。」*
 だそうです。
 
-で、設定方法は、
+で、設定方法は、 `_config.yml` に追記する。
 
 ```
 kramdown:
