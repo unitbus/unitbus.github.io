@@ -8,7 +8,8 @@
 
 highlighter: rouge
 
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+theme: jekyll-theme-hacker
 google_analytics: UA-50817371-1
 
 marked:
