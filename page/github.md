@@ -54,7 +54,7 @@ GitHubのページ見てもいまいち感覚がわからず、そもそもア�
 かと言って、wordpress的な動的サイトは、記事を書くのが面倒になるので飽きてくる。
 
 この問題は、何もしなくても、みごとクリア。
-md置くだけで、github側に、jekyllというツールがインストールされてる？らしく、
+md置くだけで、GitHub側に、jekyllというツールがインストールされてる？らしく、
 何もしなくてもhtmlで表示してくれます。
 
 ~~後は書くだけなはず。~~
@@ -81,7 +81,7 @@ githubで、mdを直接見ると大丈夫だったりする。
 *「ブラウザの幅に合わせて改行すべき」* って、本家の謎の思想が意味わからん。
 書いたままの見た目で出せ。と毎回思う。
 
-[markdownで、書いた通り改行させる方法](#markdownで、書いた通り改行させる方法)
+[markdownの改行](#markdownの改行)
 
 ## 除外ファイル、フォルダ
 
@@ -115,10 +115,12 @@ githubで、mdを直接見ると大丈夫だったりする。
 `content` の部分に、markdownが変換され挿入される。
 デザイン変更、スタイルシート等ここで設定しておく感じ。
 
-## markdownで、書いた通り改行させる方法
+## markdownの改行
 
-markdownの場合、markdown-breaksという設定で切り替え可能なのだが、
-githubは、普通のmarkdownじゃないらしい。ここを見ると、
+markdownの場合、半角スペース二個、`<br>` を使わずに、書いた通り改行させるには
+markdown-breaksという設定で切り替え可能なのだが、GitHubには見当たらないので調べてみた。
+
+GitHubは、普通のmarkdownじゃないらしい。ここを見ると、
 
 https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
 
