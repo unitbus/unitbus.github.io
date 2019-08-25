@@ -137,3 +137,17 @@ kramdown:
 
 と、 `kramdown` の `hard_wrap` として設定してあげる。
 ちなみに、GFMは、 `GitHub Flavored Markdown` らしい。
+
+## sitemap
+
+数日経っても、google検索に引っかからなかったので、調べてみると
+`sitemap` が必要らしい。すでに作成されてる場合は以下で確認できる。
+
+`https://site.github.io/sitemap.xml`
+
+設定方法は、 `_config.yml` に追記する。
+
+```
+plugins:
+    - jekyll-sitemap
+```
