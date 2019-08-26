@@ -8,15 +8,21 @@
 }
 */
 .footer {
-  /* height: 40px; */
-  /* width: 100%; */
-  color: #333;
-  border-top: double 4px #CCCCCA;
-  border-bottom: solid 6px #595956;
-  background: #DCDCDA;
-  vertical-align: middle;
-  text-align: right;
-  /* margin-top: -50px; */
+	/* height: 40px; */
+	/* width: 100%; */
+	color: #333;
+	border-top: double 4px #CCCCCA;
+	border-bottom: solid 6px #595956;
+	background: #DCDCDA;
+	vertical-align: middle;
+	text-align: right;
+	/* margin-top: -50px; */
+}
+
+.top {
+	font-size: 200%;
+	color: #14449A;
+    /* background: #faa; */
 }
 
 /* 全体設定 */
