@@ -21,7 +21,10 @@
 
 .top {
 	font-size: 200%;
+	font-weight: bold;
 	color: #14449A;
+	text-align: center;
+	vertical-align: middle;
     /* background: #faa; */
 }
 
