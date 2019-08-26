@@ -1,181 +1,180 @@
 /*
 .content {
-  min-height: 100%;
+    min-height: 100%;
 }
 .content-inside {
-  padding: 20px;
-  padding-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 */
 .footer {
-	/* height: 40px; */
-	/* width: 100%; */
-	color: #333;
-	border-top: double 4px #CCCCCA;
-	border-bottom: solid 6px #595956;
-	background: #DCDCDA;
-	vertical-align: middle;
-	text-align: right;
-	/* margin-top: -50px; */
+    /* height: 40px; */
+    /* width: 100%; */
+    color: #333;
+    border-top: double 4px #CCCCCA;
+    border-bottom: solid 6px #595956;
+    background: #DCDCDA;
+    vertical-align: middle;
+    text-align: right;
+    /* margin-top: -50px; */
 }
 
 .top {
-	font-size: 200%;
-	font-weight: bold;
-	color: #14449A;
-	text-align: center;
-	vertical-align: middle;
-    /* background: #faa; */
+    font-size: 200%;
+    font-weight: bold;
+    color: #14449A;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* 全体設定 */
 html, body {
     height: 100%;
     margin: 0;
-	font-family: "Meiryo";
+    font-family: "Meiryo";
 }
 
 p {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 /* テーブル */
 table {
-	border: solid 1px #CCCCCA;
-	border-collapse:collapse;
-	font-size: 100%;
+    border: solid 1px #CCCCCA;
+    border-collapse:collapse;
+    font-size: 100%;
 }
 tr {
-	border: solid 0px #CCCCCA;
-	border-collapse: collapse;
+    border: solid 0px #CCCCCA;
+    border-collapse: collapse;
 }
 th {
-	border: solid 1px #BBBBBA;
-	border-collapse: collapse;
-	background-color: #CCCCCA;
-	color: #14449A;
-	text-align:center;
+    border: solid 1px #BBBBBA;
+    border-collapse: collapse;
+    background-color: #CCCCCA;
+    color: #14449A;
+    text-align:center;
 }
 td {
-	border: solid 1px #CCCCCA;
-	border-collapse: collapse;
-	empty-cells: show;
+    border: solid 1px #CCCCCA;
+    border-collapse: collapse;
+    empty-cells: show;
 }
 caption{
-	text-align:left;
-	font-style:normal;
-	font-weight:normal;
+    text-align:left;
+    font-style:normal;
+    font-weight:normal;
 }
 
 /* タイトル */
 h1 {
-	font-size: 160%;
-	color: #14449A;
+    font-size: 160%;
+    color: #14449A;
 }
 h2 {
-	font-size: 140%;
-	color: #6474BA;
-	border-bottom: solid 1px #CCCCCA;
-	margin-left: 10px;
+    font-size: 140%;
+    color: #6474BA;
+    border-bottom: solid 1px #CCCCCA;
+    margin-left: 10px;
 }
 h3 {
-	margin-left: 12px;
-	font-size:130%;
+    margin-left: 12px;
+    font-size:130%;
 }
 h4 {
-	margin-left: 14px;
-	font-size:120%;
+    margin-left: 14px;
+    font-size:120%;
 }
 h5 {
-	margin-left: 16px;
-	font-size:110%;
+    margin-left: 16px;
+    font-size:110%;
 }
 h6 {
-	margin-left: 18px;
-	font-size:105%;
+    margin-left: 18px;
+    font-size:105%;
 }
 hr {
-	border: solid 1px #CCCCCA;
+    border: solid 1px #CCCCCA;
 }
 
 /* リンク */
 a:link {
-	color: #414191;
+    color: #414191;
 }
 a:visited {
-	color: #414161;
+    color: #414161;
 }
 a:hover {
-	color: #914141;
+    color: #914141;
 }
 a:active {
-	color: #914141;
+    color: #914141;
 }
 
 /* リスト */
 dl {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 dt {
-	margin: 0 0 4px 8px;
-	border-bottom: solid 1px #cccccc;
+    margin: 0 0 4px 8px;
+    border-bottom: solid 1px #cccccc;
 }
 dd {
-	margin: 0 0 4px 8px;
+    margin: 0 0 4px 8px;
 }
 ol{
-	margin-left: 20px;
+    margin-left: 20px;
 }
 ul {
-	margin: 0 0 4px 8px;
-	list-style-type: square;
+    margin: 0 0 4px 8px;
+    list-style-type: square;
 }
 li {
-	margin: 0 0 4px 8px;
+    margin: 0 0 4px 8px;
 }
 
 /* フォーム */
 input {
-	text-align: center;
-	font: 99% arial,helvetica,clean,sans-serif;
-	font-size: 90%;
-	font-family: Verdana, Arial, sans-serif;
-	border:1px solid #CCCCCA;
-	background-color:#ffffff;
-	margin-top: 1px;
-	margin-right: 1px;
-	padding: 1px;
+    text-align: center;
+    font: 99% arial,helvetica,clean,sans-serif;
+    font-size: 90%;
+    font-family: Verdana, Arial, sans-serif;
+    border:1px solid #CCCCCA;
+    background-color:#ffffff;
+    margin-top: 1px;
+    margin-right: 1px;
+    padding: 1px;
 }
 textarea {
-	font: 99% arial,helvetica,clean,sans-serif;
-	font-size: 90%;
-	font-family: 'ＭＳ ゴシック', Osaka, monospace;
-	font-family: Verdana, Arial, sans-serif;
-	border: solid 1px #CCCCCA;
-	background-color:#ffffff;
-	margin-top: 0px;
-	margin-right: 1px;
-	padding: 1px;
-	line-height: 1.2;
+    font: 99% arial,helvetica,clean,sans-serif;
+    font-size: 90%;
+    font-family: 'ＭＳ ゴシック', Osaka, monospace;
+    font-family: Verdana, Arial, sans-serif;
+    border: solid 1px #CCCCCA;
+    background-color:#ffffff;
+    margin-top: 0px;
+    margin-right: 1px;
+    padding: 1px;
+    line-height: 1.2;
 }
 select {
-	font: 99% arial,helvetica,clean,sans-serif;
-	font-size: 90%;
-	font-family: Verdana, Arial, sans-serif;
-	border: solid 1px #CCCCCA;
-	background-color:#ffffff;
-	margin-top: 1px;
-	margin-right: 1px;
-	padding: 1px;
+    font: 99% arial,helvetica,clean,sans-serif;
+    font-size: 90%;
+    font-family: Verdana, Arial, sans-serif;
+    border: solid 1px #CCCCCA;
+    background-color:#ffffff;
+    margin-top: 1px;
+    margin-right: 1px;
+    padding: 1px;
 }
 
 /* リンク */
 img{
-	border:0;
+    border:0;
 }
 address {
-	font-style:normal;font-weight:normal;
-	display: inline;
+    font-style:normal;font-weight:normal;
+    display: inline;
 }
 
 /* 物理要素 */
@@ -187,64 +186,64 @@ tt { font-family: monospace; } /* 等幅 */
 
 /* 強調・追加・削除 */
 em {
-	font-style:normal;font-weight:normal;
-	font-weight: bold;
+    font-style:normal;font-weight:normal;
+    font-weight: bold;
 }
 strong{
-	font-style:normal;font-weight:normal;
-	font-weight: bold;
-	color: #814121;
+    font-style:normal;font-weight:normal;
+    font-weight: bold;
+    color: #814121;
 }
 ins {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 del {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 /* 整形済みテキスト */
 pre {
-	border: solid 1px #DADADC;
-	padding: 10px;
-	font-family: monospace;
-	margin-left: 10px;
+    border: solid 1px #DADADC;
+    padding: 10px;
+    font-family: monospace;
+    margin-left: 10px;
 }
 q:before{
-	content:'';
+    content:'';
 }
 q:after{
-	content:'';
+    content:'';
 }
 /* 引用 */
 blockquote {
-	padding-left: 0.8em;
-	margin: 1em;
-	border-left: 2px dashed #EAEAED;
+    padding-left: 0.8em;
+    margin: 1em;
+    border-left: 2px dashed #EAEAED;
 }
 cite,q {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* その他 */
 fieldset {
-	border: 0px solid #000000;
+    border: 0px solid #000000;
 }
 legend {
-	display: none;
+    display: none;
 }
 cite{
-	font-style:normal;
-	font-weight:normal;
+    font-style:normal;
+    font-weight:normal;
 }
 code{
-	font-style:normal;
-	font-weight:normal;
+    font-style:normal;
+    font-weight:normal;
 }
 dfn{
-	font-style:normal;
-	font-weight:normal;
+    font-style:normal;
+    font-weight:normal;
 }
 var{
-	font-style:normal;
-	font-weight:normal;
+    font-style:normal;
+    font-weight:normal;
 }
