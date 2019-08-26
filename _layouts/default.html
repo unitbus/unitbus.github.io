@@ -7,6 +7,7 @@
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
     <link rel="stylesheet" href="https://unitbus.github.io/style.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/style_grid.css" type="text/css">
     <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
 </head>
 
@@ -22,7 +23,30 @@
     gtag('config', 'UA-50817371-1');
 </script>
 
-<div class="content">
+<div class=".top">
+{{ page.title }}
+</div>
+
+<nav>
+<ul>
+<li><a href="https://unitbus.github.io/pages/download">Download</a></li>
+<li><a href="https://unitbus.github.io/pages/python">Python</a></li>
+<li><a href="https://unitbus.github.io/pages/pyside">Pyside</a></li>
+<li><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
+</ul>
+</nav>
+
+<main>
+{{ content }}
+</main>
+
+<footer>
+フッター
+</footer>
+
+
+<!-- 
+<div class="container">
 <div class="content-inside">
 {{ content }}
 </div>
@@ -31,6 +55,9 @@
 <footer class="footer">
     (C) 2019 Co, UnitBus.
 </footer>
+-->
+
+
 
 </body>
 </html>

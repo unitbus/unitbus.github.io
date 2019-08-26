@@ -1,0 +1,32 @@
+
+body {
+    display: grid;
+    margin: 0;
+    min-height: 100%;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 180px 1fr;
+}
+body > * {
+    /* margin: 3px; */
+    padding: 10px;
+}
+.top {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    /* background: #faa; */
+}
+main {
+    grid-row: 2;
+    grid-column: 2;
+    /* background: #afa; */
+}
+nav {
+    grid-row: 2;
+    grid-column: 1;
+    /* background: #aaf; */
+}
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    /* background: #aaa; */
+}
