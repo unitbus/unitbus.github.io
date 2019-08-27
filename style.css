@@ -1,28 +1,23 @@
-/*
-.content {
-    min-height: 100%;
-}
-.content-inside {
-    padding: 20px;
-    padding-bottom: 50px;
-}
-*/
-.footer {
-    /* height: 40px; */
-    /* width: 100%; */
+
+footer {
     color: #333;
+    background: #DCDCDA;
     border-top: double 4px #CCCCCA;
     border-bottom: solid 6px #595956;
-    background: #DCDCDA;
-    vertical-align: middle;
+    vertical-align: bottom;
     text-align: right;
-    /* margin-top: -50px; */
+}
+
+.footer {
+    font-size: 80%;
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 .top {
+    color: #14449A;
     font-size: 200%;
     font-weight: bold;
-    color: #14449A;
     text-align: center;
     vertical-align: middle;
 }
@@ -30,6 +25,7 @@
 /* 全体設定 */
 html, body {
     height: 100%;
+    padding: 10;
     margin: 0;
     font-family: "Meiryo";
 }

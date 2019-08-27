@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
     <link rel="stylesheet" href="https://unitbus.github.io/style.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/style_grid.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/style_menu.css" type="text/css">
     <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
 </head>
 
@@ -27,21 +28,23 @@
 {{ page.title }}
 </div>
 
-<nav>
-<ul>
-<li><a href="https://unitbus.github.io/pages/download">Download</a></li>
-<li><a href="https://unitbus.github.io/pages/python">Python</a></li>
-<li><a href="https://unitbus.github.io/pages/pyside">PySide</a></li>
-<li><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
-</ul>
+<nav class=none>
+    <ul id="nav">
+        <li><a href="https://unitbus.github.io/pages/download">Download</a></li>
+        <li><a href="https://unitbus.github.io/pages/python">Python</a></li>
+        <li><a href="https://unitbus.github.io/pages/pyside">PySide</a></li>
+        <li><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
+    </ul>
 </nav>
 
 <main>
 {{ content }}
 </main>
 
-<footer class="footer">
-(C) 2019 Co, UnitBus.
+<footer>
+    <div class="footer">
+        (C) 2019 Co, UnitBus.
+    </div>
 </footer>
 
 </body>
