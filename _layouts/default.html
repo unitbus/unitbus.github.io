@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
     <link rel="stylesheet" href="https://unitbus.github.io/style.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/style_grid.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/style_name.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/style_menu.css" type="text/css">
     <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
 </head>
@@ -24,16 +25,16 @@
     gtag('config', 'UA-50817371-1');
 </script>
 
-<div class="top">
-{{ page.title }}
-</div>
+<header class="header">
+    {{ page.title }}
+</header>
 
-<nav class=none>
-    <ul id="nav">
-        <li><a href="https://unitbus.github.io/pages/download">Download</a></li>
-        <li><a href="https://unitbus.github.io/pages/python">Python</a></li>
-        <li><a href="https://unitbus.github.io/pages/pyside">PySide</a></li>
-        <li><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
+<nav>
+    <ul class="nav">
+        <li class="nav"><a href="https://unitbus.github.io/pages/download">Download</a></li>
+        <li class="nav"><a href="https://unitbus.github.io/pages/python">Python</a></li>
+        <li class="nav"><a href="https://unitbus.github.io/pages/pyside">PySide</a></li>
+        <li class="nav"><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
     </ul>
 </nav>
 
@@ -42,9 +43,7 @@
 </main>
 
 <footer>
-    <div class="footer">
-        (C) 2019 Co, UnitBus.
-    </div>
+    (C) 2019 Co, UnitBus.
 </footer>
 
 </body>

@@ -1,12 +1,11 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
     body{
         font-size: 50%;
-        max-width: 600px;
         grid-template-rows: 30px 24px 1fr 24px;
         grid-template-columns: 1fr;
     }
     
-    .top {
+    header {
         grid-row: 1;
         grid-column: 1;
     }
@@ -17,6 +16,7 @@
     }
     
     main {
+        margin-top: 20px;
         grid-row: 3;
         grid-column: 1;
     }
@@ -25,24 +25,23 @@
         grid-row: 4;
         grid-column: 1;
     }
-    /*     
-    .none {
-        display: none;
-    }
-    */
     
-    #nav li {
+    .nav {
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    .nav li {
         width: 80px;
         text-align: center;
         background-color: #14449A;
         float: left;
+        font-weight: bold;
     }
-
-    #nav li a {
+    
+    .nav li a {
         text-decoration: none;
         color: #fff;
-        font-weight: bold;
-        padding: 10px;
     }
 
 }
