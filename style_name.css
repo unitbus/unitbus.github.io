@@ -1,23 +1,21 @@
 
-.nav {
-    padding-left: 10px;
+#nav {
     list-style: none;
     overflow: hidden;
 }
 
-.nav li {
-    text-align: center;
+#nav li {
     float: right;
     padding: 10px;
     font-weight: bold;
 }
 
-.nav li a {
+#nav li a {
     color: #14449A;
     text-decoration: none;
 }
 
-.nav li a:visited {
+#nav li a:visited {
     color: #14449A;
 }
 
