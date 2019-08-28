@@ -34,15 +34,20 @@
     .nav li {
         /* width: 80px; */
         text-align: center;
-        background-color: #14449A;
         float: left;
         font-weight: bold;
+        padding: 0px;
     }
     
     .nav li a {
+        color: #fff;
+        background-color: #14449A;
         text-decoration: none;
+    }
+    
+    .nav li a:visited {
         color: #fff;
     }
-
+    
 }
 

@@ -107,11 +107,11 @@ ol{
     margin-left: 20px;
 }
 ul {
-    margin: 0 0 4px 8px;
+    /* margin: 0 0 4px 8px; */
     list-style-type: square;
 }
 li {
-    margin: 0 0 4px 8px;
+    /* margin: 0 0 4px 8px; */
 }
 
 /* フォーム */
