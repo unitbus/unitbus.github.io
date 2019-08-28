@@ -1,5 +1,6 @@
 @media screen and (max-width: 500px){
     body{
+        min-width: 300px;
         font-size: 50%;
         grid-template-rows: 30px 24px 1fr 24px;
         grid-template-columns: 1fr;
@@ -16,7 +17,6 @@
     }
     
     main {
-        margin-top: 20px;
         grid-row: 3;
         grid-column: 1;
     }
@@ -32,7 +32,7 @@
     }
     
     .nav li {
-        width: 80px;
+        /* width: 80px; */
         text-align: center;
         background-color: #14449A;
         float: left;

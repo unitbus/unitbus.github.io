@@ -8,19 +8,17 @@ body {
 }
 header {
     max-width: 740px;
-    margin-top: 10px;
     grid-row: 1;
     grid-column: 1 / span 2;
     color: #14449A;
     font-size: 200%;
     font-weight: bold;
     text-align: center;
-    vertical-align: middle;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
     /* background: #faa; */
 }
 nav {
-    margin: 10px;
-    margin-top: 20px;
     grid-row: 2;
     grid-column: 1;
     /* background: #aaf; */
@@ -29,7 +27,7 @@ main {
     max-width: 800px;
     grid-row: 2;
     grid-column: 2;
-    margin: 10px;
+    padding-left: 10px;
     /* background: #afa; */
 }
 footer {
