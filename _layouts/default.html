@@ -7,35 +7,49 @@
     <meta name="google-site-verification" content="FuqcB3d38YGzg8GiWAApyXtuOu3PW6urs3iePVJ2o-o" />
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
     <link rel="stylesheet" href="https://unitbus.github.io/style.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/style_grid.css" type="text/css">
-    <link rel="stylesheet" href="https://unitbus.github.io/style_name.css" type="text/css">
-    <link rel="stylesheet" href="https://unitbus.github.io/style_menu.css" type="text/css">
-    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://unitbus.github.io/style_hamburger.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/style_accordion.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/style_min.css" type="text/css">
 </head>
 
-<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../styles/style_hamburger.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50817371-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-50817371-1');
-</script>
+<body>
 
 <header class="header">
     {{ page.title }}
 </header>
 
-<nav>
-    <ul id="nav">
-        <li><a href="https://unitbus.github.io/pages/download">Download</a></li>
-        <li><a href="https://unitbus.github.io/pages/python">Python</a></li>
-        <li><a href="https://unitbus.github.io/pages/pyside">PySide</a></li>
-        <li><a href="https://unitbus.github.io/pages/github">GitHub</a></li>
-    </ul>
+<nav class="hamburger-nav">
+    <button type="button" id="hamburger-nav-toggle" class="hamburger-nav-toggle-btn close"></button>
+    
+    <div class="hamburger-nav-list">
+    
+        <div class="cp_actab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">Contents</label>
+            <div class="cp_actab-content">
+                <p><a href="https://unitbus.github.io/pages/download">Download</a></p>
+            </div>
+        </div>
+        
+        <div class="cp_actab">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Documents</label>
+            <div class="cp_actab-content">
+                <p><a href="https://unitbus.github.io/pages/python">Python/Basic</a></p>
+                <p><a href="https://unitbus.github.io/pages/pyside">Python/PySide</a></p>
+                <p><a href="https://unitbus.github.io/pages/github">GitHub</a></p>
+            </div>
+        </div>
+    
+    </div>
+    
 </nav>
 
 <main>
