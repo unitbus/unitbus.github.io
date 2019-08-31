@@ -1,11 +1,36 @@
 /* Accordion Navigation */
 
+.cp_acopt {
+	/* position: absolute; */
+	font-weight: bold;
+	line-height: 2;
+	/* background: red; */
+	color: var(--textColor);
+	font-size: 80%;
+	width: auto;
+	float: right;
+	margin: 0 auto;
+	padding: 0 0 0 1em;
+}
+.cp_acopt select {
+	position: relative;
+	float: right;
+	font-weight: bold;
+	line-height: 2;
+	background: var(--bgColor);
+	color: var(--textColor);
+}
+
+.cp_acopt option {
+	background: var(--bgColor);
+}
+
 .cp_actab {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	margin: 0 auto;
-	color: #ffffff;
+	color: var(--menuTextColor);
 }
 .cp_actab input {
 	position: absolute;
@@ -20,7 +45,7 @@
 	padding: 0 0 0 1em;
 	cursor: pointer;
 	margin: 0 0 1px 0;
-	background: #14449A;
+	background: var(--menuBgColor);
 }
 .cp_actab .cp_actab-content {
 	font-weight: bold;
@@ -28,7 +53,6 @@
 	max-height: 0;
 	-webkit-transition: max-height 0.15s;
 	transition: max-height 0.15s;
-	color: #14449A;
 	background: none;
 }
 .cp_actab-content p {
@@ -40,9 +64,13 @@
 	text-decoration: none;
 }
 .cp_actab-content a:visited {
-    color: #14449A;
 	display: inline-block;
 	text-decoration: none;
+	color: var(--textColor);
+}
+.cp_actab-content a:hover {
+	display: inline;
+	color: var(--hoverColor);
 }
 
 /* :checked */

@@ -1,0 +1,28 @@
+:root {
+    --textColor: hsl(224, 0%, 10%);
+    --codeColor: hsl(224, 0%, 16%);
+    
+    --bgColor: hsl(224, 0%, 86%);
+    --borderColorA: hsl(224, 0%, 34%);
+    --borderColorB: hsl(224, 0%, 40%);
+    --borderColorC: hsl(224, 0%, 80%);
+    
+    --menuTextColor: var(--bgColor);
+    --menuBgColor: hsl(224, 40%, 40%);
+    
+    --linkColor: var(--textColor);
+    --linkVisit: var(--h1);
+    --hoverColor: hsl(224, 100%, 42%);
+    --activeColor: hsl(0, 40%, 42%);
+    
+    --h1: hsl(219, 77%, 34%);
+    --h2: hsl(229, 38%, 56%);
+    
+    --middleColor: hsl(0, 0%, 80%);
+    --other: hsl(60, 3%, 86%);
+    
+    --fotterColor: hsl(224, 8%, 12%);
+    --fotterBgColor: hsl(224, 8%, 73%);
+    --fotterBorderAColor: hsl(224, 8%, 80%);
+    --fotterBorderBColor: hsl(224, 8%, 34%);
+}

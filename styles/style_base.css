@@ -4,13 +4,15 @@ html, body {
     padding: 10;
     margin: 0;
     font-family: "Meiryo";
+    background: var(--bgColor);
+    color: var(--textColor);
 }
 
 footer {
-    color: #333;
-    background: #DCDCDA;
-    border-top: double 4px #CCCCCA;
-    border-bottom: solid 6px #595956;
+    color: var(--fotterColor);
+    background: var(--fotterBgColor);
+    border-top: double 4px var(--fotterBorderAColor);
+    border-bottom: solid 6px var(--fotterBorderBColor);
     vertical-align: bottom;
     text-align: right;
 }
@@ -21,23 +23,23 @@ p {
 
 /* テーブル */
 table {
-    border: solid 1px #CCCCCA;
+    border: solid 1px var(--borderColorA);
     border-collapse:collapse;
     font-size: 100%;
 }
 tr {
-    border: solid 0px #CCCCCA;
+    border: solid 0px var(--borderColorA);
     border-collapse: collapse;
 }
 th {
-    border: solid 1px #BBBBBA;
+    border: solid 1px var(--borderColorB);
     border-collapse: collapse;
-    background-color: #CCCCCA;
-    color: #14449A;
+    background-color: var(--borderColorA);
+    color: var(--linkColor);
     text-align:center;
 }
 td {
-    border: solid 1px #CCCCCA;
+    border: solid 1px var(--borderColorA);
     border-collapse: collapse;
     empty-cells: show;
 }
@@ -50,12 +52,12 @@ caption{
 /* タイトル */
 h1 {
     font-size: 160%;
-    color: #14449A;
+    color: var(--h1);
 }
 h2 {
     font-size: 140%;
-    color: #6474BA;
-    border-bottom: solid 1px #CCCCCA;
+    color: var(--h2);
+    border-bottom: solid 1px var(--borderColorA);
     margin-left: 10px;
 }
 h3 {
@@ -75,21 +77,21 @@ h6 {
     font-size:105%;
 }
 hr {
-    border: solid 1px #CCCCCA;
+    border: solid 1px var(--borderColorA);
 }
 
 /* リンク */
 a:link {
-    color: #414191;
+    color: var(--linkColor);
 }
 a:visited {
-    color: #414161;
+    color: var(--linkVisit);
 }
 a:hover {
-    color: #914141;
+    color: var(--hoverColor);
 }
 a:active {
-    color: #914141;
+    color: var(--activeColor);
 }
 
 /* リスト */
@@ -120,8 +122,8 @@ input {
     font: 99% arial,helvetica,clean,sans-serif;
     font-size: 90%;
     font-family: Verdana, Arial, sans-serif;
-    border:1px solid #CCCCCA;
-    background-color:#ffffff;
+    border:1px solid var(--borderColorA);
+    background-color: var(--codeColor);
     margin-top: 1px;
     margin-right: 1px;
     padding: 1px;
@@ -131,8 +133,8 @@ textarea {
     font-size: 90%;
     font-family: 'ＭＳ ゴシック', Osaka, monospace;
     font-family: Verdana, Arial, sans-serif;
-    border: solid 1px #CCCCCA;
-    background-color:#ffffff;
+    border: solid 1px var(--borderColorA);
+    background-color: var(--codeColor);
     margin-top: 0px;
     margin-right: 1px;
     padding: 1px;
@@ -142,8 +144,8 @@ select {
     font: 99% arial,helvetica,clean,sans-serif;
     font-size: 90%;
     font-family: Verdana, Arial, sans-serif;
-    border: solid 1px #CCCCCA;
-    background-color:#ffffff;
+    border: solid 1px var(--borderColorA);
+    background-color: var(--codeColor);
     margin-top: 1px;
     margin-right: 1px;
     padding: 1px;
@@ -173,7 +175,7 @@ em {
 strong{
     font-style:normal;font-weight:normal;
     font-weight: bold;
-    color: #814121;
+    color: var(--activeColor);
 }
 ins {
     text-decoration: underline;
@@ -184,7 +186,7 @@ del {
 
 /* 整形済みテキスト */
 pre {
-    border: solid 1px #DADADC;
+    border: solid 1px var(--codeColor);
     padding: 10px;
     font-family: monospace;
     margin-left: 10px;
@@ -199,7 +201,7 @@ q:after{
 blockquote {
     padding-left: 0.8em;
     margin: 1em;
-    border-left: 2px dashed #EAEAED;
+    border-left: 2px dashed var(--codeColor);
 }
 cite,q {
     text-decoration: underline;
@@ -207,7 +209,7 @@ cite,q {
 
 /* その他 */
 fieldset {
-    border: 0px solid #000000;
+    border: 0px solid var(--other);
 }
 legend {
     display: none;
