@@ -3,21 +3,21 @@ layout: default
 title: Download
 ---
 
-# standalone
+# Standalone.
 
-## cpp
+## CPP
 
 古いデータですが置いておきます。
 
 - [ProcessLimiter_150704.7z](https://unitbus.github.io/download/standalone/cpp/data/ProcessLimiter_150704.7z)
 
-# maya
+# Maya.
 
-## python
+## Python
 
 現在準備中です。
 
-## mel
+## MEL
 
 古いデータですが置いておきます。
 

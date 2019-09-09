@@ -7,13 +7,15 @@ title: Python
 
 ## 基本
 
-from import asとは？
-http://python.matrix.jp/pages/tips/import.html
-
 pythonは、すべての変数、関数がオブジェクトで、ルールが統一されている。
 ファイル構成も、クラスもパッケージも、同じ考え方で慣れると色々スッキリする。
 
 オレオレ仕様で頑張っても、正規ルートから外れたルールだといずれ詰む。
+
+### 参考
+
+> PythonMatrixJp: Pythonのモジュールインポートのしくみ
+http://python.matrix.jp/pages/tips/import.html
 
 ## Class
 

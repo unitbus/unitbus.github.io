@@ -3,9 +3,7 @@ layout: default
 title: UnitBus
 ---
 
-# UnitBus
-
-Index Pages.
+# Index Pages.
 
 - [Download](https://unitbus.github.io/pages/download)
 - [Python](https://unitbus.github.io/pages/python/bsic)
