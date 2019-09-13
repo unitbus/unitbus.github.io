@@ -1,8 +1,10 @@
 :root {
     --textColor: hsl(224, 8%, 86%);
-    --codeColor: hsl(224, 8%, 72%);
-    
     --bgColor: hsl(224, 4%, 12%);
+    
+    --codeColor: rgb(177, 180, 189);
+    --codeBgColor: hsl(224, 4%, 8%);
+    
     --borderColorA: hsl(224, 8%, 80%);
     --borderColorB: hsl(224, 8%, 73%);
     --borderColorC: hsl(224, 8%, 34%);
