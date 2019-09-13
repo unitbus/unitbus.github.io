@@ -186,7 +186,8 @@ del {
 
 /* 整形済みテキスト */
 pre {
-    border: solid 1px var(--codeColor);
+    color: var(--codeColor);
+    border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
     padding: 10px;
     font-family: monospace;
