@@ -15,7 +15,7 @@ pythonは、すべての変数、関数がオブジェクトで、ルールが�
 ### 参考
 
 > PythonMatrixJp: Pythonのモジュールインポートのしくみ
-http://python.matrix.jp/pages/tips/import.html
+> http://python.matrix.jp/pages/tips/import.html
 
 ## Class
 
