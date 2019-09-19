@@ -26,3 +26,19 @@ button.show()
 ```
 
 なぜ、QPushButtonで、show()メソッドが使えて、表示出来るのか？がわかるとPySideが楽しくなる。
+
+## Document & Reference
+
+> PySide 1.0.7 Reference
+https://srinikom.github.io/pyside-docs/
+
+> PySide 1.2.1 Reference
+https://pyside.github.io/docs/pyside/index.html
+
+> Qt for Python(PySide2)
+https://doc.qt.io/qtforpython/
+
+*PySide 1.2.1 Reference* では、継承図が表示されないのでちょっと不便。
+
+そろそろPySide1は切り捨てて書いても良い気もしますが、まだ互換性考えて、
+*PySide 1.0.7 Reference* の方を見て書いてます。
