@@ -3,7 +3,7 @@ layout: default
 title: Python
 ---
 
-# Python Basic.
+# Python Basic
 
 ## 基本
 

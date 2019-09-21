@@ -3,7 +3,7 @@ layout: default
 title: Python
 ---
 
-# Python PySide.
+# Python PySide
 
 ## 基本
 

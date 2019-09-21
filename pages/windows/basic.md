@@ -3,7 +3,7 @@ layout: default
 title: Windows
 ---
 
-# Windows Basic.
+# Windows Basic
 
 windows 10 の内容を中心にメモ。
 

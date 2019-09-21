@@ -3,12 +3,12 @@ layout: default
 title: GitHub
 ---
 
-# GitHub.
+# GitHub
 
 オンラインで、複数人と、サブバージョン管理できるサービス？
 アカウント作るだけ作って放置してたので、よくわかってない。
 
-# GitHub Pages.
+# GitHub Pages
 
 GitHubを利用して、静的ページなサイトを作れるらしいので調査とメモ。
 wordpress的なのを、動的ページと言うらしい。
@@ -62,7 +62,7 @@ md置くだけで、GitHub側に、jekyllというツールがインストール
 vscodeで書いてるが、previewでは大丈夫でも、htmlで見ると乱れる所がチラホラ…。
 githubで、mdを直接見ると大丈夫だったりする。
 
-**details内のコードブロックが効かない**
+**details内のコードブロックが効かない例**
 
 <details>
 <summary>畳むタイトル</summary>
@@ -149,7 +149,7 @@ kramdown:
 数日経っても、google検索に引っかからなかったので、調べてみると
 `sitemap` が必要らしい。すでに作成されてる場合は以下で確認できる。
 
-`https://site.github.io/sitemap.xml`
+`https://{site}.github.io/sitemap.xml`
 
 設定方法は、 `_config.yml` に追記する。
 
