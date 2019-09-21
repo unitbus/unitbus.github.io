@@ -1,9 +1,9 @@
 :root {
     --textColor: hsl(224, 8%, 86%);
-    --bgColor: hsl(224, 4%, 12%);
+    --bgColor: hsl(224, 6%, 14%);
     
     --codeColor: rgb(177, 180, 189);
-    --codeBgColor: hsl(224, 4%, 8%);
+    --codeBgColor: hsl(224, 6%, 8%);
     
     --borderColorA: hsl(224, 8%, 80%);
     --borderColorB: hsl(224, 8%, 73%);
@@ -17,8 +17,8 @@
     --hoverColor: hsl(224, 100%, 42%);
     --activeColor: hsl(0, 40%, 42%);
     
-    --h1: hsl(224, 4%, 94%);
-    --h2: hsl(224, 4%, 90%);
+    --h1: hsl(224, 6%, 94%);
+    --h2: hsl(224, 6%, 90%);
     
     --middleColor: hsl(224, 8%, 20%);
     --other: rgb(0, 0, 0);

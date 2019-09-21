@@ -3,9 +3,8 @@ layout: default
 title: UnitBus
 ---
 
-# Index Pages.
+# Index Page
 
-- [Download](https://unitbus.github.io/pages/download)
-- [Python](https://unitbus.github.io/pages/python/bsic)
-- [PySide](https://unitbus.github.io/pages/python/pyside)
-- [GitHub](https://unitbus.github.io/pages/github)
+メモや、成果物を、気軽に投稿できるサイト運営を目的に、*GitHub Pages* 始めました。
+
+メニューから各リンクへ飛んでください。
