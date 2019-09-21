@@ -18,7 +18,7 @@ footer {
 }
 
 p {
-    margin-left: 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 /* テーブル */
@@ -160,20 +160,32 @@ address {
     display: inline;
 }
 
-/* 物理要素 */
-b { font-weight: bold; } /* 太字 */
-i { font-style: italic; } /* 斜体 */
-big { font-size: 107%; } /* 文字大 */
-small { font-size: 85%; } /* 文字小 */
-tt { font-family: monospace; } /* 等幅 */
+/* 太字 斜体 文字大 文字小 等幅*/
+b {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+}
+big {
+    font-size: 105%;
+}
+small {
+    font-size: 85%;
+}
+tt {
+    font-family: monospace;
+}
 
 /* 強調・追加・削除 */
 em {
-    font-style:normal;font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
     font-weight: bold;
 }
 strong{
-    font-style:normal;font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
     font-weight: bold;
     color: var(--activeColor);
 }
@@ -189,10 +201,10 @@ pre {
     color: var(--codeColor);
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
-    padding: 10px;
-    font-family: monospace;
-    margin-left: 10px;
+    padding: 4px 8px 4px 8px;
+    margin: 10px 20px 10px 20px;
     line-height: 1.4em;
+    font-family: monospace;
 }
 q:before{
     content:'';
@@ -235,18 +247,19 @@ legend {
     display: none;
 }
 cite{
-    font-style:normal;
-    font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
 }
 code{
-    font-style:normal;
-    font-weight:normal;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--codeColor);
 }
 dfn{
-    font-style:normal;
-    font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
 }
 var{
-    font-style:normal;
-    font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
 }
