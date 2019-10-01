@@ -24,8 +24,9 @@ title: VSCode
 コメントの日本語がプロポーショナルになって、凸凹して気持ち悪い。
 
 標準では入ってないので、ダウンロードが必要。
-インストール方法はこちら。
-https://unitbus.github.io/pages/windows/basic#WindowsFont
+インストール方法はこちらを参考にどうぞ。
+
+https://unitbus.github.io/pages/windows/basic#windows-font
 
 ```
 "editor.fontFamily": "'Source Han Code JP Regular', Consolas",
