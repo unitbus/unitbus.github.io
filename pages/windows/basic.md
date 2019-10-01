@@ -22,3 +22,27 @@ windowsUpdateするたびの元に戻される。
 
 > Windows 10 ファイルエクスプローラー上で重複に表示されているドライブアイコン１つだけに表示する
 > https://www.billionwallet.com/goods/windows10/win10-duplicate-drive-icon.html
+
+# Windows Font
+
+設定画面からも出来るっぽいが、下のフォルダに放るだけでもOK。
+
+`C:\Windows\Fonts`
+
+## Source Han Code JP
+
+等幅で日本語が扱える、オススメのフォント。アドビの人が公開してるらしい。
+比率は `2:3` と、アルファベットの間隔が広くスクリプト向き。
+標準では入ってないので、ダウンロードが必要。
+
+> Adobe Fonts: source-han-code-jp
+> https://github.com/adobe-fonts/source-han-code-jp
+
+フォント本体のダウンロードは下から。
+https://github.com/adobe-fonts/source-han-code-jp/blob/master/README-JP.md#download-the-fonts
+
+OTFフォルダに入ってる、.otfファイルを、fontフォルダに放るとインストール始まります。
+`It.otf` はイタリックでした。
+
+日本語名だと、 `源ノ角ゴシック Code JP` らしいです。
+日本語アプリだと、日本名知らないと探せないかも…。
