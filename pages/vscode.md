@@ -9,7 +9,7 @@ title: VSCode
 へビューユーザーから、ライトユーザーまで幅広く使われてる印象。
 自分も、長年愛用してた、Notepad++からメインエディタを変更。
 
-## settings
+## Settings
 
 **[Ctrl + Shft + P]** から、 `基本設定: 設定(JSON)を開く` を選択。
 最近は、HTMLっぽく見やすくなったが、逆に設定が面倒になったので、JSONへコピペした方が楽。
@@ -42,3 +42,16 @@ https://unitbus.github.io/pages/windows/basic#windows-font
 // 間違い例
 "editor.fontFamily": "Source Han Code JP Regular",
 ```
+
+### Markdown
+
+改行の有効は、設定で変更できる。
+cssも指定可能。相対パスは、ワークスペースの位置になる。
+
+```
+"markdown.styles": ["./document.css"],
+"markdown.preview.breaks": true,
+```
+
+> VS Code 標準Markdown Extensionsで、改行を有効にする
+https://qiita.com/rma/items/75f502e784b7164b8813
