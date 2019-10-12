@@ -3,7 +3,7 @@ layout: default
 title: Python
 ---
 
-# Python PySide
+# PySide
 
 ## 基本
 
@@ -26,6 +26,10 @@ button.show()
 ```
 
 なぜ、QPushButtonで、show()メソッドが使えて、表示出来るのか？がわかるとPySideが楽しくなる。
+
+exec_()を実行する事で、イベントループになる。
+この場合、QApplicationを作成し、standaloneソフトとして待機させてる状態になる。
+exec_()は、ダイヤログや、メニュー、スレッドでも出てくるので、覚えておくと便利。
 
 ## Document & Reference
 

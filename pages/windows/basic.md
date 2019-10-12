@@ -18,10 +18,33 @@ windowsUpdateするたびの元に戻される。
 3. コピペで飛ばないので、一文字消すと予測候補出るので、選択すると **DelegateFolders** まで表示される。
 4. **{F5FB2C77-0E2F-4A16-A381-3E560C68BC83}** を削除。
 
-### 参考
-
 > Windows 10 ファイルエクスプローラー上で重複に表示されているドライブアイコン１つだけに表示する
 > https://www.billionwallet.com/goods/windows10/win10-duplicate-drive-icon.html
+
+
+## アイコンの表示がおかしい時
+
+アイコンのキャッシュを削除できるコマンドらしい。
+
+```
+ie4uinit.exe -ClearIconCache
+```
+
+windowsでアイコンを作成する時は、 `Greenfish Icon Editor` がお勧め。
+自分は、 `portable version` をダウンロード。
+
+> Greenfish Software.org ダウンロードページ
+> http://greenfishsoftware.org/gfie.php#apage
+
+「windowsアイコンを作成する」をしないと、
+ショートカットアイコンがおかしくなったりするので注意。
+
+
+## タスクバーにピン留め
+
+ウインドウを閉じ、ピン留めしたアイコンを、`shift + 右クリック` で、ピン留めアイコンのプロパティを開ける。
+アイコンをグレースケールにしておけば、起動後は元の色付きアイコンで表示されるので、ストアアプリっぽく使える。
+
 
 # Windows Font
 
