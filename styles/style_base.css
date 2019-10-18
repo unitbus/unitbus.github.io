@@ -96,7 +96,7 @@ a:active {
 
 /* リスト */
 dl {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 dt {
     margin: 0 0 4px 18px;
@@ -106,7 +106,7 @@ dd {
     margin: 0 0 4px 18px;
 }
 ol{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 ul {
     /* margin: 0 0 4px 8px; */
