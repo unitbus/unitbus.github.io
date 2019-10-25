@@ -28,23 +28,13 @@
     --fotterBorderAColor: hsl(224, 8%, 80%);
     --fotterBorderBColor: hsl(224, 8%, 34%);
     
-    --attrdColor: hsl(0, 0%, 80%);
-    --commentColor: hsl(120, 60%, 40%);
-    --constantColor: #ffff00;
-    --deletedColor: #ff0000;
-    --insertedColor: #00ff00;
-    --keywordColor: hsl(44, 59%, 65%);
-    --otherColor: hsl(0, 0%, 38%);
-    --typedColor: #ffa500;
-    --dataColor: hsl(221, 100%, 56%);
-    
-    --syntaxColorA: #586E75; /* Comment */
-    --syntaxColorB: #93A1A1; /* Error */
-    --syntaxColorC: #859900; /* Keyword */
-    --syntaxColorD: #CB4B16; 
-    --syntaxColorE: #2AA198;
-    --syntaxColorF: #DC322F;
-    --syntaxColorG: #268BD2;
-    --syntaxColorH: #B58900;
-    --syntaxColorI: #555; /* Other */
+    --syntaxColorA: hsl(194, 14%, 40%); /* Comment */
+    --syntaxColorB: hsl(180, 7%, 60%); /* Error */
+    --syntaxColorC: hsl(68, 100%, 30%); /* Keyword */
+    --syntaxColorD: hsl(18, 80%, 44%); 
+    --syntaxColorE: hsl(175, 59%, 40%);
+    --syntaxColorF: hsl(1, 71%, 52%);
+    --syntaxColorG: hsl(205, 69%, 49%);
+    --syntaxColorH: hsl(45, 100%, 35%);
+    --syntaxColorI: hsl(0, 0%, 33%); /* Other */
 }
