@@ -10,7 +10,7 @@ title: Python
 PySideは難しいと敬遠されるが、実はpythonで使えるUIの中で一番シンプルで、ルールが統一されてる。
 以下のコードが、スタンドアローンで、最低限必要とするコマンド。
 
-```
+```python
 from PySide.QtGui import *
 app = QApplication([])
 button = QPushButton('test')
@@ -19,7 +19,8 @@ app.exec_()
 ```
 
 mayaだと、3行で済む。
-```
+
+```python
 from PySide.QtGui import *
 button = QPushButton('test')
 button.show()
