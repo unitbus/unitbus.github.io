@@ -26,7 +26,7 @@ windowsUpdateするたびの元に戻される。
 
 アイコンのキャッシュを削除できるコマンドらしい。
 
-```
+```bat
 ie4uinit.exe -ClearIconCache
 ```
 
