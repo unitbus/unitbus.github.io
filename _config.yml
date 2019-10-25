@@ -1,25 +1,31 @@
 # markdown: redcarpet
+# markdown: kramdown
+
 # redcarpet:
 #     extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 # auto: true
 # server: true
+
 # highlighter: pygments
+# highlighter: rouge
 
 # theme: jekyll-theme-slate
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+
 google_analytics: UA-50817371-1
 
 marked:
     gfm: true
     breaks: true
 
-markdown: kramdown
-highlighter: rouge
-
 kramdown:
     input: GFM
     hard_wrap: true
     syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        css_class: 'highlight'
+        yml_class: 'highlight'
+        python_class: 'highlight'
 
 plugins:
     - jekyll-sitemap
