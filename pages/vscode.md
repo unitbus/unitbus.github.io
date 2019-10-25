@@ -28,7 +28,7 @@ title: VSCode
 
 https://unitbus.github.io/pages/windows/basic#windows-font
 
-```
+```json
 "editor.fontFamily": "'Source Han Code JP Regular', Consolas",
 ```
 
@@ -38,7 +38,7 @@ https://unitbus.github.io/pages/windows/basic#windows-font
 
 以下のように間違って説明してるサイトが結構あるので注意。
 
-```
+```json
 // 間違い例
 "editor.fontFamily": "Source Han Code JP Regular",
 ```
@@ -48,7 +48,7 @@ https://unitbus.github.io/pages/windows/basic#windows-font
 改行の有効は、設定で変更できる。
 cssも指定可能。相対パスは、ワークスペースの位置になる。
 
-```
+```json
 "markdown.styles": ["./document.css"],
 "markdown.preview.breaks": true,
 ```
