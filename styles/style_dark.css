@@ -37,4 +37,14 @@
     --otherColor: hsl(0, 0%, 38%);
     --typedColor: #ffa500;
     --dataColor: hsl(221, 100%, 56%);
+    
+    --syntaxColorA: #586E75; /* Comment */
+    --syntaxColorB: #93A1A1; /* Error */
+    --syntaxColorC: #859900; /* Keyword */
+    --syntaxColorD: #CB4B16; 
+    --syntaxColorE: #2AA198;
+    --syntaxColorF: #DC322F;
+    --syntaxColorG: #268BD2;
+    --syntaxColorH: #B58900;
+    --syntaxColorI: #555; /* Other */
 }
