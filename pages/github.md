@@ -158,7 +158,7 @@ plugins:
     - jekyll-sitemap
 ```
 
-# Syntax highlighter
+## Syntax highlighter
 
 `<code>` タグの中を言語で色付けするので、`コードハイライト` とも呼ばれる機能。
 
