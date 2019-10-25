@@ -157,3 +157,21 @@ kramdown:
 plugins:
     - jekyll-sitemap
 ```
+
+# Syntax highlighter
+
+`<code>` タグの中を言語で色付けするので、`コードハイライト` とも呼ばれる機能。
+
+```yaml
+kramdown:
+    syntax_highlighter: rouge
+```
+
+調べてみたが、結構面倒だった。 `_config.yml` に上を追記するだけかと思ったら、
+htmlに、cssのクラスが挿入されるだけで、css自体の存在が無い。
+
+なんかゴニョゴニョして、cssを出力できるっぽいが、意味わからなかった。
+css自分で書いても良いみたいなので、下のサイトを参考に用意して、`<head>` に追加。
+
+> GitHub Pages が Jekyll 3.0 になり、ますますブログが書きやすくなった。
+https://mattn.kaoriya.net/software/20160215110235.htm

@@ -251,9 +251,8 @@ cite{
     font-weight: normal;
 }
 code{
-    font-style: normal;
-    font-weight: bold;
     color: var(--codeColor);
+    background-color: var(--codeBgColor);
 }
 dfn{
     font-style: normal;

@@ -27,4 +27,14 @@
     --fotterBgColor: hsl(224, 8%, 73%);
     --fotterBorderAColor: hsl(224, 8%, 80%);
     --fotterBorderBColor: hsl(224, 8%, 34%);
+    
+    --attrdColor: hsl(0, 0%, 80%);
+    --commentColor: hsl(120, 60%, 20%);
+    --constantColor: #ffff00;
+    --deletedColor: #ff0000;
+    --insertedColor: #00ff00;
+    --keywordColor: hsl(44, 59%, 65%);
+    --otherColor: hsl(0, 0%, 38%);
+    --typedColor: #ffa500;
+    --dataColor: hsl(221, 100%, 56%);
 }

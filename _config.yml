@@ -22,10 +22,7 @@ kramdown:
     input: GFM
     hard_wrap: true
     syntax_highlighter: rouge
-    syntax_highlighter_opts:
-        css_class: 'highlight'
-        yml_class: 'highlight'
-        python_class: 'highlight'
 
 plugins:
     - jekyll-sitemap
+    - jekyll-feed
