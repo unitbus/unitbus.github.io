@@ -135,7 +135,7 @@ https://help.github.com/ja/articles/updating-your-markdown-processor-to-kramdown
 
 で、設定方法は、 `_config.yml` に追記する。
 
-```
+```yaml
 kramdown:
     input: GFM
     hard_wrap: true
@@ -153,7 +153,7 @@ kramdown:
 
 設定方法は、 `_config.yml` に追記する。
 
-```
+```yaml
 plugins:
     - jekyll-sitemap
 ```
