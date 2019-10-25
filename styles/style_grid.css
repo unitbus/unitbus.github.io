@@ -2,7 +2,7 @@
 body {
     /* width: 800px; */
     display: grid;
-    margin: 0;
+    margin: 0px;
     min-height: 100%;
     grid-template-rows: 60px 1fr 36px;
     grid-template-columns: 160px 1fr;
@@ -28,6 +28,10 @@ main {
     padding-left: 10px;
 }
 footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
     grid-row: 3;
     grid-column: 1 / span 2;
     font-size: 80%;
