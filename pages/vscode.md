@@ -65,3 +65,30 @@ https://qiita.com/rma/items/75f502e784b7164b8813
 
 > VSCode ファイル検索の除外設定
 https://developer.feedforce.jp/entry/2017/11/24/195644
+
+### pythonのデバッグが出来ない場合
+
+急に、F5を押しても、別コンソールが出てしまい、デバッグが始まらない事があった。
+launch.jsonの、 `"console": "none",` にしたら直った。
+noneだと赤く表示されるが、使えるらしい。
+
+```json
+    "configurations": [
+        {
+            "name": "Python2",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${file}",
+            "console": "none",
+            "cwd": "${workspaceFolder}",
+            "debugOptions": [
+                "RedirectOutput",
+                ]
+        },
+    ]
+```
+
+> Visual Studio Codeの設定「虎の巻」：Python編 (2/3)
+https://www.atmarkit.co.jp/ait/articles/1711/24/news034_2.html
