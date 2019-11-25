@@ -9,11 +9,7 @@ title: Maya
 
 PySideから見た、Mayaのウィジェットを一覧で見れるビューワー。
 
-<!-- ![ubWidgetHierarchy](./notes/img/ubWidgetHierarchy_windowA.png) -->
-<img src="./notes/img/ubWidgetHierarchy_windowA.png" width="50%">
-
-> ダウンロード / ubWidgetHierarchy
-https://unitbus.github.io/pages/download
+https://unitbus.github.io/pages/python/pyside#Widget一覧
 
 ## MainWindowの取得
 

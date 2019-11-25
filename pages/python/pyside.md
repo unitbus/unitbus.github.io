@@ -48,6 +48,24 @@ https://doc.qt.io/qtforpython/
 そろそろPySide1は切り捨てて書いても良い気もしますが、まだ互換性考えて、
 *PySide 1.0.7 Reference* の方を見て書いてます。
 
+## Widget一覧
+
+ウィジェットを一覧で見れるビューワー。
+mayaなどの、DCCでレイアウトを確認する時に便利。
+
+<img src="./notes/img/ubWidgetHierarchy_windowA.png" width="50%">
+
+> ダウンロード / ubWidgetHierarchy
+https://unitbus.github.io/pages/download
+
+ダウンロードしたファイルは、環境変数の `PYTHONPATH` が通ってる場所に置き、
+以下のコマンドを実行してください。
+
+``` python
+import ubWidgetHierarchy
+ubWidgetHierarchy.show()
+```
+
 ## QListView
 
 QListWidgetのメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
