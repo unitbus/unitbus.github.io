@@ -4,7 +4,7 @@
     #     Python2.
     # 
     # Description:
-    #     Maya Widget Hierarchy.
+    #     Widget Hierarchy.
     # 
     # Configuration:
     #     Maya2016 - 2019.
@@ -13,7 +13,7 @@
     #     (C) 2019 Co, UnitBus.
     # 
     # Version:
-    #     1.0.0, 2019/12/03
+    #     0.1.0, 2019/11/25
     #
     # Exsample:
     #     import ubWidgetHierarchy

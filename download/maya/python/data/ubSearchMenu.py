@@ -27,8 +27,6 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import sys
-import pprint
-import traceback
 
 try:
     import PySide2
@@ -45,45 +43,92 @@ class SearchMenu(QMenu):
     def __init__(self, title, parent=None):
         super(SearchMenu, self).__init__(title, parent=parent)
         
-        self.setTearOffEnabled(False)
-        self.setBaseSize(60, 24)
         self.setObjectName('ubSearchMenu')
+        self.setTearOffEnabled(False)
+        self.setBaseSize(160, 24)
         
         self.__lineEdit = None
         self.__recentActions = []
-        self.__actionTexts = [a.text() for a in getChildActions(parent)]
-        self._initWidget(parent)
+        self.__actionTexts = []
+        
+        # init.
+        self._initWidget()
+        self._updateActions()
     
-    def _initWidget(self, parent):
-        widget = QWidget(self)
-        widget.setBaseSize(120, 24)
-        widget.setMinimumWidth(120)
-        widget.setObjectName('ubSearchWidget')
+    # signal.
+    def _returnPressedFunc(self, *args, **kwargs):
+        text = self.__lineEdit.text()
+        
+        # for action in getChildActions(self.parent()):
+        
+        menuBar = self.parent()
+        
+        for menu in menuBar.findChildren(QMenu):
+            widgets = getDeepChildren(menu, results=[], depth=0, depthLimit=6)
+            actions = [w for w in widgets if isinstance(w, (QAction, QWidgetAction))]
+            
+            for action in actions:
+                
+                if text != action.text():
+                    continue
+                
+                print(text, action)
+                action.trigger()
+                
+                self.addRecentAction(action)
+                self.setVisible(False)
+                return
+    
+    def _updateActions(self):
+        self.__actionTexts = []
+        menuBar = self.parent()
+        
+        for menu in menuBar.findChildren(QMenu):
+            widgets = getDeepChildren(menu, results=[], depth=0, depthLimit=6)
+            self.__actionTexts += [w.text() for w in widgets if isinstance(w, (QAction, QWidgetAction))]
         
         completer = QCompleter(self.__actionTexts, self)
         completer.setCaseSensitivity(Qt.CaseInsensitive)
         
+        self.__lineEdit.setCompleter(completer)
+    
+    # method.
+    def _initWidget(self):
+        widget = QWidget(self)
+        widget.setMinimumWidth(160)
+        widget.setObjectName('ubSearchWidget')
+        
         lineEdit = QLineEdit(widget)
         lineEdit.setPlaceholderText(r'<Enter wildcard>')
-        lineEdit.setCompleter(completer)
         lineEdit.setFocus(Qt.TabFocusReason)
-        lineEdit.returnPressed.connect(self.returnPressedFunc)
+        lineEdit.returnPressed.connect(self._returnPressedFunc)
         self.__lineEdit = lineEdit
         
-        layout = QVBoxLayout(widget)
-        layout.setContentsMargins(0,0,0,0)
+        styleText = ''
+        styleText += r'QPushButton{{background-color: none;}} '
+        
+        button = QPushButton(widget)
+        button.setText('')
+        button.setIcon(QPixmap(':/refresh'))
+        button.setIconSize(QSize(16, 16))
+        button.setMaximumSize(QSize(16, 16))
+        button.setFlat(True)
+        button.setStyleSheet(styleText)
+        button.pressed.connect(self._updateActions)
+        button.setToolTip(u'検索候補に出てこない場合は押してください')
+        
+        layout = QHBoxLayout(widget)
+        layout.setContentsMargins(2, 2, 2, 2)
         layout.setSpacing(4)
         layout.addWidget(lineEdit)
+        layout.addWidget(button)
         
         action = QWidgetAction(self)
         action.setDefaultWidget(widget)
         action.setObjectName('ubSearchAction')
         self.addAction(action)
     
-    def lineEdit(self):
-        return self.__lineEdit
-    
-    def appendAction(self, action):
+    def addRecentAction(self, action):
         
         if not self.__recentActions:
             separator = QWidgetAction(self)
@@ -96,43 +141,17 @@ class SearchMenu(QMenu):
         self.__recentActions = [action]
         self.addAction(action)
     
-    # signal.
-    def returnPressedFunc(self, *args, **kwargs):
-        text = self.__lineEdit.text()
-        parent = self.parent()
-        
-        for action in getChildActions(parent):
-            
-            if text != action.text():
-                continue
-            
-            print(text, action)
-            action.trigger()
-            
-            self.appendAction(action)
-            self.setVisible(False)
-            return
-
-# actionを検索
-def getChildActions(menuBar):
-    actions = []
-    
-    for menu in menuBar.findChildren(QMenu):
-        action = menu.defaultAction()
-        action and action.activate()
-        
-        widgets = getDeepChildren(menu, results=[])
-        actions += [w for w in widgets if isinstance(w, (QAction, QWidgetAction))]
-    
-    return actions
+    def lineEdit(self):
+        return self.__lineEdit
 
 # 再帰的に子を検索
-def getDeepChildren(widget, results=[], depth=0, depthLimit=10):
+def getDeepChildren(widget, results=[], depth=0, depthLimit=6):
     
     if depth >= depthLimit:
         return results
     
-    hasattr(widget, 'update') and widget.update()
+    if hasattr(widget, 'update'):
+        widget.update()
     
     if not hasattr(widget, 'children'):
         return results
@@ -150,9 +169,9 @@ def getDeepChildren(widget, results=[], depth=0, depthLimit=10):
 
 # maya.
 def getMayaWidget(name):
-    widgets = QApplication.topLevelWidgets()
     
-    for widget in widgets:
+    for widget in QApplication.topLevelWidgets():
+        
         if widget.objectName() == name:
             return widget
     
@@ -160,20 +179,20 @@ def getMayaWidget(name):
 
 # maya shortcut commnd.
 def popMenu():
-    # menuBar = getMayaWidget('MainHelpMenu').parent()
-    
     window = getMayaWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
     
     menu = menuBar.findChild(QMenu, 'ubSearchMenu')
     menu = menu or SearchMenu('Search', menuBar)
-    menu.lineEdit().setFocus(Qt.TabFocusReason)
+    
+    lineEdit = menu.lineEdit()
+    lineEdit.setFocus(Qt.TabFocusReason)
+    lineEdit.selectAll()
+    
     menu.popup(QCursor.pos())
 
 # maya append menuBar.
 def show():
-    # menuBar = getMayaWidget('MainHelpMenu').parent()
-    
     window = getMayaWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
     print('menuBar:', menuBar)
@@ -186,35 +205,3 @@ def show():
     
     menu = SearchMenu('Search', menuBar)
     menuBar.addMenu(menu)
-
-# standalone debug.
-def sample():
-    mainApp = QApplication(sys.argv)
-    
-    def rightClickFunc(pos):
-        searchMenu.lineEdit().setFocus(Qt.TabFocusReason)
-        searchMenu.popup(QCursor.pos())
-    
-    # 右クリックメニュー
-    window = QMainWindow()
-    window.setContextMenuPolicy(Qt.CustomContextMenu)
-    window.customContextMenuRequested.connect(rightClickFunc)
-    window.show()
-    
-    # メニュー
-    testMenu = QMenu('Test')
-    testMenu.addAction('actionA')
-    testMenu.addAction('actionB')
-    testMenu.addAction('actionC')
-    
-    searchMenu = SearchMenu('Search', window)
-    
-    # メニューバー
-    menuBar = window.menuBar()
-    menuBar.addMenu(testMenu)
-    menuBar.addMenu(searchMenu)
-    
-    mainApp.exec_()
-
-if __name__ == '__main__':
-    sample()

@@ -19,6 +19,7 @@ https://unitbus.github.io/pages/python/pyside#widget一覧
 from PySide2.QtGui import *
 
 def getMayaWidget(name):
+    
     for widget in QApplication.topLevelWidgets():
         
         if widget.objectName() == name:
@@ -35,6 +36,7 @@ getMayaWidget('MainWindow')
 from PySide2.QtGui import *
 
 def getMayaWidget(title):
+    
     for widget in QApplication.topLevelWidgets():
         
         if title in widget.windowTitle():
