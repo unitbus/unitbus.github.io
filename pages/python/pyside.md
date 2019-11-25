@@ -55,7 +55,7 @@ mayaなどの、DCCでレイアウトを確認する時に便利。
 
 <img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowA.png" width="50%">
 
-> ダウンロード / ubWidgetHierarchy
+> Dwonload / standalone / ubWidgetHierarchy
 https://unitbus.github.io/pages/download
 
 ダウンロードしたファイルは、環境変数の `PYTHONPATH` が通ってる場所に置き、
@@ -66,12 +66,14 @@ import ubWidgetHierarchy
 ubWidgetHierarchy.show()
 ```
 
+standaloneでも動きますが、他のウインドウが無いと意味ありません。
+
 ## QListView
 
-QListWidgetのメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
-QListWidgetから、モデルを取得して、複数行まとめて作成する事で、かなりの高速化が出来ます。
+`QListWidget` のメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
+`QListWidget` から、モデルを取得して、複数行まとめて作成する事で、かなりの高速化が出来ます。
 
 `QAbstractListModel` を元に自分で作成すれば、不必要な機能に絞ってを減量出来るので、さらに高速化出来ます。
 
-対象が１０万とか、100万とかある訳ではなければ、
-QListViewと、QStnanderdModelの組み合わせで十分だったりします。
+リスト対象のアイテムが、1万とか超えなければ、
+`QListView` と、`QStnanderdModel` の組み合わせで十分だったりします。
