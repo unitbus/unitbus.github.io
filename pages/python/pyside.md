@@ -47,3 +47,13 @@ https://doc.qt.io/qtforpython/
 
 そろそろPySide1は切り捨てて書いても良い気もしますが、まだ互換性考えて、
 *PySide 1.0.7 Reference* の方を見て書いてます。
+
+## QListView
+
+QListWidgetのメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
+QListWidgetから、モデルを取得して、複数行まとめて作成する事で、かなりの高速化が出来ます。
+
+`QAbstractListModel` を元に自分で作成すれば、不必要な機能に絞ってを減量出来るので、さらに高速化出来ます。
+
+対象が１０万とか、100万とかある訳ではなければ、
+QListViewと、QStnanderdModelの組み合わせで十分だったりします。
