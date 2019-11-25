@@ -83,17 +83,6 @@ def hierarchyWindow(parent):
     window.setWindowTitle('ubHierarchyWindow')
     return window
 
-# maya.
-def getMayaWidget(name):
-    widgets = QApplication.topLevelWidgets()
-    
-    for widget in widgets:
-        if widget.objectName() == name:
-            return widget
-    
-    return None
-
 def show():
-    parent = getMayaWidget('MayaWindow')
-    window = hierarchyWindow(parent)
+    window = hierarchyWindow(None)
     window.show()
