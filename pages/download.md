@@ -13,7 +13,7 @@ title: Download
 
 ## Python
 
-- [ubWidgetHierarchy.py](https://unitbus.github.io/download/python/cpp/data/ubWidgetHierarchy.py)
+- [ubWidgetHierarchy.py](https://unitbus.github.io/download/standalone/python/data/ubWidgetHierarchy.py)
 
 # Maya
 
