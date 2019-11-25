@@ -53,7 +53,7 @@ https://doc.qt.io/qtforpython/
 ウィジェットを一覧で見れるビューワー。
 mayaなどの、DCCでレイアウトを確認する時に便利。
 
-<img src="./maya/images/ubWidgetHierarchy_windowA.png" width="50%">
+<img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowA.png" width="50%">
 
 > ダウンロード / ubWidgetHierarchy
 https://unitbus.github.io/pages/download
