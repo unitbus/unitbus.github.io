@@ -55,7 +55,7 @@ mayaなどの、DCCでレイアウトを確認する時に便利。
 
 <img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowA.png" width="50%">
 
-> Dwonload / standalone / ubWidgetHierarchy
+> Dwonload / Standalone / Python / ubWidgetHierarchy
 https://unitbus.github.io/pages/download
 
 ダウンロードしたファイルは、環境変数の `PYTHONPATH` が通ってる場所に置き、
