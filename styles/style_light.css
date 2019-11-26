@@ -15,7 +15,8 @@
     --linkColor: var(--textColor);
     --linkVisit: var(--h1);
     --hoverColor: hsl(224, 100%, 42%);
-    --activeColor: hsl(0, 40%, 42%);
+    --strongColor: hsl(0, 40%, 42%);
+    --italicColor: hsl(200, 90%, 42%);
     
     --h1: hsl(219, 77%, 34%);
     --h2: hsl(229, 38%, 56%);

@@ -91,7 +91,7 @@ a:hover {
     color: var(--hoverColor);
 }
 a:active {
-    color: var(--activeColor);
+    color: var(--strongColor);
 }
 
 /* リスト */
@@ -180,11 +180,12 @@ tt {
 em {
     font-style: normal;
     font-weight: bold;
+    color: var(--italicColor);
 }
 strong{
     font-style: normal;
     font-weight: bold;
-    color: var(--activeColor);
+    color: var(--strongColor);
 }
 ins {
     text-decoration: underline;

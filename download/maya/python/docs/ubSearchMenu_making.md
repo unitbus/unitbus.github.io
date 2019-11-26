@@ -48,7 +48,7 @@ Mayaの他のメニューからアクションを探し、実行するツール�
 
 MayaのUIは、Qtで作られてるため、すべてのウィジェットに、PySideからアクセス出来ます。
 例えば、Mayaの、メインウインドウを取得したいだけなら、
-`shiboken` や、`MayaQWidgetBaseMixin` を使う必要はありません。
+**shiboken** や、**MayaQWidgetBaseMixin** を使う必要はありません。
 オブジェクト名がわかれば、PySideとしてWidgetを検索し、取得できます。
 
 ## shiboken
@@ -89,7 +89,7 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 目的のウィジェットが事前に分かれば、後は名前で検索するだけです。
 いったんオブジェクトとして取得できれば、以降PySideの機能をフルに扱う事が出来ます。
 
-Mayaのメインウインドウ名は、`MayaWindow` になります。
+Mayaのメインウインドウ名は、**MayaWindow** になります。
 
 ## windowの取得
 
@@ -97,14 +97,14 @@ Mayaのメインウインドウ名は、`MayaWindow` になります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
 > Maya / PySide / MainWindowの取得
-[mainwindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
+[MainWindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
 
 ## menuBarの取得
 
 今回は、parent先はmenuBarなので、menuBarを取得したいのですが、
-`MayaWindow` の、menuBarには `objectName()` が設定されてません。
+**MayaWindow** の、menuBarには `objectName()` が設定されてません。
 
-また、`MayaWindow` は、`QMainWindow` を使わず、`QWidget` で作成されてるため、
+また、**MayaWindow** は、`QMainWindow` を使わず、`QWidget` で作成されてるため、
 `QMainWindow.menuBar()` メソッドが存在せず、取得できません。
 
 なので、`QWindow` から探す必要があります。
@@ -125,7 +125,7 @@ window = getTopLevelWidget('MayaWindow')
 menuBar = window.findChild(QMenuBar)
 ```
 
-他にも、`HelpMenu` を先に取得し、親ウィジェットを探す方法もあります。
+他にも、**HelpMenu** を先に取得し、親ウィジェットを探す方法もあります。
 
 ## メモ
 
@@ -196,8 +196,8 @@ PySideだけで書かれてるので、対象のウィジェット名を変え�
 
 ![ubSearchMenu_mayaPressHotkeyA](https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png)
 
-自分は、 `Hide All UI Elements` は使わないので、 `Ctrl + Space` に登録してます。
-`Hotkey Editor > Rantime Command Editor` で、 `Python` で下のコマンド登録してください。
+自分は、 **Hide All UI Elements** は使わないので、 **Ctrl + Space** に登録してます。
+`Hotkey Editor > Rantime Command Editor` で、 **Python** で下のコマンド登録してください。
 
 ```python
 import ubSearchMenu
