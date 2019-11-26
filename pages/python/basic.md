@@ -14,10 +14,17 @@ pythonは、すべての変数、関数がオブジェクトで、ルールが�
 
 ### 参考
 
-> PythonMatrixJp: Pythonのモジュールインポートのしくみ
-> http://python.matrix.jp/pages/tips/import.html
+> [PythonMatrixJp: Pythonのモジュールインポートのしくみ](http://python.matrix.jp/pages/tips/import.html)
 
 ## Class
 
-クラスの中で定義された関数は、クラスメソッドと呼ぶ。
-変数は、クラスメンバと呼ぶ。それぞれ意味は一緒。
+クラスの中で定義された関数は、**クラスメソッド**と呼ぶ。
+変数は、**クラスメンバ**と呼ぶ。それぞれ意味は変わらない。
+
+**Class**の構造は、**Package**のファイル構造と同じ。
+
+## Package
+
+インストールディレクトリを見るのが分かりやすい。
+`site-packages` は、外部からダウンロードした**Package**を指す。
+

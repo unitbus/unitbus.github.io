@@ -11,15 +11,15 @@ title: VSCode
 
 ## Settings
 
-**[Ctrl + Shft + P]** から、 `基本設定: 設定(JSON)を開く` を選択。
+**[Ctrl + Shft + P]** から、 **基本設定: 設定(JSON)を開く** を選択。
 最近は、HTMLっぽく見やすくなったが、逆に設定が面倒になったので、JSONへコピペした方が楽。
 
 ### Font
 
-色々試したが、 `Source Han Code JP` がオススメ。
-散々悩んだが、 `2:3` 比率の、 `Source Han Code JP` に落ち着いた感じ。
+色々試したが、 **Source Han Code JP** がオススメ。
+散々悩んだが、 **2:3** 比率の、 **Source Han Code JP** に落ち着いた感じ。
 
-日本が使える等幅フォントは少なく、大抵が `1:2` 比率で、アルファベット間隔が狭く見辛い。
+日本が使える等幅フォントは少なく、大抵が **1:2** 比率で、アルファベット間隔が狭く見辛い。
 かといって、アルファベットだけ等幅のフォントを使うと、
 コメントの日本語がプロポーショナルになって、凸凹して気持ち悪い。
 
@@ -34,7 +34,7 @@ https://unitbus.github.io/pages/windows/basic#windows-font
 
 `editor.fontFamily` は、代用フォントを書く前提となってるので、
 スペースある場合は、シングルクォーテーションで囲む。
-他の太さにしたければ、 `Regular` の部分を、置き換えれば使用可。
+他の太さにしたければ、 **Regular** の部分を、置き換えれば使用可。
 
 以下のように間違って説明してるサイトが結構あるので注意。
 
@@ -90,10 +90,10 @@ noneだと赤く表示されるが、使えるらしい。
     ]
 ```
 
-> Visual Studio Codeの設定「虎の巻」：Python編 (2/3)
-https://www.atmarkit.co.jp/ait/articles/1711/24/news034_2.html
+> [Visual Studio Codeの設定「虎の巻」：Python編 (2/3)](https://www.atmarkit.co.jp/ait/articles/1711/24/news034_2.html)
 
 > 追記
-後日ですが、コマンドプロンプトのオプションで、
+コマンドプロンプトのオプションで、
 レガシーコンソールを使用するのチェックを外したら元に戻った。
 結局、何が悪いのかよくわからないので、調査中。
+多分、windowsUpdateが原因？

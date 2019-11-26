@@ -80,8 +80,7 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 
 <img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png" width="50%">
 
-> ダウンロード / ubWidgetHierarchy
-[download](https://unitbus.github.io/pages/download)
+> [ダウンロード / ubWidgetHierarchy](https://unitbus.github.io/pages/download)
 
 余談ですが、melや、maya.cmdsで作成したウインドウも、
 名前を付けておけば、PySideの `QWidget` として取得出来ます。
@@ -96,8 +95,7 @@ Mayaのメインウインドウ名は、**MayaWindow** になります。
 `objectName()` や、`windowTitle()` から取得する方法があります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
-> Maya / PySide / MainWindowの取得
-[MainWindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
+> [Maya / PySide / MainWindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
 
 ## menuBarの取得
 
@@ -171,8 +169,7 @@ Mayaのメニューツールのオプションボックスは、これを利用�
 以上説明した技術を使い、ちょっと実用性を持たせ作成したツールを作ってみました。
 こちらからダウンロードできます。
 
-> Dwonload / Maya / Python / ubSearchMenu
-https://unitbus.github.io/pages/download
+> [Dwonload / Maya / Python / ubSearchMenu](https://unitbus.github.io/pages/download)
 
 ダウンロードしたファイルは、`Documents/maya/scripts` に置いてください。
 スクリプトエディタで以下のコマンドを実行するとメニューに追加されます。

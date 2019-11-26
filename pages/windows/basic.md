@@ -30,19 +30,19 @@ windowsUpdateするたびの元に戻される。
 ie4uinit.exe -ClearIconCache
 ```
 
-windowsでアイコンを作成する時は、 `Greenfish Icon Editor` がお勧め。
-自分は、 `portable version` をダウンロード。
+windowsでアイコンを作成する時は、 **Greenfish Icon Editor** がお勧め。
+自分は、 **portable version** をダウンロード。
 
 > Greenfish Software.org ダウンロードページ
 > http://greenfishsoftware.org/gfie.php#apage
 
-「windowsアイコンを作成する」をしないと、
+**「windowsアイコンを作成する」**をしないと、
 ショートカットアイコンがおかしくなったりするので注意。
 
 
 ## タスクバーにピン留め
 
-ウインドウを閉じ、ピン留めしたアイコンを、`shift + 右クリック` で、ピン留めアイコンのプロパティを開ける。
+ウインドウを閉じ、ピン留めしたアイコンを、**shift + 右クリック** で、ピン留めアイコンのプロパティを開ける。
 アイコンをグレースケールにしておけば、起動後は元の色付きアイコンで表示されるので、ストアアプリっぽく使える。
 
 windows7でやると、アクティブなアイコンが表示されないので意味がない。
@@ -58,11 +58,10 @@ windows7でやると、アクティブなアイコンが表示されないので
 ## Source Han Code JP
 
 等幅で日本語が扱える、オススメのフォント。アドビの人が公開してるらしい。
-比率は `2:3` と、アルファベットの間隔が広くスクリプト向き。
+比率は **2:3** と、アルファベットの間隔が広くスクリプト向き。
 標準では入ってないので、ダウンロードが必要。
 
-> Adobe Fonts: source-han-code-jp
-> https://github.com/adobe-fonts/source-han-code-jp
+> [Adobe Fonts: source-han-code-jp](https://github.com/adobe-fonts/source-han-code-jp)
 
 フォント本体のダウンロードは下から。
 https://github.com/adobe-fonts/source-han-code-jp/blob/master/README-JP.md#download-the-fonts
@@ -70,5 +69,5 @@ https://github.com/adobe-fonts/source-han-code-jp/blob/master/README-JP.md#downl
 OTFフォルダに入ってる、.otfファイルを、fontフォルダに放るとインストール始まります。
 `It.otf` はイタリックでした。
 
-日本語名だと、 `源ノ角ゴシック Code JP` らしいです。
+日本語名だと、 **源ノ角ゴシック Code JP** らしいです。
 日本語アプリだと、日本名知らないと探せないかも…。
