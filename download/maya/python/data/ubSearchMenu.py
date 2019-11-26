@@ -13,7 +13,7 @@
     #     (C) 2019 Co, UnitBus.
     # 
     # Version:
-    #     1.0.0, 2019/12/03
+    #     1.0.0, 2019/11/26
     #
     # Exsample:
     #     import ubSearchMenu
@@ -167,8 +167,7 @@ def getDeepChildren(widget, results=[], depth=0, depthLimit=6):
     
     return results
 
-# maya.
-def getMayaWidget(name):
+def getTopLevelWidget(name):
     
     for widget in QApplication.topLevelWidgets():
         
@@ -179,7 +178,7 @@ def getMayaWidget(name):
 
 # maya shortcut commnd.
 def popMenu():
-    window = getMayaWidget('MayaWindow')
+    window = getTopLevelWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
     
     menu = menuBar.findChild(QMenu, 'ubSearchMenu')
@@ -193,7 +192,7 @@ def popMenu():
 
 # maya append menuBar.
 def show():
-    window = getMayaWidget('MayaWindow')
+    window = getTopLevelWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
     print('menuBar:', menuBar)
     

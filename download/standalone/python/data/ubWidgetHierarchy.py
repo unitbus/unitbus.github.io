@@ -13,7 +13,7 @@
     #     (C) 2019 Co, UnitBus.
     # 
     # Version:
-    #     0.1.0, 2019/11/25
+    #     0.1.0, 2019/11/26
     #
     # Exsample:
     #     import ubWidgetHierarchy
@@ -83,6 +83,17 @@ def hierarchyWindow(parent):
     window.setWindowTitle('ubHierarchyWindow')
     return window
 
+def getTopLevelWidget(name):
+    
+    for widget in QApplication.topLevelWidgets():
+        
+        if widget.objectName() == name:
+            return widget
+    
+    return None
+
+# parent先は必要に応じて変更
 def show():
-    window = hierarchyWindow(None)
+    parent = getTopLevelWidget('')
+    window = hierarchyWindow(parent)
     window.show()
