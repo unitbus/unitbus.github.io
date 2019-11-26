@@ -9,7 +9,7 @@ title: Maya
 
 PySideから見た、Mayaのウィジェットを一覧で見れるビューワー。
 
-https://unitbus.github.io/pages/python/pyside#widget一覧
+[Widget一覧](https://unitbus.github.io/pages/python/pyside#widget一覧)
 
 ## MainWindowの取得
 
@@ -18,7 +18,7 @@ https://unitbus.github.io/pages/python/pyside#widget一覧
 ``` python
 from PySide2.QtGui import *
 
-def getMayaWidget(name):
+def getTopLevelWidget(name):
     
     for widget in QApplication.topLevelWidgets():
         
@@ -27,7 +27,7 @@ def getMayaWidget(name):
     
     return None
 
-getMayaWidget('MainWindow')
+getTopLevelWidget('MainWindow')
 ```
 
 `QWidget.windowTitle()` から取得
@@ -35,7 +35,7 @@ getMayaWidget('MainWindow')
 ``` python
 from PySide2.QtGui import *
 
-def getMayaWidget(title):
+def getTopLevelWidget(title):
     
     for widget in QApplication.topLevelWidgets():
         
@@ -43,6 +43,6 @@ def getMayaWidget(title):
             return widget
     
     return None
-    
-getMayaWidget('Autodesk Maya')
+
+getTopLevelWidget('Autodesk Maya')
 ```
