@@ -80,8 +80,8 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 
 <img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png" width="50%">
 
-> ダウンロード / ubWidgetHierarchy.py
-https://unitbus.github.io/pages/download
+> ダウンロード / ubWidgetHierarchy
+[download](https://unitbus.github.io/pages/download)
 
 余談ですが、melや、maya.cmdsで作成したウインドウも、
 名前を付けておけば、PySideの `QWidget` として取得出来ます。
@@ -97,7 +97,7 @@ Mayaのメインウインドウ名は、`MayaWindow` になります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
 > Maya / PySide / MainWindowの取得
-[https://unitbus.github.io/pages/maya/pyside#mainwindowの取得]()
+[mainwindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
 
 ## menuBarの取得
 
