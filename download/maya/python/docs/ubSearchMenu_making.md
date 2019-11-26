@@ -53,14 +53,14 @@ MayaのUIは、Qtで作られてるため、すべてのウィジェットに、
 
 ## shiboken
 
-`shiboken` は、ざっくり言うと、DCCとPySideを繋ぐ為のモジュールです。
+**shiboken** は、ざっくり言うと、DCCとPySideを繋ぐ為のモジュールです。
 DCC独自のウィジェットにアクセスしたい時などに使う？らしいです。
 目的に対して、ちょっと大げさなのもあり、自分はこのモジュールを使った事がありません。
 
 ## MayaQWidgetBaseMixin
 
-`MayaQWidgetBaseMixin` は、Maya側が用意してるPySide用のクラスです。
-便利なクラスですが、parent先を取得する為だけに、
+**MayaQWidgetBaseMixin** は、Maya側が用意してるPySide用のクラスです。
+便利なクラスですが、ペアレント先を取得する為だけに、
 バージョンで仕様がコロコロ変わるMayaのモジュールを読みたくはありません。
 
 都度DCCを起動したりデバッグも大変ですし、自分は、ウィジェット作成中は、
@@ -97,7 +97,7 @@ Mayaのメインウインドウ名は、`MayaWindow` になります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
 > Maya / PySide / MainWindowの取得
-https://unitbus.github.io/pages/maya/pyside#mainwindowの取得
+[https://unitbus.github.io/pages/maya/pyside#mainwindowの取得]()
 
 ## menuBarの取得
 
