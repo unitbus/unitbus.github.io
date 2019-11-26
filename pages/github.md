@@ -62,15 +62,19 @@ md置くだけで、GitHub側に、jekyllというツールがインストール
 vscodeで書いてるが、previewでは大丈夫でも、htmlで見ると乱れる所がチラホラ…。
 githubで、mdを直接見ると大丈夫だったりする。
 
-**details内のコードブロックが効かない例**
+details内でコードブロックを使う場合は、`<div>` で囲む必要があるらしい。
 
 <details>
 <summary>畳むタイトル</summary>
+<div>
 
-```
-コードブロック
+``` python
+# コードブロック
+import sys
+print(sys.path)
 ```
 
+</div>
 </details>
 
 **markdown-breaksが適用されない**
