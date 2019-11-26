@@ -94,6 +94,6 @@ def getTopLevelWidget(name):
 
 # parent先は必要に応じて変更
 def show():
-    parent = getTopLevelWidget('MayaWindow')
+    parent = getTopLevelWidget('')
     window = hierarchyWindow(parent)
     window.show()
