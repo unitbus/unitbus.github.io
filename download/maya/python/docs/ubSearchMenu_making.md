@@ -193,8 +193,8 @@ PySideだけで書かれてるので、対象のウィジェット名を変え�
 
 ![ubSearchMenu_mayaPressHotkeyA](https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png)
 
-自分は、 **Hide All UI Elements** は使わないので、 **Ctrl + Space** に登録してます。
-`Hotkey Editor > Rantime Command Editor` で、 **Python** で下のコマンド登録してください。
+自分は、 **Hide All UI Elements** は使わないので、 **[Ctrl] + [Space]** に登録してます。
+`Hotkey Editor > Rantime Command Editor` から、 **Python** を選んで、下のコマンドを登録してください。
 
 ```python
 import ubSearchMenu
