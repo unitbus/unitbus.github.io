@@ -39,7 +39,8 @@
 # 完成イメージ
 
 作り方だけ書いてもあまりピンとこないと思うので、ある程度実用性のあるツールにしてみました。
-こちらから [ダウンロード](#ダウンロード) 出来ます。
+Mayaの他のメニューからアクションを探し、実行するツールです。
+ダウンロードと、使い方の説明は、[ツール紹介](#ツール紹介)を見てください。
 
 ![mayaPressMenuA](https://unitbus.github.io/pages/maya/images/ubSearchMenu_mayaPressMenuA.png) 
 
