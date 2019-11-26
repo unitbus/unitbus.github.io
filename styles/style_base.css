@@ -131,8 +131,7 @@ input {
 textarea {
     font: 99% arial,helvetica,clean,sans-serif;
     font-size: 90%;
-    font-family: 'ＭＳ ゴシック', Osaka, monospace;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
     border: solid 1px var(--borderColorA);
     background-color: var(--codeColor);
     margin-top: 0px;
@@ -174,18 +173,16 @@ small {
     font-size: 85%;
 }
 tt {
-    font-family: monospace;
+    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
 }
 
 /* 強調・追加・削除 */
 em {
     font-style: normal;
-    font-weight: normal;
     font-weight: bold;
 }
 strong{
     font-style: normal;
-    font-weight: normal;
     font-weight: bold;
     color: var(--activeColor);
 }
@@ -199,12 +196,13 @@ del {
 /* 整形済みテキスト */
 pre {
     color: var(--codeColor);
+    color: transparent;
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
     padding: 4px 8px 4px 8px;
     margin: 10px 20px 10px 30px;
     line-height: 1.4em;
-    font-family: monospace;
+    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
 }
 q:before{
     content:'';
@@ -252,7 +250,11 @@ cite{
 }
 code{
     color: var(--codeColor);
-    background-color: var(--codeBgColor);
+    /* padding: 4px 8px 4px 8px; */
+    line-height: 1.4em;
+    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
+    background-color: transparent;
+    /* background-color: var(--codeBgColor); */
 }
 dfn{
     font-style: normal;

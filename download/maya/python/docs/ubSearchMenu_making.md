@@ -42,7 +42,7 @@
 Mayaの他のメニューからアクションを探し、実行するツールです。
 ダウンロードと、使い方の説明は、[ツール紹介](#ツール紹介)を見てください。
 
-![mayaPressMenuA](https://unitbus.github.io/pages/maya/images/ubSearchMenu_mayaPressMenuA.png) 
+![mayaPressMenuA](https://unitbus.github.io/images/ubSearchMenu_mayaPressMenuA.png) 
 
 # Mayaの話
 
@@ -78,7 +78,7 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 初めてMayaのウィジェットにアクセスする際に、
 一覧で見れるビューワーがあると便利だと思い用意しました。
 
-<img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowA.png" width="50%">
+<img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png" width="50%">
 
 > ダウンロード / ubWidgetHierarchy.py
 https://unitbus.github.io/pages/download
@@ -112,7 +112,7 @@ https://unitbus.github.io/pages/maya/pyside#mainwindowの取得
 ``` python
 from PySide2.QtGui import *
 
-def getMayaWidget(name):
+def getTopLevelWidget(name):
     
     for widget in QApplication.topLevelWidgets():
         
@@ -121,7 +121,7 @@ def getMayaWidget(name):
     
     return None
 
-window = getMayaWidget('MayaWindow')
+window = getTopLevelWidget('MayaWindow')
 menuBar = window.findChild(QMenuBar)
 ```
 
@@ -194,7 +194,7 @@ PySideだけで書かれてるので、対象のウィジェット名を変え�
 ショートカット用のコマンドも用意してあります。
 カーソルの位置にメニューを出せるので、登録しておくと便利かと思います。
 
-![ubSearchMenu_mayaPressHotkeyA](https://unitbus.github.io/pages/maya/images/ubSearchMenu_mayaPressHotkeyA.png)
+![ubSearchMenu_mayaPressHotkeyA](https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png)
 
 自分は、 `Hide All UI Elements` は使わないので、 `Ctrl + Space` に登録してます。
 `Hotkey Editor > Rantime Command Editor` で、 `Python` で下のコマンド登録してください。
@@ -204,7 +204,7 @@ import ubSearchMenu
 ubSearchMenu.popMenu()
 ```
 
-<img src="https://unitbus.github.io/pages/maya/images/ubSearchMenu_mayaHotkeyEditorA.png" width="50%">
+<img src="https://unitbus.github.io/images/ubSearchMenu_mayaHotkeyEditorA.png" width="50%">
 
 # 最後に
 
@@ -214,4 +214,4 @@ ubSearchMenu.popMenu()
 https://unitbus.slack.com 
 
 お仕事の相談も募集してます。フルタイム勤務は無理ですが、細かいツールの依頼や、
-ワークフローの改善案の相談など、おチカラになれそうな事あればご連絡ください。
+ワークフローの改善案など、おチカラになれそうな相談事あればご連絡ください。
