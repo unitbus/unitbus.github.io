@@ -13,7 +13,7 @@
     #     (C) 2019 Co, UnitBus.
     # 
     # Version:
-    #     0.1.0, 2019/11/25
+    #     0.1.0, 2019/11/26
     #
     # Exsample:
     #     import ubWidgetHierarchy
