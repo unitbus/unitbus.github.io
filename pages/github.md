@@ -62,17 +62,18 @@ md置くだけで、GitHub側に、jekyllというツールがインストール
 vscodeで書いてるが、previewでは大丈夫でも、htmlで見ると乱れる所がチラホラ…。
 githubで、mdを直接見ると大丈夫だったりする。
 
-details内でコードブロックを使う場合は、`<div>` で囲む必要があるらしい。
+details内でコードブロックを使う場合は、`<div>` で囲む必要があるらしいが、
+それでも、 *kramdown* では反映されない？模様…。
 
 <details>
 <summary>畳むタイトル</summary>
 <div>
 
-``` python
+\``` python
 # コードブロック
 import sys
 print(sys.path)
-```
+\```
 
 </div>
 </details>
