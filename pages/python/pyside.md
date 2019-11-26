@@ -55,6 +55,7 @@ mayaなどの、DCCでレイアウトを確認する時に便利。
 
 <img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowA.png" width="50%">
 <img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowB.png" width="50%">
+<img src="https://unitbus.github.io/pages/maya/images/ubWidgetHierarchy_windowC.png" width="50%">
 
 > Dwonload / Standalone / Python / ubWidgetHierarchy
 https://unitbus.github.io/pages/download
