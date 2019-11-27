@@ -23,8 +23,8 @@
 .nav-list {
     display: initial;
     list-style: initial;
-    font-size: 0.8em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 1.4em;
     border-bottom: 1px solid var(--borderColorA);
     height: auto;
 }
