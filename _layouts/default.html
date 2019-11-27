@@ -41,16 +41,16 @@
     <div class="nav-list">
     
         <div class="cp_actab">
-            <input id="tab-one" type="checkbox" name="tabs">
-            <label for="tab-one">Contents</label>
+            <input id="tab-1" type="checkbox" name="tabs">
+            <label for="tab-1">Pages</label>
             <div class="cp_actab-content">
                 <p><a href="https://unitbus.github.io/pages/download">Download</a></p>
             </div>
         </div>
         
         <div class="cp_actab">
-            <input id="tab-two" type="checkbox" name="tabs">
-            <label for="tab-two">Notes</label>
+            <input id="tab-2" type="checkbox" name="tabs">
+            <label for="tab-2">Notes</label>
             <div class="cp_actab-content">
                 <p><a href="https://unitbus.github.io/pages/blender/reference">Blender/Reference</a></p>
                 <p><a href="https://unitbus.github.io/pages/maya/pyside">Maya/PySide</a></p>
@@ -62,10 +62,22 @@
                 <p><a href="https://unitbus.github.io/pages/vscode">VSCode</a></p>
             </div>
         </div>
+        
+        <div class="cp_actab">
+            <input id="tab-3" type="checkbox" name="tabs">
+            <label for="tab-3">Contents</label>
+            <div class="cp_actab-content">
+                
+                <!-- 目次を作成する先 -->
+                <div id="toc"></div>
+                
+            </div>
+        </div>
+        
     </div>
     
     <div class="cp_acopt">
-    STYLE： 
+    STYLEï¼š 
     <select onchange="changesytle('dark',value);">
         <option value="../styles/style_dark.css">drak</option>
         <option value="../styles/style_light.css">light</option>
@@ -79,6 +91,7 @@
 
 <footer>(C) 2019 Co, UnitBus.</footer>
 
+<script src="../scripts/toc.js"></script>
 <script src="../scripts/tracking.js"></script>
 
 </body>
