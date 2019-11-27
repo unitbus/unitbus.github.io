@@ -200,6 +200,7 @@ pre {
     color: transparent;
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
+    overflow: auto;
     padding: 4px 8px 4px 8px;
     margin: 10px 20px 10px 30px;
     line-height: 1.4em;
@@ -251,11 +252,12 @@ cite{
 }
 code{
     color: var(--codeColor);
-    /* padding: 4px 8px 4px 8px; */
     line-height: 1.4em;
     font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
+    overflow: auto;
     background-color: transparent;
     /* background-color: var(--codeBgColor); */
+    /* padding: 4px 8px 4px 8px; */
 }
 dfn{
     font-style: normal;
