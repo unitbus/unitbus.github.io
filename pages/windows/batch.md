@@ -45,7 +45,7 @@ set PATH=%PATH%;C:/test
 ジャンクションにすれば気軽に作れる。作成するコマンドは一緒。
 
 ```bat
-mklink /J C:\Users\%USERNAME%\AppData\Roaming\Mozilla U:\%USERNAME%\appdata\roaming\Mozilla
+mklink /J C:\Users\%USERNAME%\AppData\Roaming\Mozilla U:\data\Mozilla
 ```
 
 ## 改行して、複数行で書く
