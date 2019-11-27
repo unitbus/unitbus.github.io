@@ -1,7 +1,6 @@
-
 @media screen and (max-width: 800px){
     body{
-        min-width: 600px;
+        min-width: 400px;
         font-size: 80%;
         grid-template-rows: auto 30px 1fr 24px;
         grid-template-columns: 1fr;
@@ -9,10 +8,18 @@
     nav {
         grid-row: 1;
         grid-column: 1;
+        
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        background: var(--middleColor);
+        width: 100%;
+        height: initial;
     }
     header {
         grid-row: 2;
         grid-column: 1;
+        padding: 10px;
     }
     main {
         grid-row: 3;
@@ -49,7 +56,21 @@
 
 @media screen and (max-width: 600px){
     body{
-        min-width: 400px;
+        min-width: none;
         font-size: 60%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    header {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    nav {
+        display: none;
+    }
+    main {
+        grid-row: 2;
+        grid-column: 1;
+        display: block;
     }
 }
