@@ -8,7 +8,7 @@
             "areaA"
             "areaB"
             "areaC";
-        }
+    }
     nav {
         position: relative;
         margin: 0px;
@@ -17,10 +17,6 @@
         width: 100%;
         height: initial;
     }
-    header {
-        padding: 10px;
-    }
-    
     .nav-list {
         display: block;
         list-style: none;
@@ -28,7 +24,9 @@
         padding: 0;
         border-bottom: 1px solid var(--borderColorA);
     }
-    
+    header {
+        padding: 10px;
+    }
     .sample-articles {
         padding: 10px 1em;
     }

@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     min-height: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-rows: 60px 1fr auto;
     grid-template-columns: 220px 1fr;
@@ -33,17 +34,17 @@ header {
 }
 
 main {
+    grid-area: areaB;
     margin: 0px;
     padding: 0px;
-    grid-area: areaB;
 }
 
 footer {
+    grid-area: areaC;
     position: fixed;
     bottom: 0px;
     right: 0px;
     min-width: 100%;
-    grid-area: areaC;
     font-size: 80%;
     font-weight: bold;
     padding-right: 10px;
