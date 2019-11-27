@@ -106,6 +106,6 @@
 	content: '◀';
 }
 .cp_actab input[type=checkbox]:checked + label::after {
-	content: '▽';
+	content: '◁';
 	transform: rotate(-90deg);
 }
