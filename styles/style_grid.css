@@ -14,7 +14,7 @@ body {
 nav {
     grid-area: sideA;
     position: fixed;
-    top: 10px;
+    top: 0px;
     left: 0px;
     margin: 0px;
     padding: 0px;

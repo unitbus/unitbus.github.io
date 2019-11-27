@@ -1,25 +1,7 @@
-<!-- このファイルはMarkdown形式で書かれています。-->
-
-<!-- TOC -->
-
-- [挨拶](#挨拶)
-- [完成イメージ](#完成イメージ)
-- [Mayaの話](#mayaの話)
-    - [shiboken](#shiboken)
-    - [MayaQWidgetBaseMixin](#mayaqwidgetbasemixin)
-    - [PySideのウィジェットを探す](#pysideのウィジェットを探す)
-    - [windowの取得](#windowの取得)
-    - [menuBarの取得](#menubarの取得)
-    - [メモ](#メモ)
-- [PySide](#pyside)
-    - [QMenu](#qmenu)
-    - [QAction](#qaction)
-- [ツール紹介](#ツール紹介)
-    - [ダウンロード](#ダウンロード)
-    - [ショートカットに登録](#ショートカットに登録)
-- [最後に](#最後に)
-
-<!-- /TOC -->
+---
+layout: default
+title: ubSearchMenu Making
+---
 
 # 挨拶
 
@@ -42,7 +24,9 @@
 Mayaの他のメニューからアクションを探し、実行するツールです。
 ダウンロードと、使い方の説明は、[ツール紹介](#ツール紹介)を見てください。
 
-![mayaPressMenuA](https://unitbus.github.io/images/ubSearchMenu_mayaPressMenuA.png) 
+<p class="resizeimage">
+<img src="https://unitbus.github.io/images/ubSearchMenu_mayaPressMenuA.png">
+</p>
 
 # Mayaの話
 
@@ -78,7 +62,9 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 初めてMayaのウィジェットにアクセスする際に、
 一覧で見れるビューワーがあると便利だと思い用意しました。
 
-<img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png" width="50%">
+<p class="resizeimage">
+<img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png">
+</p>
 
 > [ダウンロード / ubWidgetHierarchy](https://unitbus.github.io/pages/download)
 
@@ -191,7 +177,9 @@ PySideだけで書かれてるので、対象のウィジェット名を変え�
 ショートカット用のコマンドも用意してあります。
 カーソルの位置にメニューを出せるので、登録しておくと便利かと思います。
 
-![ubSearchMenu_mayaPressHotkeyA](https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png)
+<p class="resizeimage">
+<img src="https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png">
+</p>
 
 自分は、 **Hide All UI Elements** は使わないので、 **[Ctrl] + [Space]** に登録してます。
 `Hotkey Editor > Rantime Command Editor` から、 **Python** を選んで、下のコマンドを登録してください。
@@ -201,7 +189,10 @@ import ubSearchMenu
 ubSearchMenu.popMenu()
 ```
 
-<img src="https://unitbus.github.io/images/ubSearchMenu_mayaHotkeyEditorA.png" width="50%">
+<p class="resizeimage">
+<img src="https://unitbus.github.io/images/ubSearchMenu_mayaHotkeyEditorA.png">
+</p>
+
 
 # 最後に
 

@@ -1,0 +1,35 @@
+.selector {
+    /* background: red; */
+    font-weight: bold;
+    line-height: 2;
+    color: var(--textColor);
+    font-size: 80%;
+    float: right;
+    margin: 2px auto;
+    padding: 0 0 0 1em;
+}
+.selector select {
+    position: relative;
+    float: right;
+    font-weight: bold;
+    line-height: 2;
+    background: var(--bgColor);
+    color: var(--textColor);
+}
+.selector option {
+    background: var(--bgColor);
+}
+
+.nav-list {
+    display: initial;
+    list-style: initial;
+    font-size: 0.8em;
+    line-height: 2;
+    border-bottom: 1px solid var(--borderColorA);
+    height: auto;
+}
+
+.pagetop {
+    margin-right: 10px;
+    text-align: right;
+}

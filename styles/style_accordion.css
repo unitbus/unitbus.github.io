@@ -1,111 +1,86 @@
 /* Accordion Navigation */
 
-.cp_acopt {
-	/* position: absolute; */
-	font-weight: bold;
-	line-height: 2;
-	/* background: red; */
-	color: var(--textColor);
-	font-size: 80%;
-	width: auto;
-	float: right;
-	margin: 2px auto;
-	padding: 0 0 0 1em;
+.accordion {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    color: var(--menuTextColor);
 }
-.cp_acopt select {
-	position: relative;
-	float: right;
-	font-weight: bold;
-	line-height: 2;
-	background: var(--bgColor);
-	color: var(--textColor);
+.accordion input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
-
-.cp_acopt option {
-	background: var(--bgColor);
+.accordion label {
+    font-weight: bold;
+    line-height: 2;
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    cursor: pointer;
+    margin: 0 0 2px 0;
+    background: var(--menuBgColor);
 }
-
-.cp_actab {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	margin: auto;
-	color: var(--menuTextColor);
+.accordion .accordion-content {
+    font-weight: bold;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.15s;
+    transition: max-height 0.15s;
+    background: none;
 }
-.cp_actab input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
+.accordion-content p {
+    font-size: 0.8em;
+    margin: 1em;
 }
-.cp_actab label {
-	font-weight: bold;
-	line-height: 2;
-	position: relative;
-	display: block;
-	padding: 0 0 0 1em;
-	cursor: pointer;
-	margin: 0 0 2px 0;
-	background: var(--menuBgColor);
+.accordion-content a {
+    display: inline-block;
+    text-decoration: none;
 }
-.cp_actab .cp_actab-content {
-	font-weight: bold;
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: max-height 0.15s;
-	transition: max-height 0.15s;
-	background: none;
+.accordion-content a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textColor);
 }
-.cp_actab-content p {
-	font-size: 0.8em;
-	margin: 1em;
+.accordion-content a:hover {
+    display: inline;
+    color: var(--hoverColor);
 }
-.cp_actab-content a {
-	display: inline-block;
-	text-decoration: none;
+.accordion-content ul {
+    margin: 0em;
+    margin-left: 0px;
+    padding: 0px;
+    list-style-type: square;
 }
-.cp_actab-content a:visited {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--textColor);
-}
-.cp_actab-content a:hover {
-	display: inline;
-	color: var(--hoverColor);
-}
-.cp_actab-content ul {
-	font-size: 0.72em;
-    margin: 0px;
-    padding-left: 20px;
-    background: red;
-}
-.cp_actab-content li {
-    margin: 0px;
-    padding: 0px 0px;
-    background: green;
+.accordion-content li {
+    margin: 0em;
+    margin-left: 20px;
+    padding: 0px;
 }
 
 /* :checked */
-.cp_actab input:checked ~ .cp_actab-content {
-	max-height: 20em;
+.accordion input:checked ~ .accordion-content {
+    max-height: 100%;
 }
 
 /* Icon */
-.cp_actab label::after {
-	line-height: 2;
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	width: 2em;
-	height: 2em;
-	-webkit-transition: all 0.15s;
-	transition: all 0.15s;
-	text-align: center;
+.accordion label::after {
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 2em;
+    height: 2em;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+    text-align: center;
 }
-.cp_actab input[type=checkbox] + label::after {
-	content: '◀';
+.accordion input[type=checkbox] + label::after {
+    content: '◀';
 }
-.cp_actab input[type=checkbox]:checked + label::after {
-	content: '▽';
-	transform: rotate(-90deg);
+.accordion input[type=checkbox]:checked + label::after {
+    content: '◁';
+    transform: rotate(-90deg);
 }

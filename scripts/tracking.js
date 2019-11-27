@@ -7,5 +7,11 @@ $(function() {
                 'location': url
             });
         }
+        if (url && url.match(/\.py$/)) {
+            ga('send', {
+                'hitType': 'pageview',
+                'location': url
+            });
+        }
     });
 });

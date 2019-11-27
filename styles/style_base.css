@@ -99,11 +99,11 @@ dl {
     margin-left: 20px;
 }
 dt {
-    margin: 0 0 4px 18px;
+    margin: 0px 0px 4px 18px;
     border-bottom: solid 1px #cccccc;
 }
 dd {
-    margin: 0 0 4px 18px;
+    margin: 0px 0px 4px 18px;
 }
 ol{
     margin-left: 20px;
@@ -113,7 +113,7 @@ ul {
     list-style-type: square;
 }
 li {
-    /* margin: 0 0 4px 8px; */
+    margin: 0px 0px 4px 18px;
 }
 
 /* フォーム */
