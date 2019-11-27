@@ -72,6 +72,17 @@
 	display: inline;
 	color: var(--hoverColor);
 }
+.cp_actab-content ul {
+	font-size: 0.72em;
+    margin: 0px;
+    padding-left: 20px;
+    background: red;
+}
+.cp_actab-content li {
+    margin: 0px;
+    padding: 0px 0px;
+    background: green;
+}
 
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
@@ -92,9 +103,9 @@
 	text-align: center;
 }
 .cp_actab input[type=checkbox] + label::after {
-	content: '◀';
+	content: 'â';
 }
 .cp_actab input[type=checkbox]:checked + label::after {
-	content: '◁';
+	content: 'â';
 	transform: rotate(-90deg);
 }
