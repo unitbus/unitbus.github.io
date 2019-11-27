@@ -103,9 +103,9 @@
 	text-align: center;
 }
 .cp_actab input[type=checkbox] + label::after {
-	content: 'â';
+	content: '◀';
 }
 .cp_actab input[type=checkbox]:checked + label::after {
-	content: 'â';
+	content: '▽';
 	transform: rotate(-90deg);
 }
