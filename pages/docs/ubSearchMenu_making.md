@@ -5,6 +5,13 @@ title: ubSearchMenu Making
 
 # 挨拶
 
+**このページは、Maya Advent Calendar 2019用に書いています。**
+
+<dl>
+    <dt>Maya Advent Calendar 2019</dt>
+    <dd>https://qiita.com/advent-calendar/2019/maya</dd>
+</dl>
+
 近況報告としては、前の会社を辞めた際に、アーティストは引退し、テック系CG屋に転職しました。
 もともとは、ジェネラリストで、TAっぽい仕事が多かったですが、テックに移って4年近く経ち、
 今はもう、画作りにほぼ関わってないので、TAですらありません。笑

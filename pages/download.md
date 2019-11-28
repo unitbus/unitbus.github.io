@@ -19,7 +19,7 @@ title: Download
 
 ## Python
 
-- [ubSearchMenu.py]() - [document]()
+- [ubSearchMenu.py]() - [making]()
 現在準備中です。
 
 ## MEL
