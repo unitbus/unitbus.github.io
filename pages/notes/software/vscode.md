@@ -26,7 +26,7 @@ title: VSCode
 標準では入ってないので、ダウンロードが必要。
 インストール方法はこちらを参考にどうぞ。
 
-https://unitbus.github.io/pages/windows/basic#windows-font
+https://unitbus.github.io/pages/notes/windows/basic#windows-font
 
 ```json
 "editor.fontFamily": "'Source Han Code JP Regular', Consolas",

@@ -25,7 +25,7 @@ Mayaの他のメニューからアクションを探し、実行するツール�
 ダウンロードと、使い方の説明は、[ツール紹介](#ツール紹介)を見てください。
 
 <p class="resizeimage">
-<img src="https://unitbus.github.io/images/ubSearchMenu_mayaPressMenuA.png">
+<img src="https://unitbus.github.io/images/docs/ubSearchMenu_mayaPressMenuA.png">
 </p>
 
 # Mayaの話
@@ -63,7 +63,7 @@ Mayaでツールを作成する場合、既に数多くあるツールの中の�
 一覧で見れるビューワーがあると便利だと思い用意しました。
 
 <p class="resizeimage">
-<img src="https://unitbus.github.io/images/ubWidgetHierarchy_windowA.png">
+<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowA.png">
 </p>
 
 > [ダウンロード / ubWidgetHierarchy](https://unitbus.github.io/pages/download)
@@ -81,7 +81,7 @@ Mayaのメインウインドウ名は、**MayaWindow** になります。
 `objectName()` や、`windowTitle()` から取得する方法があります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
-> [Maya / PySide / MainWindowの取得](https://unitbus.github.io/pages/maya/pyside#mainwindowの取得)
+> [Maya / PySide / MainWindowの取得](https://unitbus.github.io/pages/notes/maya/pyside#mainwindowの取得)
 
 ## menuBarの取得
 
@@ -178,7 +178,7 @@ PySideだけで書かれてるので、対象のウィジェット名を変え�
 カーソルの位置にメニューを出せるので、登録しておくと便利かと思います。
 
 <p class="resizeimage">
-<img src="https://unitbus.github.io/images/ubSearchMenu_mayaPressHotkeyA.png">
+<img src="https://unitbus.github.io/images/docs/ubSearchMenu_mayaPressHotkeyA.png">
 </p>
 
 自分は、 **Hide All UI Elements** は使わないので、 **[Ctrl] + [Space]** に登録してます。
@@ -190,7 +190,7 @@ ubSearchMenu.popMenu()
 ```
 
 <p class="resizeimage">
-<img src="https://unitbus.github.io/images/ubSearchMenu_mayaHotkeyEditorA.png">
+<img src="https://unitbus.github.io/images/docs/ubSearchMenu_mayaHotkeyEditorA.png">
 </p>
 
 

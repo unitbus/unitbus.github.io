@@ -9,7 +9,7 @@ title: Maya
 
 PySideから見た、Mayaのウィジェットを一覧で見れるビューワー。
 
-[Widget一覧](https://unitbus.github.io/pages/python/pyside#widget一覧)
+[Widget一覧](https://unitbus.github.io/pages/notes/python/pyside#widget一覧)
 
 ## MainWindowの取得
 
