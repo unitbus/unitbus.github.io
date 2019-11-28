@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="FuqcB3d38YGzg8GiWAApyXtuOu3PW6urs3iePVJ2o-o" />
     <title>{{page.title}}</title> {% feed_meta %}
-    <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
     
+    <link rel="shortcut icon" type="image/x-icon" href="https://unitbus.github.io/favicon.ico">
     <link rel="stylesheet" href="https://unitbus.github.io/styles/style_dark.css" type="text/css" id="dark">
     <link rel="stylesheet" href="https://unitbus.github.io/styles/style_base.css" type="text/css">
-    <link rel="stylesheet" href="https://unitbus.github.io/styles/style_grid.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/styles/style_menu.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/styles/style_page.css" type="text/css">
-    <link rel="stylesheet" href="https://unitbus.github.io/styles/style_accordion.css" type="text/css">
-    <link rel="stylesheet" href="https://unitbus.github.io/styles/style_min.css" type="text/css">
     <link rel="stylesheet" href="https://unitbus.github.io/styles/style_code.css" type="text/css">
+    <link rel="stylesheet" href="https://unitbus.github.io/styles/style_layout.css" type="text/css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50817371-2"></script>
@@ -39,17 +37,9 @@
 
 <header class="header" id="title">{{page.title}}</header>
 
-<nav class="nav">
+<menu class="menu">
     
-    <div class="selector">
-        Style: 
-        <select onchange="changesytle('dark', value);">
-            <option value="https://unitbus.github.io/styles/style_dark.css">drak</option>
-            <option value="https://unitbus.github.io/styles/style_light.css">light</option>
-        </select>
-    </div>
-    
-    <div class="nav-list">
+    <div class="menu-list">
     
         <div class="accordion">
             <input id="tab-1" type="checkbox" name="tabs">
@@ -79,7 +69,7 @@
             <label for="tab-3">Contents</label>
             <div class="accordion-content">
                 
-                <!-- 目次を作成する先 -->
+                <!-- 目次を作戝㝙る先 -->
                 <div id="toc"></div>
                 
             </div>
@@ -87,14 +77,23 @@
         
     </div>
     
-    <div class="pagetop"><a href="#title">先頭へ戻る</a></div>
-</nav>
+    <div class="pagetop"><a href="#title">Page Top</a></div>
+</menu>
 
 <main>
 {{content}}
 </main>
 
-<footer>(C) 2019 Co, UnitBus.</footer>
+<footer>
+    <div class="selector">
+        Style: 
+        <select onchange="changesytle('dark', value);">
+            <option value="https://unitbus.github.io/styles/style_dark.css">drak</option>
+            <option value="https://unitbus.github.io/styles/style_light.css">light</option>
+        </select>
+    </div>
+    (C) 2019 Co, UnitBus.
+</footer>
 
 <script src="https://unitbus.github.io/scripts/toc.js"></script>
 <script src="https://unitbus.github.io/scripts/tracking.js"></script>

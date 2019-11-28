@@ -13,11 +13,11 @@
     #     (C) 2019 Co, UnitBus.
     # 
     # Version:
-    #     1.0.0, 2019/11/26
+    #     1.0.0, 2019/11/28
     #
     # Exsample:
     #     import ubSearchMenu
-    #     ubSearchMenu.appendMayaMenu()
+    #     ubSearchMenu.show()
     #
     #     # shortcut runtime command.
     #     import ubSearchMenu
@@ -27,6 +27,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import sys
+import traceback
 
 try:
     import PySide2
@@ -38,6 +39,7 @@ except ImportError:
     from PySide.QtCore import *
     from PySide.QtGui import *
 
+# menu class.
 class SearchMenu(QMenu):
     
     def __init__(self, title, parent=None):
@@ -57,11 +59,8 @@ class SearchMenu(QMenu):
     
     # signal.
     def _returnPressedFunc(self, *args, **kwargs):
-        text = self.__lineEdit.text()
-        
-        # for action in getChildActions(self.parent()):
-        
         menuBar = self.parent()
+        text = self.__lineEdit.text()
         
         for menu in menuBar.findChildren(QMenu):
             widgets = getDeepChildren(menu, results=[], depth=0, depthLimit=6)
@@ -78,6 +77,9 @@ class SearchMenu(QMenu):
                 self.addRecentAction(action)
                 self.setVisible(False)
                 return
+        
+        print('"{}" is not found action...'.format(text))
+        self.setVisible(False)
     
     def _updateActions(self):
         self.__actionTexts = []
@@ -86,6 +88,8 @@ class SearchMenu(QMenu):
         for menu in menuBar.findChildren(QMenu):
             widgets = getDeepChildren(menu, results=[], depth=0, depthLimit=6)
             self.__actionTexts += [w.text() for w in widgets if isinstance(w, (QAction, QWidgetAction))]
+        
+        self.__actionTexts = list(set(self.__actionTexts))
         
         completer = QCompleter(self.__actionTexts, self)
         completer.setCaseSensitivity(Qt.CaseInsensitive)
@@ -167,6 +171,7 @@ def getDeepChildren(widget, results=[], depth=0, depthLimit=6):
     
     return results
 
+# search maya widget.
 def getTopLevelWidget(name):
     
     for widget in QApplication.topLevelWidgets():
@@ -180,9 +185,10 @@ def getTopLevelWidget(name):
 def popMenu():
     window = getTopLevelWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
-    
     menu = menuBar.findChild(QMenu, 'ubSearchMenu')
-    menu = menu or SearchMenu('Search', menuBar)
+    
+    if not menu:
+        menu = SearchMenu('Search', menuBar)
     
     lineEdit = menu.lineEdit()
     lineEdit.setFocus(Qt.TabFocusReason)
@@ -194,13 +200,77 @@ def popMenu():
 def show():
     window = getTopLevelWidget('MayaWindow')
     menuBar = window.findChild(QMenuBar)
-    print('menuBar:', menuBar)
-    
     menu = menuBar.findChild(QMenu, 'ubSearchMenu')
     
     if menu:
+        print('rebuild ubSearchMenu.')
         menu.deleteLater()
-        print('Rebuild ubSearchMenu.')
     
     menu = SearchMenu('Search', menuBar)
     menuBar.addMenu(menu)
+
+# call maya scripts.
+def _initMayaMenu():
+    # 必要あれば足してください
+    _mayaMenuInitCommands = [
+        # general.
+        r'buildFileMenu;',
+        r'buildEditMenu MayaWindow|mainEditMenu;',
+        r'ModCreateMenu MayaWindow|mainCreateMenu;',
+        r'buildSelectMenu MayaWindow|mainSelectMenu;',
+        r'ModObjectsMenu MayaWindow|mainModifyMenu;',
+        r'buildViewMenu MayaWindow|mainWindowMenu;',
+        r'buildHelpMenu;',
+        
+        # modeing.
+        r'PolygonsMeshMenu MayaWindow|mainMeshMenu;',
+        r'PolygonsBuildMenu MayaWindow|mainEditMeshMenu;',
+        r'PolygonsBuildToolsMenu MayaWindow|mainMeshToolsMenu;',
+        r'ModelingMeshDisplayMenu MayaWindow|mainMeshDisplayMenu;',
+        r'ModelingCurvesMenu MayaWindow|mainCurvesMenu;',
+        r'ModelingSurfacesMenu MayaWindow|mainSurfacesMenu;',
+        r'ChaDeformationsMenu MayaWindow|mainDeformMenu;',
+        r'ModelingUVMenu MayaWindow|mainUVMenu;',
+        r'ModelingGenerateMenu MayaWindow|mainGenerateMenu;',
+        
+        # rig.
+        r'ChaSkeletonsMenu MayaWindow|mainRigSkeletonsMenu;',
+        r'ChaSkinningMenu MayaWindow|mainRigSkinningMenu;',
+        r'ChaDeformationsMenu MayaWindow|mainRigDeformationsMenu;',
+        r'AniConstraintsMenu MayaWindow|mainRigConstraintsMenu;',
+        r'ChaControlsMenu MayaWindow|mainRigControlMenu;',
+        
+        # animation.
+        r'AniKeyMenu MayaWindow|mainKeysMenu;',
+        r'AniPlaybackMenu MayaWindow|mainPlaybackMenu;',
+        r'AniVisualizeMenu MayaWindow|mainVisualizeMenu;',
+        r'AniDeformationsMenu MayaWindow|mainDeformationMenu;',
+        r'AniConstraintsMenu MayaWindow|mainConstraintsMenu;',
+        
+        # effect.
+        r'DynParticlesMenu MayaWindow|mainParticlesMenu;',
+        r'DynFluidsMenu MayaWindow|mainFluidsMenu;',
+        r'DynClothMenu MayaWindow|mainNClothMenu;',
+        r'DynCreateHairMenu MayaWindow|mainHairMenu;',
+        r'NucleusConstraintMenu MayaWindow|mainNConstraintMenu;',
+        r'NucleusCacheMenu MayaWindow|mainNCacheMenu;',
+        r'DynFieldsSolverMenu MayaWindow|mainFieldsSolverMenu;',
+        r'DynEffectsMenu MayaWindow|mainDynEffectsMenu;',
+        
+        r'editMenuUpdate MayaWindow|mainEditMenu;',
+        ]
+    
+    print('call maya menu commands.')
+    from maya import mel
+    
+    for command in _mayaMenuInitCommands:
+        
+        try:
+            mel.eval(command)
+        
+        except:
+            print(traceback.format_exc())
+
+# モジュールが読まれた時だけ実行
+# mayaのメニューコマンドを呼び出す
+_initMayaMenu()

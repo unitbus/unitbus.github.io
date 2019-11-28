@@ -17,7 +17,7 @@ footer {
 }
 
 p {
-    margin: 10px 20px 10px 30px;
+    margin: 10px 30px 10px 30px;
 }
 
 /* テーブル */
@@ -59,6 +59,7 @@ h2 {
     color: var(--h2);
     border-bottom: solid 1px var(--menuBgColor);
     margin-left: 20px;
+    margin-right: 20px;
 }
 h3 {
     font-size:130%;
@@ -196,15 +197,14 @@ del {
 
 /* 整形済みテキスト */
 pre {
+    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
+    line-height: 1.4em;
     color: var(--codeColor);
-    color: transparent;
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
     overflow: auto;
     padding: 4px 8px 4px 8px;
-    margin: 10px 20px 10px 30px;
-    line-height: 1.4em;
-    font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
+    margin: 10px 30px 10px 30px;
 }
 q:before{
     content:'';
@@ -251,13 +251,13 @@ cite{
     font-weight: normal;
 }
 code{
-    color: var(--codeColor);
-    line-height: 1.4em;
     font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
+    font-weight: bold;
+    line-height: 1.4em;
+    color: var(--code);
+    background-color: none;
     overflow: auto;
-    background-color: transparent;
-    /* background-color: var(--codeBgColor); */
-    /* padding: 4px 8px 4px 8px; */
+    overflow-x:scroll;
 }
 dfn{
     font-style: normal;

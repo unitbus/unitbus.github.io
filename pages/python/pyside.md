@@ -66,6 +66,8 @@ ubWidgetHierarchy.show()
 
 standaloneでも動きますが、他のウインドウが無いと意味ありません。
 
+こうやって見ると、**Houdini** はまだ、独自UIが多く、**Qt** を使ってない事がわかる。
+
 ## QListView
 
 `QListWidget` のメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
