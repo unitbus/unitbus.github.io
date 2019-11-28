@@ -39,42 +39,38 @@
 
 <menu class="menu">
     
-    <div class="menu-list">
+    <div class="accordion">
+        <input id="tab-1" type="checkbox" name="tabs">
+        <label for="tab-1">Pages</label>
+        <div class="menu-list">
+            <p><a href="https://unitbus.github.io/pages/download">Download</a></p>
+        </div>
+    </div>
     
-        <div class="accordion">
-            <input id="tab-1" type="checkbox" name="tabs">
-            <label for="tab-1">Pages</label>
-            <div class="accordion-content">
-                <p><a href="https://unitbus.github.io/pages/download">Download</a></p>
-            </div>
+    <div class="accordion">
+        <input id="tab-2" type="checkbox" name="tabs">
+        <label for="tab-2">Notes</label>
+        <div class="menu-list">
+            <p><a href="https://unitbus.github.io/pages/blender/reference">Blender/Reference</a></p>
+            <p><a href="https://unitbus.github.io/pages/maya/pyside">Maya/PySide</a></p>
+            <p><a href="https://unitbus.github.io/pages/python/basic">Python/Basic</a></p>
+            <p><a href="https://unitbus.github.io/pages/python/pyside">Python/PySide</a></p>
+            <p><a href="https://unitbus.github.io/pages/windows/basic">Windows/Basic</a></p>
+            <p><a href="https://unitbus.github.io/pages/windows/batch">Windows/Batch</a></p>
+            <p><a href="https://unitbus.github.io/pages/github">GitHub</a></p>
+            <p><a href="https://unitbus.github.io/pages/vscode">VSCode</a></p>
         </div>
-        
-        <div class="accordion">
-            <input id="tab-2" type="checkbox" name="tabs">
-            <label for="tab-2">Notes</label>
-            <div class="accordion-content">
-                <p><a href="https://unitbus.github.io/pages/blender/reference">Blender/Reference</a></p>
-                <p><a href="https://unitbus.github.io/pages/maya/pyside">Maya/PySide</a></p>
-                <p><a href="https://unitbus.github.io/pages/python/basic">Python/Basic</a></p>
-                <p><a href="https://unitbus.github.io/pages/python/pyside">Python/PySide</a></p>
-                <p><a href="https://unitbus.github.io/pages/windows/basic">Windows/Basic</a></p>
-                <p><a href="https://unitbus.github.io/pages/windows/batch">Windows/Batch</a></p>
-                <p><a href="https://unitbus.github.io/pages/github">GitHub</a></p>
-                <p><a href="https://unitbus.github.io/pages/vscode">VSCode</a></p>
-            </div>
+    </div>
+    
+    <div class="accordion">
+        <input id="tab-3" type="checkbox" name="tabs">
+        <label for="tab-3">Contents</label>
+        <div class="menu-list">
+            
+            <!-- 目次を作戝㝙る先 -->
+            <div id="toc"></div>
+            
         </div>
-        
-        <div class="accordion">
-            <input id="tab-3" type="checkbox" name="tabs">
-            <label for="tab-3">Contents</label>
-            <div class="accordion-content">
-                
-                <!-- 目次を作戝㝙る先 -->
-                <div id="toc"></div>
-                
-            </div>
-        </div>
-        
     </div>
     
     <div class="pagetop"><a href="#title">Page Top</a></div>

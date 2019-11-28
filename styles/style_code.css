@@ -1,8 +1,7 @@
 .highlight code {
-    /* font-family:'Bitstream Vera Sans Mono','Courier', monospace; */
     font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
     font-style: normal;
-    font-weight: none;
+    font-weight: normal;
     color: var(--codeColor);
     background: var(--codeBgColor);
 }

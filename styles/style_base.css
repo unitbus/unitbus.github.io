@@ -95,17 +95,19 @@ a:active {
     color: var(--strongColor);
 }
 
-/* リスト */
+/* 定義リスト */
 dl {
     margin-left: 20px;
 }
 dt {
     margin: 0px 0px 4px 18px;
-    border-bottom: solid 1px #cccccc;
+    border-bottom: solid 1px var(--borderColorA);
 }
 dd {
     margin: 0px 0px 4px 18px;
 }
+
+/* リスト */
 ol{
     margin-left: 20px;
 }
@@ -255,7 +257,7 @@ code{
     font-weight: bold;
     line-height: 1.4em;
     color: var(--code);
-    background-color: none;
+    background-color: transparent;
     overflow: auto;
     overflow-x:scroll;
 }
