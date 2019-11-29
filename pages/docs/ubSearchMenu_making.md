@@ -198,7 +198,8 @@ melからのアクセスだと、*ペアレントを変える＝移動* なの�
 以上説明した技術を使い、ツールを作ってみました。
 こちらからダウンロードできます。
 
-> [Dwonload / Maya / Python / ubSearchMenu](https://unitbus.github.io/pages/download)
+> Dwonload / Maya / Python / ubSearchMenu
+[https://unitbus.github.io/pages/download](https://unitbus.github.io/pages/download)
 
 ダウンロードしたファイルは、`Documents/maya/scripts` に置いてください。
 スクリプトエディタで以下のコマンドを実行するとメニューに追加されます。
