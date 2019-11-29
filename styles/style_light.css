@@ -10,7 +10,8 @@
     --borderColorC: hsl(224, 0%, 80%);
     
     --menuTextColor: var(--bgColor);
-    --menuBgColor: hsl(224, 40%, 40%);
+    --menuBgColor: hsl(0, 0%, 80%);
+    --labelBgColor: hsl(224, 40%, 40%);
     
     --linkColor: var(--textColor);
     --linkVisit: var(--h1);
@@ -18,11 +19,10 @@
     --strongColor: hsl(0, 40%, 42%);
     --italicColor: hsl(200, 90%, 42%);
     
-    --h1: hsl(219, 77%, 34%);
-    --h2: hsl(229, 38%, 56%);
+    --h1: var(--bgColor);
+    --h2: hsl(219, 77%, 34%); 
     --code: hsl(40, 80%, 40%);
-    
-    --middleColor: hsl(0, 0%, 80%);
+    --title: var(--textColor);
     --other: hsl(60, 3%, 86%);
     
     --fotterColor: hsl(224, 8%, 12%);

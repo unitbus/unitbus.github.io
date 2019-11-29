@@ -4,12 +4,11 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 60px 1fr 48px;
+    grid-template-rows: 1fr 48px;
     grid-template-columns: 220px 1fr;
     grid-template-areas:
         "sideA areaA"
-        "sideA areaB"
-        "areaC areaC";
+        "under under";
 }
 
 menu {
@@ -24,16 +23,8 @@ menu {
     z-index: 1;
 }
 
-header {
-    grid-area: areaA;
-    color: var(--h1);
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-}
-
 main {
-    grid-area: areaB;
+    grid-area: areaA;
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -42,7 +33,7 @@ main {
 }
 
 footer {
-    grid-area: areaC;
+    grid-area: under;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -56,16 +47,12 @@ footer {
 @media screen and (max-width: 800px){
     body{
         font-size: 80%;
-        grid-template-rows: auto 1fr auto 24px;
+        grid-template-rows: 1fr auto 24px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "areaA"
-            "areaB"
             "sideA"
-            "areaC";
-    }
-    header {
-        padding: 10px;
+            "under";
     }
     main {
         width: 100%;
@@ -74,7 +61,7 @@ footer {
         position: relative;
         margin: 0px;
         padding: 0px;
-        background: var(--middleColor);
+        background: var(--menuBgColor);
         width: 100%;
         height: initial;
         display: block;

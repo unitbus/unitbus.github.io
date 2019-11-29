@@ -119,7 +119,7 @@ class SearchMenu(QMenu):
         button.setFlat(True)
         button.setStyleSheet(styleText)
         button.pressed.connect(self._updateActions)
-        button.setToolTip(u'検索候補に出てこない場合は押してください')
+        button.setToolTip('検索候補に出てこない場合は押してください')
         
         layout = QHBoxLayout(widget)
         layout.setContentsMargins(2, 2, 2, 2)
@@ -147,6 +147,10 @@ class SearchMenu(QMenu):
     
     def lineEdit(self):
         return self.__lineEdit
+    
+    def keyPressEvent(self, event):
+        # shiftキーを押すと、focusが外れるので無効にする
+        pass
 
 # 再帰的に子を検索
 def getDeepChildren(widget, results=[], depth=0, depthLimit=6):
@@ -211,6 +215,7 @@ def show():
 
 # call maya scripts.
 def _initMayaMenu():
+    
     # 必要あれば足してください
     _mayaMenuInitCommands = [
         # general.
