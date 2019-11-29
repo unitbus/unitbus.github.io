@@ -21,7 +21,8 @@ title: ubSearchMenu Making
 
 **このページは、Maya Advent Calendar 2019 12/3用に書かれています。**
 
-> [Maya Advent Calendar 2019](https://qiita.com/advent-calendar/2019/maya)
+> Maya Advent Calendar 2019
+[https://qiita.com/advent-calendar/2019/maya](https://qiita.com/advent-calendar/2019/maya)
 
 ## 完成イメージ
 
@@ -78,7 +79,8 @@ Mayaでツールを作成する場合、既に数多くあるツール郡の中�
 `objectName()` や、`windowTitle()` から取得する方法があります。
 この方法は、他のDCCでも使えるので、覚えておくと便利だと思います。
 
-> [Maya / PySide / MainWindowの取得](https://unitbus.github.io/pages/notes/maya/pyside#mainwindowの取得)
+> Maya / PySide / MainWindowの取得
+[https://unitbus.github.io/pages/notes/maya/pyside#mainwindowの取得](https://unitbus.github.io/pages/notes/maya/pyside#mainwindowの取得)
 
 ## menuBarの取得
 
