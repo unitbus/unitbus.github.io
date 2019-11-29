@@ -149,3 +149,13 @@ set time_raw=%time: =0%
 set time_now=%time_raw:~0,2%%time_raw:~3,2%%time_raw:~6,2%
 echo %time_now%
 ```
+
+## クリップボードの文字の置換
+
+パスをコピーして、スラッシュだとエクスプローラーで開けず、イライラする時に実行。
+コピーしたパスを、バックスラッシュに置き換えて、クリップボードに戻してくれます。
+powershell使ってますが、batで保存。送るに入れると便利。
+
+```
+powershell $s = get-clipboard; $s.Replace('/', '\') | clip
+```
