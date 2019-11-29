@@ -14,7 +14,7 @@
     --labelBgColor: hsl(224, 40%, 40%);
     
     --linkColor: var(--textColor);
-    --linkVisit: var(--h1);
+    --linkVisit: var(--textColor);
     --hoverColor: hsl(224, 100%, 42%);
     --strongColor: hsl(0, 40%, 42%);
     --italicColor: hsl(200, 90%, 42%);
