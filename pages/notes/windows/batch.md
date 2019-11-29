@@ -154,8 +154,9 @@ echo %time_now%
 
 パスをコピーして、スラッシュだとエクスプローラーで開けず、イライラする時に実行。
 コピーしたパスを、バックスラッシュに置き換えて、クリップボードに戻してくれます。
-powershell使ってますが、batで保存。送るに入れると便利。
+powershell使ってますが、batで保存。 ~~送るに入れると便利。~~
+送るに入れても仕方ないですね…。デスクトップとかに置くとかですかね。
 
 ```
-powershell $s = get-clipboard; $s.Replace('/', '\') | clip
+powershell "$s = get-clipboard; $s.Replace('/', '\').toString().trimend([environment]::newline) + [convert]::tochar(0) | clip"
 ```
