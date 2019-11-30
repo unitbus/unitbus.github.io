@@ -42,7 +42,7 @@ td {
     border-collapse: collapse;
     empty-cells: show;
 }
-caption{
+caption {
     text-align:left;
     font-style:normal;
     font-weight:normal;
@@ -117,7 +117,7 @@ ul {
     list-style-type: square;
 }
 li {
-    margin: 4px 0px 4px 4px;
+    margin: 10px 0px 10px 0px;
 }
 
 /* フォーム */
@@ -186,7 +186,7 @@ em {
     font-weight: bold;
     color: var(--italicColor);
 }
-strong{
+strong {
     font-style: normal;
     font-weight: bold;
     color: var(--strongColor);
@@ -210,17 +210,17 @@ pre {
     padding: 4px 8px 4px 8px;
     margin: 10px 30px 10px 30px;
 }
-q:before{
+q:before {
     content:'';
 }
-q:after{
+q:after {
     content:'';
 }
 
 /* 引用 */
 blockquote {
     position: relative;
-    padding: 2px 2px 2px 10px;
+    padding: 2px 2px 2px 1em;
     box-sizing: border-box;
     background: none;
     color: var(--textColor);
@@ -250,11 +250,11 @@ fieldset {
 legend {
     display: none;
 }
-cite{
+cite {
     font-style: normal;
     font-weight: normal;
 }
-code{
+code {
     font-family: 'Courier New', 'ＭＳ ゴシック', monospace;
     font-weight: bold;
     line-height: 1.4em;
@@ -263,11 +263,11 @@ code{
     overflow: auto;
     overflow-x: scroll;
 }
-dfn{
+dfn {
     font-style: normal;
     font-weight: normal;
 }
-var{
+var {
     font-style: normal;
     font-weight: normal;
 }
