@@ -206,6 +206,7 @@ pre {
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
     overflow: auto;
+    overflow-x: scroll;
     padding: 4px 8px 4px 8px;
     margin: 10px 30px 10px 30px;
 }
@@ -260,7 +261,7 @@ code{
     color: var(--code);
     background-color: transparent;
     overflow: auto;
-    overflow-x:scroll;
+    overflow-x: scroll;
 }
 dfn{
     font-style: normal;
