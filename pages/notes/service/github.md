@@ -24,7 +24,7 @@ wordpress的なのを、動的ページと言うらしい。
 - window10環境、コマンドラインをなるべく使わない
 - markdownでメモを取る感覚でページの作成、そのまま投稿
 
-### window10環境
+## window10環境
 
 GitHubのページ見てもいまいち感覚がわからず、そもそもアップロードの仕方もわからん。
 **GitHub Desktop** というアプリを入れれば、色々問題が解決した。
@@ -46,7 +46,7 @@ GitHubのページ見てもいまいち感覚がわからず、そもそもア�
 個人的には、この手のは `mklink` でジャンクション作って、別の場所で管理。
 バックアップ管理とか、別マシンで使いたかったりするので。
 
-### markdown
+## markdown
 
 もう一つ個人的に重要だったのが、markdownの使用。
 
@@ -69,11 +69,10 @@ details内でコードブロックを使う場合は、`<div>` で囲む必要�
 <summary>畳むタイトル</summary>
 <div>
 
-\``` python
-# コードブロック
+``` python
 import sys
 print(sys.path)
-\```
+```
 
 </div>
 </details>
