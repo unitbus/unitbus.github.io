@@ -8,7 +8,8 @@
     font-size: 0.8em;
     font-weight: bold;
     border-bottom: 1px solid var(--borderColorA);
-    max-height: 0px;
+    height: auto;
+    display: none;
 }
 .menu-list p {
     margin: 0px;
@@ -28,13 +29,11 @@
     color: var(--hoverColor);
 }
 .menu-list ul {
-    margin-left: -18px;
-    padding: 4px 10px;
+    margin-left: -30px;
     list-style: none;
 }
 .menu-list ol {
-    margin: 0px;
-    padding: 4px 20px;
+    margin-left: -30px;
     list-style: none;
 }
 .menu-list li {
@@ -76,20 +75,14 @@
 
 /* Accordion :checked */
 .accordion input:checked ~ .menu-list {
-    max-height: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Accordion Icon */
 .accordion label::after {
     position: absolute;
-    /* display: block; */
-    /* top: 0; */
     right: 0;
-    /* width: 2em; */
-    /* height: 2em; */
-    /* -webkit-transition: all 0.15s; */
-    /* transition: all 0.15s; */
-    /* text-align: center; */
     padding: 0px 10px;
 }
 .accordion input[type=checkbox] + label::after {

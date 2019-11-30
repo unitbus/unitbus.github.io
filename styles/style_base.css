@@ -110,14 +110,14 @@ dd {
 
 /* リスト */
 ol{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 ul {
-    margin-left: 20px;
+    margin-left: 10px;
     list-style-type: square;
 }
 li {
-    margin: 0px 0px 4px 18px;
+    margin: 4px 0px 4px 4px;
 }
 
 /* フォーム */
@@ -219,7 +219,7 @@ q:after{
 /* 引用 */
 blockquote {
     position: relative;
-    padding: 2px 2px 2px 20px;
+    padding: 2px 2px 2px 10px;
     box-sizing: border-box;
     background: none;
     color: var(--textColor);

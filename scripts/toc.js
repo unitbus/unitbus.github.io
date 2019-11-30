@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // 目次を追加する先(table of contents)
     var contentsList = document.getElementById('toc');
     
-    // 作成する目次のコンテナ要素
-    var div = document.createElement('div');
-    
     // .entry-content配下のh1、h2要素を全て取得する
     var matches = document.querySelectorAll('h1, h2');
     
@@ -54,8 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
     // <ul>を閉じる
-    div.appendChild(ul);
-    
     // 最後に画面にレンダリング
-    contentsList.appendChild(div);
+    contentsList.appendChild(ul);
 });
