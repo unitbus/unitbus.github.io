@@ -19,8 +19,7 @@ title: Download
 
 ## Python
 
-- [ubSearchMenu.py]() - [making]()
-現在準備中です。
+- [ubSearchMenu.py](https://unitbus.github.io/data/maya/python/ubSearchMenu.py) - [making](https://unitbus.github.io/pages/docs/ubSearchMenu_making)
 
 ## MEL
 
