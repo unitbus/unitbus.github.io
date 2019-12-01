@@ -205,8 +205,8 @@ pre {
     color: var(--codeColor);
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
+    /* overflow-x: scroll; */
     overflow: auto;
-    overflow-x: scroll;
     padding: 4px 8px 4px 8px;
     margin: 10px 30px 10px 30px;
 }
@@ -260,8 +260,8 @@ code {
     line-height: 1.4em;
     color: var(--code);
     background-color: transparent;
+    /* overflow-x: scroll; */
     overflow: auto;
-    overflow-x: scroll;
 }
 dfn {
     font-style: normal;
