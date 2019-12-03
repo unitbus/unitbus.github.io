@@ -249,8 +249,8 @@ def _initMayaMenu():
         r'AniKeyMenu MayaWindow|mainKeysMenu;',
         r'AniPlaybackMenu MayaWindow|mainPlaybackMenu;',
         r'AniVisualizeMenu MayaWindow|mainVisualizeMenu;',
-        r'AniDeformationsMenu MayaWindow|mainDeformationMenu;',
         r'AniConstraintsMenu MayaWindow|mainConstraintsMenu;',
+        # r'AniDeformationsMenu MayaWindow|mainDeformationMenu;',
         
         # effect.
         r'DynParticlesMenu MayaWindow|mainParticlesMenu;',
