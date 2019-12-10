@@ -21,6 +21,7 @@ menu {
     width: 220px;
     height: 100%;
     z-index: 1;
+    overflow: auto;
 }
 
 main {
@@ -42,6 +43,10 @@ footer {
     font-weight: bold;
     padding-right: 10px;
     z-index: 2;
+}
+
+.pagetop {
+    padding: 0px 0px 48px 0px;
 }
 
 @media screen and (max-width: 800px){
@@ -67,6 +72,9 @@ footer {
         display: block;
         list-style: none;
         border-top: 1px solid var(--borderColorA);
+    }
+    .pagetop {
+        padding: 0px 0px 10px 0px;
     }
 }
 
