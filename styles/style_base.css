@@ -23,30 +23,33 @@ p {
 
 /* テーブル */
 table {
-    border: solid 1px var(--borderColorA);
+    margin: 10px 30px;
+    border: solid 1px var(--fotterBorderAColor);
     border-collapse:collapse;
     font-size: 100%;
 }
 tr {
-    border: solid 0px var(--borderColorA);
+    border: solid 0px var(--fotterBorderAColor);
     border-collapse: collapse;
 }
 th {
-    border: solid 1px var(--borderColorB);
+    padding: 0px 8px;
+    border: solid 1px var(--fotterBorderAColor);
     border-collapse: collapse;
-    background-color: var(--borderColorA);
-    color: var(--linkColor);
-    text-align:center;
+    background-color: var(--fotterBgColor);
+    color: var(--fotterColor);
+    text-align: center;
 }
 td {
-    border: solid 1px var(--borderColorA);
+    padding: 0px 8px;
+    border: solid 1px var(--fotterBorderAColor);
     border-collapse: collapse;
     empty-cells: show;
 }
-caption {
-    text-align:left;
-    font-style:normal;
-    font-weight:normal;
+caption{
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* タイトル */
