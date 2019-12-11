@@ -18,7 +18,7 @@ footer {
 
 p {
     margin: 10px 30px 10px 30px;
-    line-height: 1.2em;
+    /* line-height: 1.2em; */
 }
 
 /* テーブル */
@@ -54,14 +54,14 @@ caption{
 
 /* タイトル */
 h1 {
-    margin: 0px 10px;
+    margin: 10px 10px;
     padding: 0px 8px;
     color: var(--h1);
     background-color: var(--labelBgColor);
     font-size: 160%;
 }
 h2 {
-    margin: 0px 20px;
+    margin: 10px 20px;
     color: var(--h2);
     border-bottom: solid 1px var(--labelBgColor);
     font-size: 140%;
@@ -102,7 +102,7 @@ a:active {
 
 /* 定義リスト */
 dl {
-    margin-left: 20px;
+    margin: 4px 20px;
 }
 dt {
     margin: 0px 0px 4px 18px;
@@ -114,14 +114,14 @@ dd {
 
 /* リスト */
 ol{
-    margin-left: 10px;
+    margin: 4px 20px;
 }
 ul {
-    margin-left: 10px;
+    margin: 4px 20px;
     list-style-type: square;
 }
 li {
-    margin: 10px 0px 10px 0px;
+    margin: 2px 0px 2px 4px;
 }
 
 /* フォーム */
@@ -190,7 +190,7 @@ em {
     font-weight: bold;
     color: var(--italicColor);
 }
-strong {
+strong{
     font-style: normal;
     font-weight: bold;
     color: var(--strongColor);
@@ -209,22 +209,21 @@ pre {
     color: var(--codeColor);
     border: solid 1px var(--borderColorA);
     background: var(--codeBgColor);
-    /* overflow-x: scroll; */
     overflow: auto;
     padding: 4px 8px 4px 8px;
     margin: 10px 30px 10px 30px;
 }
-q:before {
+q:before{
     content:'';
 }
-q:after {
+q:after{
     content:'';
 }
 
 /* 引用 */
 blockquote {
     position: relative;
-    padding: 2px 2px 2px 1em;
+    padding: 2px 2px 2px 20px;
     box-sizing: border-box;
     background: none;
     color: var(--textColor);
