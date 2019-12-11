@@ -264,8 +264,8 @@ code {
     line-height: 1.4em;
     color: var(--code);
     background-color: transparent;
-    /* overflow-x: scroll; */
     overflow: auto;
+    overflow-x:scroll;
 }
 dfn {
     font-style: normal;
@@ -274,4 +274,8 @@ dfn {
 var {
     font-style: normal;
     font-weight: normal;
+}
+
+details {
+    margin: 10px 30px;
 }
