@@ -105,11 +105,16 @@ dl {
     margin: 4px 30px;
 }
 dt {
-    margin: 4px 0px;
-    border-bottom: dashed 1px var(--borderColorA);
+    margin: 8px 0px 0px 0px;
+    padding: 0px 0px 0px 8px;
+    border-bottom: solid 1px var(--labelBgColor);
+    border-left: solid 4px var(--labelBgColor);
+    font-weight: bold;
 }
 dd {
     margin: 0px 0px 0px 18px;
+    padding: 4px 0px 4px 8px;
+    border-left: solid 2px var(--labelBgColor);
 }
 
 /* リスト */
