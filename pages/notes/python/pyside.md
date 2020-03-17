@@ -81,3 +81,22 @@ standaloneでも動きますが、他のウインドウが無いと意味あり�
 リスト対象のアイテムが、1万とか超えなければ、
 `QListView` と、`QStnanderdModel` の組み合わせで十分だったりします。
 `QListView` 複数行まとめて登録する事で、十分な高速化が出来ます。
+
+## QTreeView
+
+`QTreeWidget`&`QTreeWidgetItem`と、`QTreeView`&`QAbstractItemModel`の組み合わせで比較してみたが、
+`parent-1000 x child-1000` とかなり高負荷で試しても速度面的な恩恵はなかった。
+書き方次第では、Viewの方がかなり遅くなる場合も…。
+
+`QListView`や、`QTableView`と違い、かなりモデルが最適化されてるみたいで、
+検索や、デリゲート使うような見た目の変更をしない限り`QTreeView`を使うメリットを感じなかった。
+
+## QFileInfo
+windowsのショートカット、".lnk"から実体を取得する方法。
+
+D&Dした時のショートカットから元のリンクを取る方法
+https://kiwamiden.com/drag-and-drop-files-to-qlistview
+
+D&Dイベントだと、QUrlにパスが入ってくるが、
+ダイヤログとかで取得した場合は、一度`QFileInfo`に変換すると色々取得できる。
+https://kiwamiden.com/how-to-read-the-shortcut-file
