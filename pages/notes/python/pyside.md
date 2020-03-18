@@ -100,3 +100,12 @@ https://kiwamiden.com/drag-and-drop-files-to-qlistview
 D&Dイベントだと、QUrlにパスが入ってくるが、
 ダイヤログとかで取得した場合は、一度`QFileInfo`に変換すると色々取得できる。
 https://kiwamiden.com/how-to-read-the-shortcut-file
+
+## QMenu, QAction
+
+`QMenu.addAction` で同じアクションを指定すると、一番下に再配置される。
+この仕組み使ってソートも可能。
+
+ドキュメントのメソッド一覧をみると、`QMenu.insertMenu`, `QMenu.insertSeparator`はあるのに、`insertAction`が見当たらない。
+しばらく使えないものだと思ってたが、QWidget側に`QWidget.insertAction`が用意されてた。
+なので、継承してるQMenuでも普通に使える。これに気付かず色々頑張ってしまった…。
