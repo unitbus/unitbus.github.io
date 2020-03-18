@@ -20,12 +20,14 @@ title: UnitBus
 > https://twitter.com/UnitBus
 
 ゲスト用アカウント作ってみました。Slackの雰囲気を見たい方は覗いてみてください。
+`ジーメールドットコム`は、`gmail.com`に置き換えてください。
+
 質問等ある方は、自分用のアカウントを作成してからお願いします。
 ゲストアカウントから自分を招待する事も可能です。
 ※荒らされそうな気配を感じたら消すかもしれません。
 
 > Unitbus Slack Guest Account.
-> username: guest.unitbus@gmail.com
+> username: guest.unitbus@ジーメールドットコム
 > password: unitbus
 
 ## その他リンク
