@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VSCode
+title: Software
 ---
 
 # VSCode
