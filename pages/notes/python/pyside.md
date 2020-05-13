@@ -109,3 +109,14 @@ https://kiwamiden.com/how-to-read-the-shortcut-file
 ドキュメントのメソッド一覧をみると、`QMenu.insertMenu`, `QMenu.insertSeparator`はあるのに、`insertAction`が見当たらない。
 しばらく使えないものだと思ってたが、QWidget側に`QWidget.insertAction`が用意されてた。
 なので、継承してるQMenuでも普通に使える。これに気付かず色々頑張ってしまった…。
+
+## Convert
+
+`pyside-uic.exe`を使うと、`designer.exe`で作成した、`.ui`ファイルを、`.py`に変換出来る。
+
+`<Python>\Lib\site-packages\PySide\designer.exe`
+`<Python>\Scripts\pyside-uic.exe`
+
+以下のエラーが出る場合は、pipで、osに合わせて正しいバージョンの`PySide`をインストールし直す。
+
+`Fatal error in launcher: Unable to create process using '""`
