@@ -43,6 +43,9 @@ Pillow内でも、ndarrayがよく使われてる。
 `Python2`を使ってる間は、スタンドアローンアプリを作る際にお世話になる。
 他にも、Pyinstallerとかあるが、ファイルサイズが肥大化しがちなのであまり使ってない。
 
+`Python3`になると、`py2exe`がなくなるので、`Pyinstaller`にお世話になりそうだが、
+移行してから考えることにしてる。
+
 ## 参考
 
 http://blawat2015.no-ip.com/~mieki256/diary/201210021.html
@@ -122,9 +125,38 @@ DLLが見つからないエラーが出る時は、以下を `%PATH%` に追加�
 <site-packages>\numpy\.libs
 ```
 
+## コンパイル
+
+パッケージで作成してる場合は、`__main__.py`を利用すると邪魔にならなくていい。
+`__main__.py`を作っておけば、`python.exe`に`-m`フラグでテストできるようになる。
+これだけでもアプリケーションっぽい動作するので、デバッグモード時は切り替えたりとかもあり。
+
+``` bat
+python.exe -m "package_name"
+```
+
+コンパイルする時は、`py2exe`のオプションで、script部分に`__main__.py`を指定してする感じ。
+
+``` python
+# _setup.py 色々割愛
+
+console_option = {
+    'script': r'{}\__main__.py'.format(scriptDir),
+    }
+
+setup(
+    console = [console_option],
+    )
+```
+
+``` bat
+python.exe "_setup.py" py2exe
+```
+
 ## その他
 
 コンパイルオプションでwindowモードにすると、
 テキストに出力しない限りコンソールの内容が確認出来ない状態になるので注意。
 
 stderrに書き込まれると、`<exeName>.log`が出力される。
+
