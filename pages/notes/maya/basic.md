@@ -3,22 +3,22 @@ layout: default
 title: Maya
 ---
 
-# Basic
+<!-- # Maya Basic -->
 
-## Scriptノード
+# Scriptノード
 
 `Script`ノードは万能で、シーンを開く時、閉じる時、レンダリング時など、
 タイミングをコントロールしながら、シーンに埋め込んだスクリプトを実行できます。
 いつ頃からか忘れましたが、いまはここに、標準でframeRangeの設定が埋め込まれてたりします。
 
-### Scriptノードの実行を回避
+## Scriptノードの実行を回避
 
 ファイルダイヤログのオプションで、シーンを開く時に埋め込まれてる`Script`ノードの実行を回避出来ます。
 melや、pythonコマンドにも、`executeScriptNodes`フラグが用意されてます。
 
 https://knowledge.autodesk.com/ja/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/JPN/Maya/files/GUID-203FC12C-6C80-497C-AC29-548DF6EC91B5-htm.html
 
-### 悪用したマルウェアが流出
+## 悪用したマルウェアが流出
 
 いま流行りのマルウェアもこの仕組を利用し、まずは環境を感染させ、順に開いたファイルを感染させ続けています。
 一度感染すると、シーンから駆除しただけでは解決せず、再度シーンを開く度に復活します。
