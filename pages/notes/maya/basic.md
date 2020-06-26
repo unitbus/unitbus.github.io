@@ -5,6 +5,8 @@ title: Maya
 
 <!-- # Maya Basic -->
 
+<!-- Scriptノード, マルウェア, malware, Expression Editor -->
+
 # Scriptノード
 
 `Script`ノードは万能で、シーンを開く時、閉じる時、レンダリング時など、
@@ -14,7 +16,7 @@ title: Maya
 ## Scriptノードの実行を回避
 
 ファイルダイヤログのオプションで、シーンを開く時に埋め込まれてる`Script`ノードの実行を回避出来ます。
-melや、pythonコマンドにも、`executeScriptNodes`フラグが用意されてます。
+melや、pythonの、`file`コマンドにも、`executeScriptNodes`フラグが用意されてます。
 
 https://knowledge.autodesk.com/ja/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/JPN/Maya/files/GUID-203FC12C-6C80-497C-AC29-548DF6EC91B5-htm.html
 
@@ -30,7 +32,13 @@ https://knowledge.autodesk.com/ja/support/maya/learn-explore/caas/CloudHelp/clou
 
 ちなみに、Autodeskが配布してるツールも、感染する前提でシーンを開かせ駆除してるので注意してください。
 
+> Security Tools for Autodesk® Maya® 2020 - 2015について教えてください
 https://knowledge.autodesk.com/ja/support/maya/troubleshooting/caas/sfdcarticles/sfdcarticles/kA93g0000004JXR.html
+
+マルウェアの挙動については、トモハラさんがまとめてくださってます。
+
+> 【Maya】2020/6/27以降にMayaがクラッシュするマルウェアの調査と対処
+https://tm8r.hateblo.jp/entry/2020/06/25/144335
 
 今後も亜種が増えると思うので、ネットからデータをダウンロードして開く際は、
 `Script`ノードを無効にして開き、`Expression Editor`のメニューから、
