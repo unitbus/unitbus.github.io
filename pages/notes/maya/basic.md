@@ -30,6 +30,8 @@ https://knowledge.autodesk.com/ja/support/maya/learn-explore/caas/CloudHelp/clou
 
 ちなみに、Autodeskが配布してるツールも、感染する前提でシーンを開かせ駆除してるので注意してください。
 
+https://knowledge.autodesk.com/ja/support/maya/troubleshooting/caas/sfdcarticles/sfdcarticles/kA93g0000004JXR.html
+
 今後も亜種が増えると思うので、ネットからデータをダウンロードして開く際は、
 `Script`ノードを無効にして開き、`Expression Editor`のメニューから、
 `Select Filter > By Script Node Name`を選択し、
