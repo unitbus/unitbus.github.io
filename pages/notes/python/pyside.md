@@ -95,11 +95,13 @@ standaloneでも動きますが、他のウインドウが無いと意味あり�
 windowsのショートカット、".lnk"から実体を取得する方法。
 
 D&Dした時のショートカットから元のリンクを取る方法
-https://kiwamiden.com/drag-and-drop-files-to-qlistview
+
+> https://kiwamiden.com/drag-and-drop-files-to-qlistview
 
 D&Dイベントだと、QUrlにパスが入ってくるが、
 ダイヤログとかで取得した場合は、一度`QFileInfo`に変換すると色々取得できる。
-https://kiwamiden.com/how-to-read-the-shortcut-file
+
+> https://kiwamiden.com/how-to-read-the-shortcut-file
 
 ## QMenu, QAction
 
@@ -109,6 +111,12 @@ https://kiwamiden.com/how-to-read-the-shortcut-file
 ドキュメントのメソッド一覧をみると、`QMenu.insertMenu`, `QMenu.insertSeparator`はあるのに、`insertAction`が見当たらない。
 しばらく使えないものだと思ってたが、QWidget側に`QWidget.insertAction`が用意されてた。
 なので、継承してるQMenuでも普通に使える。これに気付かず色々頑張ってしまった…。
+
+`Qt`のドキュメントの方が見易いと教えてもらった。ありがとうtakkun。
+クラス説明上の方の、下の文字のリンクをクリックすると、継承した後のメソッド一覧が確認できる。
+`List of all members, including inherited members`
+
+> https://doc.qt.io/qt-5/qmenu.html
 
 ## Convert
 

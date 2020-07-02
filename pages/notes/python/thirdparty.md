@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Python
+title: Python2 Thirdparty
 ---
 
-# Python Thirdparty
-
-## 基本
+# Thirdparty
 
 `pip`でインストールすると、デフォルトでは `site-packages` に配置される。
 インストール先を変更できるが、パッケージを使うときはなるべく同じディレクトリにまとめた方が良い。
@@ -13,7 +11,7 @@ title: Python
 パッケージ名の重複を防げたり、PYTHONPATHに設定するパスが多すぎると、
 パッケージの検索に時間がかかり、アプリケーションの起動が遅くなる。
 
-PySideもサードパーティ製になるが、良く使うので別ページに記載。
+PySideもサードパーティ製になるが、別言語と言っていいぐらい情報量多いので別ページに記載。
 
 # numpy
 
