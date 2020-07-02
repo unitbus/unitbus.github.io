@@ -44,10 +44,18 @@ Peopenで、プロセスが非同期に開始する、終了を待つ場合は�
 処理を待たず、非同期でよければ、マルチプロセスの代わりに使う事も可能。
 テクスチャのコンバートとかに使える。
 
+`subprocess.SW_HIDE`は最小化ではなく完全隠蔽。
+
+## shell
+
 `shell=True`の場合、osのshellを経由する(windowsの場合はcmd.exe)
 `shell=False`の場合はwindow標準コマンド(copyとか)を直接叩け無いので注意
 
-`subprocess.SW_HIDE`は最小化ではなく完全隠蔽。
+windowsの場合、`cmd`を省略して書けるってだけで、`shell=False`でも、
+`cmd /K copy "A" "B"`みたいに書けば動く。
+
+バッチファイルを動かす時や、startコマンドも、`shell=False`で大丈夫。
+なので、`shell=True`を使う時は、ごく稀と思われる。
 
 ## env
 
