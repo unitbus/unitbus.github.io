@@ -18,6 +18,12 @@ Pythonは、すべての変数、関数がオブジェクトで、ルールが�
 
 > [PythonMatrixJp: Pythonのモジュールインポートのしくみ](http://python.matrix.jp/pages/tips/import.html)
 
+# 組み込み関数(Built-in)
+
+python.exeのビルド時に標準で搭載してる関数たち。
+
+> [Built-in](https://unitbus.github.io/pages/notes/python/builtin)
+
 # Class
 
 クラスの中で定義された関数は、**クラスメソッド**と呼ぶ。
@@ -28,7 +34,20 @@ Pythonは、すべての変数、関数がオブジェクトで、ルールが�
 # Package
 
 インストールディレクトリを見るのが分かりやすい。
-`site-packages` は、外部からダウンロードした**Package**を指す。
+
+## Standard Library
+
+インストール時に、最初から付いてくるライブラリ。
+インストール先は、`<python>\Lib`。
+
+> [Standard Library](https://unitbus.github.io/pages/notes/python/standard)
+
+## Thirdparty
+
+外部からダウンロードした**Package**を指す。
+インストール先は、デフォルトだと`<python>\Lib\site-packages`。
+
+> [Thirdparty](https://unitbus.github.io/pages/notes/python/thirdparty)
 
 # 文字列
 
