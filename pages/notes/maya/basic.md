@@ -42,7 +42,7 @@ https://knowledge.autodesk.com/ja/support/maya/troubleshooting/caas/sfdcarticles
 専用のエディタや、ウインドウもなく、オマケ的な位置付けでバックグラウンドに押し込んでます。
 
 `Reference Editor`みたいに、一覧でノードを確認出来、有効/無効を切り替えできるツールなど、
-もっと早く、Autodeskがちゃんとしたサポートをして、こんな事にはならなかった感が半端ないです。
+もっと早く、Autodeskがちゃんとしたサポートをしてれば、こんな事にはならなかった感が半端ないです。
 利便性高くして、皆に認知されてれば、また話は変わってたと思います。
 
 今回のマルウェアは、`Script`ノードを無効にして、開けば感染は防げます。
@@ -57,8 +57,8 @@ https://knowledge.autodesk.com/ja/support/maya/troubleshooting/caas/sfdcarticles
 `Select Filter > By Script Node Name`を選択し、
 `Script`ノードに余分なスクリプトが埋め込まれてないかを確認する事をオススメします。
 
-`Scrip`ノードには、Brfore/Afterと、大きく2種類のタイミングがあり、両方確認する必要があります。
-`Expression Editor`のUIからだと、埋め込まれてるか分かりにくいので注意してください。
+`Scrip`ノードには、`Brfore/After`と、大きく2種類のタイミングがあり、両方確認する必要があります。
+`Expression Editor`のUIからだと、`After`が埋め込まれてるか分かりにくいので注意してください。
 
 今回のタイプは、シーンファイルから感染し、環境を汚染する珍しいケースでしたが、
 便利スクリプトを歌って、実行するだけで環境を汚したり、`scriptJob`で作業を妨害、
