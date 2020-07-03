@@ -49,13 +49,15 @@ Peopenで、プロセスが非同期に開始する、終了を待つ場合は�
 ## shell
 
 `shell=True`の場合、osのshellを経由する(windowsの場合はcmd.exe)
-`shell=False`の場合はwindow標準コマンド(copyとか)を直接叩け無いので注意
+プロセスツリーを見るとcmd.exeが親に付く。
+startコマンドを使う時は、`shell=True`にしないといけない。
+
+`shell=False`の場合はwindow標準コマンド(copyとか)を直接叩け無いので注意。
+外部アプリケーションを使う場合は、基本`False`でOK。
+バッチファイルを動かす時も、`shell=False`で大丈夫。
 
 windowsの場合、`cmd`を省略して書けるってだけで、`shell=False`でも、
 `cmd /K copy "A" "B"`みたいに書けば動く。
-
-バッチファイルを動かす時や、startコマンドも、`shell=False`で大丈夫。
-なので、`shell=True`を使う時は、ごく稀と思われる。
 
 ## env
 
