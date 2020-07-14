@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Python
+title: Python PySide
 ---
 
-# PySide
-
-## 基本
+# 基本
 
 PySideは難しいと敬遠されるが、実はpythonで使えるUIの中で一番シンプルで、ルールが統一されてる。
 以下のコードが、スタンドアローンで、最低限必要とするコマンド。
@@ -32,7 +30,7 @@ button.show()
 この場合、`QApplication` を作成し、standaloneソフトとして待機させてる状態になる。
 `exec_()` は、ダイヤログや、メニュー、スレッドでも出てくるので、覚えておくと便利。
 
-## Document & Reference
+# Document & Reference
 
 > [PySide 1.0.7 Reference](https://srinikom.github.io/pyside-docs/)
 
@@ -45,7 +43,7 @@ button.show()
 そろそろPySide1は切り捨てて書いても良い気もしますが、まだ互換性考えて、
 **PySide 1.0.7 Reference** の方を見て書いてます。
 
-## Widget一覧
+# Widget一覧
 
 ウィジェットを一覧で見れるビューワー。
 mayaなどの、DCCでレイアウトを確認する時に便利。
@@ -67,6 +65,8 @@ ubWidgetHierarchy.show()
 standaloneでも動きますが、他のウインドウが無いと意味ありません。
 
 こうやって見ると、**Houdini** はまだ、独自UIが多く、**Qt** を使ってない事がわかる。
+
+# Viewについて
 
 ## QListView
 
@@ -90,6 +90,8 @@ standaloneでも動きますが、他のウインドウが無いと意味あり�
 
 `QListView`や、`QTableView`と違い、かなりモデルが最適化されてるみたいで、
 検索や、デリゲート使うような見た目の変更をしない限り`QTreeView`を使うメリットを感じなかった。
+
+# その他
 
 ## QFileInfo
 windowsのショートカット、".lnk"から実体を取得する方法。
@@ -118,7 +120,7 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 
 > https://doc.qt.io/qt-5/qmenu.html
 
-## Convert
+# Convert
 
 `pyside-uic.exe`を使うと、`designer.exe`で作成した、`.ui`ファイルを、`.py`に変換出来る。
 
@@ -129,13 +131,13 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 
 `Fatal error in launcher: Unable to create process using '""`
 
-## プロセスの通信
+# プロセスの通信
 
 プロセスの通信には、`QLocalSocket`と、`QLocalServer`を使う。
 まだ全然わかってないが、基本的なPythonのサンプルがなかったので記載。
 他にもそれっぽい名前のClassあるので、追々わかれば書くかもしれません。
 
-### QLocalServer
+## QLocalServer
 
 まずサーバー側を起動。コンソールアプリだとしても、`QApplication`でイベントループさせる。
 イベントループさせないと、`waitForNewConnection`でコネクション無制限にしても意味ないので注意。
@@ -166,7 +168,7 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-### QLocalSocket
+## QLocalSocket
 
 サーバーを起動後、ソケット(クライアント？)を起動。
 サーバー側に設定した名前で接続する。

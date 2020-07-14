@@ -1,17 +1,15 @@
 ---
 layout: default
-title: Maya
+title: Maya PySide
 ---
 
-# PySide
-
-## MayaのWidget一覧
+# MayaのWidget一覧
 
 PySideから見た、Mayaのウィジェットを一覧で見れるビューワー。
 
 [Widget一覧](https://unitbus.github.io/pages/notes/python/pyside#widget一覧)
 
-## MainWindowの取得
+# MainWindowの取得
 
 `QWidget.objectName()` から取得
 
