@@ -128,3 +128,72 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 以下のエラーが出る場合は、pipで、osに合わせて正しいバージョンの`PySide`をインストールし直す。
 
 `Fatal error in launcher: Unable to create process using '""`
+
+## プロセスの通信
+
+プロセスの通信には、`QLocalSocket`と、`QLocalServer`を使う。
+まだ全然わかってないが、基本的なPythonのサンプルがなかったので記載。
+他にもそれっぽい名前のClassあるので、追々わかれば書くかもしれません。
+
+### QLocalServer
+
+まずサーバー側を起動。コンソールアプリだとしても、`QApplication`でイベントループさせる。
+イベントループさせないと、`waitForNewConnection`でコネクション無制限にしても意味ないので注意。
+
+サーバー名が大事になるので、必ず付ける。
+コマンドラインで実行して、そのまま待機させておく。
+
+```python
+from PySide.QtGui import QApplication
+from PySide.QtNetwork import QLocalServer
+
+class Server(QLocalServer):
+    
+    def __init__(self, parent=None, **kwargs):
+        super(Server, self).__init__(parent)
+        self.newConnection.connect(self.echo)
+    
+    def echo(self):
+        print 'server connect !!!'
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    
+    server = Server(app)
+    server.listen('home')
+    server.waitForNewConnection(-1)
+    
+    sys.exit(app.exec_())
+```
+
+### QLocalSocket
+
+サーバーを起動後、ソケット(クライアント？)を起動。
+サーバー側に設定した名前で接続する。
+
+こちらも、`QApplication`をイベントループさせないと通信されなかった。
+親にする必要はないが、イベントループ(`exec_`)は必須っぽい。
+
+```python
+from PySide.QtGui import QApplication
+from PySide.QtNetwork import QLocalSocket
+
+class Socket(QLocalSocket):
+    sss = Signal()
+    
+    def __init__(self, parent=None, **kwargs):
+        super(Socket, self).__init__(parent)
+        self.connected.connect(self.echo)
+    
+    def echo(self):
+        print 'socket connect !!!'
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    
+    socket = Socket(app)
+    socket.connectToServer('home')
+    socket.waitForConnected(-1)
+    
+    sys.exit(app.exec_())
+```
