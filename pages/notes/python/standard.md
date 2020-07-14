@@ -153,3 +153,58 @@ writeIo = io.open(logPath, 'wt', encoding='cp932', errors='replace')
 ```python
 writeIo = codecs.open(logPath, 'w', encoding='cp932', errors='replace')
 ```
+
+# プロセスの通信
+
+PySide版はこちら。どっちがいいか言える程まだ触ってない。
+
+> PySide版
+https://unitbus.github.io/pages/notes/python/pyside#%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AE%E9%80%9A%E4%BF%A1
+
+## server
+
+```python
+import socket
+
+def server():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.bind(('localhost', 1234))
+    sock.listen(4)
+    
+    while True:
+        try:
+            conn, addr = sock.accept()
+            
+            msg = conn.recv(2048)
+            print 'message:', msg
+            
+            conn.close()
+        
+        except:
+            print 'error...'
+
+server()
+```
+
+## client
+
+```python
+import socket
+
+def sender(msg):
+    
+    while True:
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.connect(('localhost', 1234))
+            sock.send(msg)
+            sock.close()
+            
+            print 'send fin.'
+            break
+        
+        except:
+            print 'send retry...'
+
+sender(u'メッセージ'.encode('cp932'))
+```

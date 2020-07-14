@@ -137,6 +137,11 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 まだ全然わかってないが、基本的なPythonのサンプルがなかったので記載。
 他にもそれっぽい名前のClassあるので、追々わかれば書くかもしれません。
 
+Pythonの標準モジュールでやる場合はこちら。
+
+> Python2 Standard Library
+https://unitbus.github.io/pages/notes/python/standard#%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AE%E9%80%9A%E4%BF%A1
+
 ## QLocalServer
 
 まずサーバー側を起動。コンソールアプリだとしても、`QApplication`でイベントループさせる。
