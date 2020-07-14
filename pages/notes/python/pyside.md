@@ -181,7 +181,6 @@ from PySide.QtGui import QApplication
 from PySide.QtNetwork import QLocalSocket
 
 class Socket(QLocalSocket):
-    sss = Signal()
     
     def __init__(self, parent=None, **kwargs):
         super(Socket, self).__init__(parent)
