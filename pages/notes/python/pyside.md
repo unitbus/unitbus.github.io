@@ -126,9 +126,11 @@ PySideでテキストを表示せたい場合、`QTextEdit`, `QPlainTextEdit`の
 `QTextEdit`はかなり多機能なので、迷ったら`QPlainTextEdit`を使うのがオススメ。
 
 結論から言うと、`QTextEdit`と比べて、`QPlainTextEdit`の`append`の処理が3倍以上速かった。
-`setPlainText()`メソッドの場合、速度は誤差レベルだったが、スレッドでループさせ、都度クリアし、描画待ち含めた速度比べると、体感でわかるぐらい断然に速く負荷が低い。時には10倍以上差が付く事があった。
+`setPlainText()`メソッドの場合、速度は誤差レベルだったが、スレッドでループさせ、都度クリアし、
+描画待ち含めた速度比べると、体感でわかるぐらい断然に速く負荷が低い。時には10倍以上差が付く事があった。
 
-`QTextEdit.append()`は、カーソルを最後の位置に移動して`insert`してるだけなので速度面の恩恵は無いが、`QPlainTextEdit.appendPlainText()`はエリア外の描画処理省くのでかなり速い。
+`QTextEdit.append()`は、カーソルを最終行に移動して`insert`してるだけなので速度は変わらないが、
+`QPlainTextEdit.appendPlainText()`はエリア外の描画処理省くのでかなり速い。
 
 ちなみに、`QPlainTextEdit.moveCursor(QTextCursor.End)`で、常に最後の行を表示しながら、
 `QPlainTextEdit.appendPlainText()`をしても、`QPlainTextEdit`の方が速いところや、
@@ -136,6 +138,10 @@ PySideでテキストを表示せたい場合、`QTextEdit`, `QPlainTextEdit`の
 
 ドキュメントに書いてある通り、`QPlainTextEdit`はプレーンテキスト処理用に最適化されてるが、
 htmlを使って基本的な装飾可能なので、基礎部分で速度差が出る以上、`QPlainTextEdit`を使う恩恵は高いと思われる。
+
+調べてると、`QTextDocument`と言うキーワードが出てくるが、こちらは`QTextEdit`専用になる。
+`QPlainTextEdit`に普通に適用しても描画されない。`QPlainTextDocumentLayout`を使えとか出てくるがよくわからないくなってきたので放置。
+`QTextEdit`に、素の`QTextDocument`を突っ込んでも速度的に変わらないので、デザイン的な変更を加えない限りは触らなくていい感じ？かと。
 
 
 # Convert

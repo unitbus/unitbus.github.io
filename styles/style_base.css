@@ -270,6 +270,7 @@ code {
     background-color: transparent;
     overflow: auto;
     overflow-x:scroll;
+    margin: 0px 2px 0px 2px;
 }
 dfn {
     font-style: normal;
