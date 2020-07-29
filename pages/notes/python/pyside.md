@@ -24,11 +24,11 @@ button = QPushButton('test')
 button.show()
 ```
 
-なぜ、`QPushButton` で、`show()` メソッドが使えて、表示出来るのか？がわかるとPySideが楽しくなる。
+なぜ、`QPushButton`で、`show()`メソッドが使えて、表示出来るのか？がわかるとPySideが楽しくなる。
 
-`exec_()` を実行する事で、イベントループになる。
-この場合、`QApplication` を作成し、standaloneソフトとして待機させてる状態になる。
-`exec_()` は、ダイヤログや、メニュー、スレッドでも出てくるので、覚えておくと便利。
+`exec_()`を実行する事で、イベントループになる。
+この場合、`QApplication`を作成し、standaloneソフトとして待機させてる状態になる。
+`exec_()`は、ダイヤログや、メニュー、スレッドでも出てくるので、覚えておくと便利。
 
 # Document & Reference
 
@@ -48,45 +48,60 @@ button.show()
 ウィジェットを一覧で見れるビューワー。
 mayaなどの、DCCでレイアウトを確認する時に便利。
 
-<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowA.png" width="50%">
-<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowB.png" width="50%">
-<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowC.png" width="50%">
+<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowA.png" width="20%">
+<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowB.png" width="20%">
+<img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowC.png" width="20%">
 
 > [Dwonload / Standalone / Python / ubWidgetHierarchy](https://unitbus.github.io/pages/download)
 
 ダウンロードしたファイルは、環境変数の **PYTHONPATH** が通ってる場所に置き、
 以下のコマンドを実行してください。
 
-``` python
+```python
 import ubWidgetHierarchy
 ubWidgetHierarchy.show()
 ```
 
-standaloneでも動きますが、他のウインドウが無いと意味ありません。
+standaloneでも動きますが、他にウインドウを表示して無いと意味ないです。
 
 こうやって見ると、**Houdini** はまだ、独自UIが多く、**Qt** を使ってない事がわかる。
 
-# Viewについて
+# リスト関連
 
-## QListView
+PySideのリスト系ウィジェットは、View(表示)と、Model(データ)が必要になります。
+Viewの表示を装飾したりデコる場合は、デリゲーターが出てきますが説明は割愛。
+Viewでの選択も、セレクションモデルって言葉が出てきますが、コレも説明は割愛。
 
-`QListWidget` のメソッドを使って作成すると、一個づつしか追加できないので、数が多いと激重になります。
+ViewとModelの関係をワンセットにしたユトリウィジェットが、
+QListWidget, QTableWidget, QTreeWidgetです。
 
-`QAbstractListModel` を元に自分で作成し、`QListView` を使用すれば、
-不必要な機能に絞ってを減量出来るので、かなり高速化出来ます(当社比約20倍)。
+QWidgetから色々継承してViewを作ったのに、またWidgetって呼び名に戻るのかい。
+って個人的にはツッコミ入れたいところですが…。
+
+小難しく言うと、Viewを継承し、Modelのメソッドを追加した拡張Viewです。
+なので、Viewを自前で作る場合、もれなくModelが必要になります。
+
+## QTableView, QTableWidget
+
+`QListWidget.setItem()`のメソッドを使ってテーブルを作成すると、
+一個づつしか追加できないので、数が多いと激重になります。
+
+`QTableView`を使用し、`QAbstractListModel`を元に自分でModelを作成すれば、
+不必要な機能に絞ってを減量出来き、まとめてデータを登録出来るようにすれば、かなり高速化出来ます(当社比約20倍)。
 
 とは言え、かなりの知識と、準備が必要なり、汎用性には向きません。
-下手に機能を盛れば、盛るほど遅くなります。
+汎用性考えて、下手に機能を盛れば、盛るほど遅くなります。
 
 リスト対象のアイテムが、1万とか超えなければ、
-`QListView` と、`QStnanderdModel` の組み合わせで十分だったりします。
-`QListView` 複数行まとめて登録する事で、十分な高速化が出来ます。
+`QTableView`と、`QStandardItemModel`の組み合わせで十分だったりします。
+`QStandardItemModel.appendRow()`で、行単位で登録する事で、十分な高速化が出来ます。
 
-## QTreeView
+## QTreeView, QTreeWidget
 
-`QTreeWidget`&`QTreeWidgetItem`と、`QTreeView`&`QAbstractItemModel`の組み合わせで比較してみたが、
-`parent-1000 x child-1000` とかなり高負荷で試しても速度面的な恩恵はなかった。
-書き方次第では、Viewの方がかなり遅くなる場合も…。
+`QTreeWidget`&`QTreeWidgetItem`と、
+`QTreeView`&`QAbstractItemModel`の組み合わせで比較してみたが、
+`parent-1000 x child-1000`とかなり高負荷で試しても速度面的な恩恵はなかった。
+TreeItemの書き方次第では、`QTreeView`の方が遅くなる場合もあった。
 
 `QListView`や、`QTableView`と違い、かなりモデルが最適化されてるみたいで、
 検索や、デリゲート使うような見た目の変更をしない限り`QTreeView`を使うメリットを感じなかった。
@@ -107,7 +122,7 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 
 ## QMenu, QAction
 
-`QMenu.addAction` で同じアクションを指定すると、一番下に再配置される。
+`QMenu.addAction`で同じアクションを指定すると、一番下に再配置される。
 この仕組み使ってソートも可能。
 
 ドキュメントのメソッド一覧をみると、`QMenu.insertMenu`, `QMenu.insertSeparator`はあるのに、`insertAction`が見当たらない。
@@ -141,8 +156,13 @@ htmlを使って基本的な装飾可能なので、基礎部分で速度差が�
 
 調べてると、`QTextDocument`と言うキーワードが出てくるが、こちらは`QTextEdit`専用になる。
 `QPlainTextEdit`に普通に適用しても描画されない。`QPlainTextDocumentLayout`を使えとか出てくるがよくわからないくなってきたので放置。
-`QTextEdit`に、素の`QTextDocument`を突っ込んでも速度的に変わらないので、デザイン的な変更を加えない限りは触らなくていい感じ？かと。
 
+ViewとModelの関係に似てると思って期待したが、`QTextEdit`に必要なメソッドがほぼ全部揃ってる感じで、
+なんかちょっと違う感。詳細な変更を加えない限りは触らなくていい感じ？かと。
+
+`QTextEdit`に、素の`QTextDocument`を突っ込んで、
+ドキュメント側で`QTextDocument.setPlainText()`しても、
+速度的に変わらなかった。`setData()`的なのがあれば期待通りなのだが…。
 
 # Convert
 
