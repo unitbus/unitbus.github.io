@@ -120,6 +120,24 @@ D&Dイベントだと、QUrlにパスが入ってくるが、
 
 > https://doc.qt.io/qt-5/qmenu.html
 
+## QTextEdit, QPlainTextEdit
+
+PySideでテキストを表示せたい場合、`QTextEdit`, `QPlainTextEdit`の選択肢がある。
+`QTextEdit`はかなり多機能なので、迷ったら`QPlainTextEdit`を使うのがオススメ。
+
+結論から言うと、`QTextEdit`と比べて、`QPlainTextEdit`の`append`の処理が3倍以上速かった。
+`setPlainText()`メソッドの場合、速度は誤差レベルだったが、スレッドでループさせ、都度クリアし、描画待ち含めた速度比べると、体感でわかるぐらい断然に速く負荷が低い。時には10倍以上差が付く事があった。
+
+`QTextEdit.append()`は、カーソルを最後の位置に移動して`insert`してるだけなので速度面の恩恵は無いが、`QPlainTextEdit.appendPlainText()`はエリア外の描画処理省くのでかなり速い。
+
+ちなみに、`QPlainTextEdit.moveCursor(QTextCursor.End)`で、常に最後の行を表示しながら、
+`QPlainTextEdit.appendPlainText()`をしても、`QPlainTextEdit`の方が速いところや、
+文章の長さによる速度比が変わらないところをみると、基礎部分がかなりテキストに最適化されてると思われる。
+
+ドキュメントに書いてある通り、`QPlainTextEdit`はプレーンテキスト処理用に最適化されてるが、
+htmlを使って基本的な装飾可能なので、基礎部分で速度差が出る以上、`QPlainTextEdit`を使う恩恵は高いと思われる。
+
+
 # Convert
 
 `pyside-uic.exe`を使うと、`designer.exe`で作成した、`.ui`ファイルを、`.py`に変換出来る。
