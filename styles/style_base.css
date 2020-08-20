@@ -227,18 +227,21 @@ q:after{
 
 /* 引用 */
 blockquote {
-    position: relative;
-    padding: 2px 2px 2px 20px;
-    box-sizing: border-box;
+    margin: 10px 30px 10px 30px;
+    padding: 0px;
+    border: none;
     background: none;
     color: var(--textColor);
-    border-left: 6px solid var(--labelBgColor);
 }
 
 blockquote p {
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.6em;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 6px;
+    line-height: 1.2em;
+    background-color: var(--menuBgColor);
+    box-sizing: border-box;
+    border-left: solid 6px var(--labelBgColor);
+    border-bottom: solid 1px var(--labelBgColor);
 }
 
 blockquote cite {
