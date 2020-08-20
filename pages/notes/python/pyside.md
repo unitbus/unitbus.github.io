@@ -48,9 +48,11 @@ button.show()
 ウィジェットを一覧で見れるビューワー。
 mayaなどの、DCCでレイアウトを確認する時に便利。
 
+<p>
 <img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowA.png" width="20%">
 <img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowB.png" width="20%">
 <img src="https://unitbus.github.io/images/docs/ubWidgetHierarchy_windowC.png" width="20%">
+</p>
 
 > [Dwonload / Standalone / Python / ubWidgetHierarchy](https://unitbus.github.io/pages/download)
 

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Software
+title: Software Firefox
 ---
 
-# Firefox
+# 概要
 
 長寿のWEBブラウザ。御三家の1個。foxの`f`は小文字。
 

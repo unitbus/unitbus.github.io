@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Software
+title: Software VSCode
 ---
 
-# VSCode
+# 概要
 
 最近、一番勢いのあるテキストエディタ。
 へビューユーザーから、ライトユーザーまで幅広く使われてる印象。
 自分も、長年愛用してた、Notepad++からメインエディタを変更。
 
-## Settings
+# Settings
 
 **[Ctrl + Shft + P]** から、 **基本設定: 設定(JSON)を開く** を選択。
 最近は、HTMLっぽく見やすくなったが、逆に設定が面倒になったので、JSONへコピペした方が楽。
 
-### Font
+## Font
 
 色々試したが、 **Source Han Code JP** がオススメ。
 散々悩んだが、 **2:3** 比率の、 **Source Han Code JP** に落ち着いた感じ。
@@ -28,6 +28,8 @@ title: Software
 
 > Windows / Basic / windows-font
 [https://unitbus.github.io/pages/notes/windows/basic#windows-font](https://unitbus.github.io/pages/notes/windows/basic#windows-font)
+
+### 設定
 
 ```json
 "editor.fontFamily": "'Source Han Code JP Regular', Consolas",
@@ -44,7 +46,7 @@ title: Software
 "editor.fontFamily": "Source Han Code JP Regular",
 ```
 
-### Markdown
+## Markdown
 
 改行の有効は、設定で変更できる。
 cssも指定可能。相対パスは、ワークスペースの位置になる。
@@ -54,10 +56,12 @@ cssも指定可能。相対パスは、ワークスペースの位置になる�
 "markdown.preview.breaks": true,
 ```
 
+### リンク
+
 > VS Code 標準Markdown Extensionsで、改行を有効にする
 https://qiita.com/rma/items/75f502e784b7164b8813
 
-### 検索の除外設定
+## 検索の除外設定
 
 ワークスペースに、複数のフォルダを登録してると、全体検索で大量結果が表示され困るのでフィルタを設定する。
 基本は、表示設定 `files.exclude` が継承され、検索用にフィルタ `search.exclude` を追加出来る仕組み。
@@ -67,7 +71,7 @@ https://qiita.com/rma/items/75f502e784b7164b8813
 > VSCode ファイル検索の除外設定
 https://developer.feedforce.jp/entry/2017/11/24/195644
 
-### pythonのデバッグが出来ない場合
+## pythonのデバッグが出来ない場合
 
 急に、F5を押しても、別コンソールが出てしまい、デバッグが始まらない事があった。
 launch.jsonの、 `"console": "none",` にしたら直った。
@@ -91,17 +95,19 @@ noneだと赤く表示されるが、使えるらしい。
     ]
 ```
 
+### リンク
+
 > [Visual Studio Codeの設定「虎の巻」：Python編 (2/3)](https://www.atmarkit.co.jp/ait/articles/1711/24/news034_2.html)
 
-> 追記
-コマンドプロンプトのオプションで、
-レガシーコンソールを使用するのチェックを外したら元に戻った。
+### 追記
+
+コマンドプロンプトのオプションで、レガシーコンソールを使用するのチェックを外したら元に戻った。
 結局、何が悪いのかよくわからないので、調査中。
-多分、windowsUpdateが原因？
+多分、windowsUpdateのタイミングで色々おかしくなった？
 
-## Tips
+# Tips
 
-### 折り畳み
+## 折り畳み
 
 折り畳みルールにないケースでも、regionで囲むと畳んで表示できる。
 インデントも関係なく使えるので、たまに便利。コード行が増えるのが難点。

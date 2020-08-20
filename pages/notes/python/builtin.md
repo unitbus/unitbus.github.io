@@ -6,7 +6,7 @@ title: Python2 Built-in Functions
 <!-- # Python Built-in Functions -->
 <!-- # 組み込み関数 -->
 
-## help
+# help
 
 `help(object)`で関数、クラス、パッケージ等のドキュメント(docstring)が取得できる。
 __doc__部分に記述するので、`object.__doc__`からオリジナルが取得できる。

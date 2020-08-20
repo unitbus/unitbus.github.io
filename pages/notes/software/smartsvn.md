@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Software
+title: Software Smart SVN
 ---
 
-# Smart SVN
+# 概要
 
 Smart SVNは、GUIで操作出来るSVN。
 機能制限と、同時アクセス人数制限があるが、無料で使用出来る。
