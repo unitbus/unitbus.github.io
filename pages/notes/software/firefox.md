@@ -14,14 +14,17 @@ title: Software
 
 ## タブ関連
 
-`restore_pinned_tabs_on_demand`: <default: false>
-起動時、ピンしてるタブの再読み込み。`true`にすると、リロードされないので起動速くなる。
-`true`の場合、WEBメールとかは、自分でピンをアクティブにしないと通知来ないので注意。
+> `restore_pinned_tabs_on_demand`: <default: false>
 
-`accessibility.blockautorefresh`: <default: false>
-タブ(ピン留め以外)の再読み込みをブロック。`true`にすると、リロードされないので起動速くなる。
+起動時、ピンしてるタブの再読み込み。**true**にすると、リロードされないので起動速くなる。
+**true**の場合、WEBメールとかは、自分でピンをアクティブにしないと通知来ないので注意。
+
+> `accessibility.blockautorefresh`: <default: false>
+
+タブ(ピン留め以外)の再読み込みをブロック。**true**にすると、リロードされないので起動速くなる。
 度重なるアップデートで、自動リロード系が増えすぎてどこま効果があるか不明。
 
-`browser.tabs.unloadOnLowMemory`: <default: true>
+> `browser.tabs.unloadOnLowMemory`: <default: true>
+
 未使用時にタブのサスペンドモードの停止(タブ再選択時に自動リロード)。
-`false`の場合、タブがサスペンドモードにならなくなるので、タブを閉じない限りメモリに残り続ける。
+**false**の場合、タブがサスペンドモードにならなくなるので、タブを閉じない限りメモリに残り続ける。
