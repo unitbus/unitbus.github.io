@@ -9,10 +9,38 @@ title: Software VSCode
 へビューユーザーから、ライトユーザーまで幅広く使われてる印象。
 自分も、長年愛用してた、Notepad++からメインエディタを変更。
 
-# Settings
+# 設定
 
 **[Ctrl + Shft + P]** から、 **基本設定: 設定(JSON)を開く** を選択。
 最近は、HTMLっぽく見やすくなったが、逆に設定が面倒になったので、JSONへコピペした方が楽。
+
+## 設定の同期
+
+アドオンでは色々な同期ツールがあったが、v1.48.xから標準で搭載。
+`Settings Sync`がインクルードされた感じと思われる。
+設定のコメントには`settingsSync`の単語が出てくるが、探すと無いので実際のところはわからない。
+
+ツールバーの、歯車アイコンの上に追加され、Microsoftアカウントと、GitHubアカウントから選択。
+アドオン版だとGitHubにレポジトリの用意が必要だったが、アカウントさえあれば同期出来る模様(さすが本家？)。
+
+環境で異なる設定は除外したいが、マージ時にコントロール出来る感じはしなかった。今後のバージョンアップに期待。
+ローカルパスを記述する設定だけ、ワークスペースに書くことで回避。なるべく基本的な設定だけにして同期するのが良いかと思う。
+
+アドオン版の記事に書いてあった、`// @sync`も試したが、上手くいかなかった。
+未だに健在なのをみると、まだアドオン版の方が高機能なのかもしれない(使ったこと無い)。
+
+`--user-data-dir`を起動時に使用すると、好きな場所にユーザー設定を保存出来るのだが同期が出来なかった。
+新規に作った場所でも駄目だったので、ユーザー設定の場所は固定らしい。ローカルネットワークで共通設定してた人は諦めるしかないかも？
+とは言え、Cドライブの`Roaming`に置きたくなかったので、自分は [ジャンクション](https://unitbus.github.io/pages/notes/windows/batch#%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AA%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%A8%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3) を作成して逃した。
+ジャンクションはネットワークに置けないのが残念。
+
+`--extensions-dir`の方は使用したまま同期出来た。
+複数台で使用してる場合はアドオンだけでもローカルネットワークに置くのもありかも。
+
+### リンク
+
+> 【VSCode】公式版の設定同期機能 Settings Sync を早速使ってみた
+https://serip39.hatenablog.com/entry/2020/08/18/173000
 
 ## Font
 
@@ -28,8 +56,6 @@ title: Software VSCode
 
 > Windows / Basic / windows-font
 [https://unitbus.github.io/pages/notes/windows/basic#windows-font](https://unitbus.github.io/pages/notes/windows/basic#windows-font)
-
-### 設定
 
 ```json
 "editor.fontFamily": "'Source Han Code JP Regular', Consolas",
