@@ -207,7 +207,7 @@ https://github.com/fmaida/mkdocs-material-dark-theme
 
 FireFoxとかで、プレビュー中のHTMLを`要素の調査`で、cssを直接いじるとわかりやすいかった。
 
-``` yaml
+```yaml
 theme:
     language: 'ja'
     name: 'material'
@@ -219,28 +219,30 @@ extra_css:
 
 ### TOC問題
 
-`TOC`が１個目の、`h1`以下の`h2`以下しか表示されない。
-バグかと思ったが、作者的に`h1`はタイトルだから１個だろ。と譲らない模様。
-
-> mkdocs-material issues
-https://github.com/squidfunk/mkdocs-material/issues/818
-
-１ページに、複数の`h1`を保つ場合は、テンプレートから３行を削除すれば、通常のTOCが作れる。
-{% site-packages\material\partials\toc.html %}
-バージョンによって違うかもしれないが７行目付近。
-
-``` html
-  {% if toc | first is defined and "\x3ch1 id=" in page.content %}
-    {% set toc = (toc | first).children %}
-  {% endif %}
-```
-
 TOC自体は標準エクステンションなので、`mkdocs.yml`で追加できる。
 
-``` yaml
+```yaml
 markdown_extensions:
     - toc:
         permalink: True
         separator: "-"
         toc_depth: 3
+```
+
+TOCが１個目の、`h1`以下の`h2`以下しか表示されない。
+バグかと思ったが、作者的に`h1`はタイトルだから１個だろ。と譲らない模様。
+
+> mkdocs-material issues
+https://github.com/squidfunk/mkdocs-material/issues/818
+
+<!-- {% raw %} -->
+１ページに、複数の`h1`を保つ場合は、テンプレートから３行を削除すれば、通常のTOCが作れる。
+`site-packages\material\partials\toc.html`
+バージョンによって違うかもしれないが７行目付近。
+<!-- {% endraw %} -->
+
+```html
+  {% if toc | first is defined and "\x3ch1 id=" in page.content %}
+    {% set toc = (toc | first).children %}
+  {% endif %}
 ```
