@@ -226,7 +226,7 @@ extra_css:
 https://github.com/squidfunk/mkdocs-material/issues/818
 
 １ページに、複数の`h1`を保つ場合は、テンプレートから３行を削除すれば、通常のTOCが作れる。
-site-packages\material\partials\toc.html
+{% site-packages\material\partials\toc.html %}
 バージョンによって違うかもしれないが７行目付近。
 
 ``` html
