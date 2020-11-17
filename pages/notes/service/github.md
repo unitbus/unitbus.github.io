@@ -94,6 +94,22 @@ print(sys.path)
 公開したくないファイルとか、.vscodeとか、まぁその辺。
 `.gitignore` 自身も追記しておけば、除外可能。
 
+## ビルドエラー
+
+ページの作成に失敗するとメールが届く。GitHubのCodeではプレビュー閲覧出来てる場合はだいたいコレ。
+してされた行と別の場所だったりするので、凄い混乱する。
+
+The tag `set` on line 000 in `xxxx.md` is not a recognized Liquid tag.
+
+<!-- {% raw %} -->
+`{%`の表記があると変数？的な扱いにるっぽい。回避するには前後を`raw`で囲む。
+```
+<!-- {% raw %} -->
+本文
+<!-- {% endraw %} -->
+```
+<!-- {% endraw %} -->
+
 # jekyll
 
 GitHubが、markdownプレビュー用に使ってる、Git用プラグイン？みたいなもの。
