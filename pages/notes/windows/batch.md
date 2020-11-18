@@ -127,12 +127,14 @@ echo | "F:\tmp\convertB.bat"
 > Qiita: コマンドプロンプトの自分用メモ
 https://qiita.com/yuji38kwmt/items/6866fbcb3175ef1c897a
 
-# 入力を待機
+# 入力を待機とスキップ
 
+<!-- {% raw %} -->
 ```bat
 set /p ANS="実行する(Y/N)？"
 if /i {%ANS%}=={n} goto :EOF
 ```
+<!-- {% endraw %} -->
 
 `/p`オプションを使うと、ユーザーの入力した文字を変数に入れる事ができる。
 変数をもとに、処理を部分的に回避したり、終了したり出来る。
