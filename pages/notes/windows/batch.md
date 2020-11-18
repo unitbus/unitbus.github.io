@@ -127,7 +127,7 @@ echo | "F:\tmp\convertB.bat"
 > Qiita: コマンドプロンプトの自分用メモ
 https://qiita.com/yuji38kwmt/items/6866fbcb3175ef1c897a
 
-# 入力を待機とスキップ
+# 入力待機とスキップ
 
 <!-- {% raw %} -->
 ```bat
