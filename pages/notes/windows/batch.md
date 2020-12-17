@@ -160,9 +160,7 @@ test.bat < nul
 `/` を取りたい時は、スライスを利用( `20190922` )。
 
 ```bat
-echo %date%
-set date_raw=%date%
-set date_now=%date_raw:~-10,4%%date_raw:~-5,2%%date_raw:~-2,2%
+set date_now=%date:~-10,4%%date:~-5,2%%date:~-2,2%
 echo %date_now%
 ```
 
@@ -172,10 +170,8 @@ echo %date_now%
 スペースあったりクセが強いので、ファイル名とかに使う時は、`010655` みたいに変換が必要。
 
 ```bat
-echo %time%
-set time_raw=%time: =0%
-set time_now=%time_raw:~0,2%%time_raw:~3,2%%time_raw:~6,2%
-echo %time_now%
+set time_now=%time:~0,2%%time:~3,2%%time:~6,2%
+echo %time_now: =0%
 ```
 
 # クリップボードの文字の置換
