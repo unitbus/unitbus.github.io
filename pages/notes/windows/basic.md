@@ -71,3 +71,58 @@ OTFフォルダに入ってる、.otfファイルを、fontフォルダに放る
 
 日本語名だと、 **源ノ角ゴシック Code JP** らしいです。
 日本語アプリだと、日本名知らないと探せないかも…。
+
+# Windows Remote Desk Top
+
+設定画面で保存して、テキストで開くと、オプションにはない細かい設定が出来ます。
+
+例えば、起動と同時にサブモニタに全画面表示したい場合は、以下の設定が必要でした。
+存在しないオプションは追記します。環境で調整必要です。
+略字、スペース有り無しと気持ち悪いキーですが…
+
+```json
+selectedmonitors:s:1
+span monitors:i:1
+screen mode id:i:2
+winposstr:s:0,3,-3440,0,0,1440
+```
+
+環境によっては、`selectedmonitors`だけでも平気な人も居るみたいです。
+
+うちのは特殊みたいで、サブモニタがマイナス位置にあたるみたいで、
+`winposstr`の設定で無事にサブモニタに表示できました。
+
+> .RDP ファイルパラメーター
+https://www.vwnet.jp/Windows/w7/RDP/RDP-parameters.html
+
+## selectedmonitors
+
+使用するモニタID。目的のIDが無い時は追加が必要。
+下みたいに、コンマで区切って2つ書くと、複数モニタでフルスクリーンができる。
+
+selectedmonitors:s:1,0
+
+モニタのIDは、コマンドプロンプトで下のコマンド打つとダイヤログで教えてくれる。
+`mstsc.exe`はリモートデスクトップの本体っぽい？
+
+```console
+mstsc.exe /l
+```
+
+## span monitors
+
+0: disable, 2: enable
+
+1にすると、複数モニタ使えます。
+
+## screen mode id
+
+1: window, 2: full-screen
+
+winposstr の位置を元にフルスクリーンになる気がする。
+
+## winposstr
+
+1: 固定, 2: 固定, 3: 左, 4: 上, 5: 右, 6: 下 
+
+左2個は固定値らしく変更しない。
