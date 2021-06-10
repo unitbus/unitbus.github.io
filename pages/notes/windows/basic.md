@@ -98,10 +98,6 @@ https://www.vwnet.jp/Windows/w7/RDP/RDP-parameters.html
 ## selectedmonitors
 
 使用するモニタID。目的のIDが無い時は追加が必要。
-下みたいに、コンマで区切って2つ書くと、複数モニタでフルスクリーンができる。
-
-selectedmonitors:s:1,0
-
 モニタのIDは、コマンドプロンプトで下のコマンド打つとダイヤログで教えてくれる。
 `mstsc.exe`はリモートデスクトップの本体っぽい？
 
@@ -109,20 +105,24 @@ selectedmonitors:s:1,0
 mstsc.exe /l
 ```
 
+下みたいに、コンマで区切って2つ書くと、複数モニタでフルスクリーンができる。
+
+`selectedmonitors:s:1,0`
+
 ## span monitors
 
 0: disable, 2: enable
 
-1にすると、複数モニタ使えます。
+`1`にすると、複数モニタ使えます。
 
 ## screen mode id
 
 1: window, 2: full-screen
 
-winposstr の位置を元にフルスクリーンになる気がする。
+`winposstr`の位置を元にフルスクリーンになる気がする。
 
 ## winposstr
 
-1: 固定, 2: 固定, 3: 左, 4: 上, 5: 右, 6: 下 
+左から順に、固定, 固定, 左, 上, 右, 下 
 
 左2個は固定値らしく変更しない。
