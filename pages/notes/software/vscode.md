@@ -97,23 +97,86 @@ https://qiita.com/rma/items/75f502e784b7164b8813
 > VSCode ファイル検索の除外設定
 https://developer.feedforce.jp/entry/2017/11/24/195644
 
+# ワークスペース設定
+
+言語固有の設定は、なるべくワークスペースに書くのがいいかと思います。
+
+個人設定は同期されるが、ワークスペース設定は同期されない事から、
+パスを使用した記述がある場合も、ワークスペース側に書くことをオススメします。
+
+## Python環境設定
+
+```json
+// 環境変数のPYTHONPATHとは関係ありません、EXEまでの絶対パスを書きます
+// たまにディレクトリ指定と書いてるサイトがあるがアナライズがエラー出るので嘘
+"python.pythonPath": "${env:APP_ROOT}/python/v2.7.15/python.exe"
+```
+
+## dotenvの指定
+
+パッケージ毎に、環境変数を切り替えるには、`.env`ファイルを使用し、設定にオプションを足します。
+個人設定ではなく、ワークスペース設定に書くことをオススメします。
+
+```json
+// ワークスペースに置いてる環境変数をファイルから設定
+"python.envFile": "${workspaceFolder}/.env"
+```
+
+ややこしいのが、マルチワークスペースを使用してる場合、`workspaceFolder`と書いてるのに、
+`.code-workspace`ではなく、登録してるそれぞれのフォルダ直下の`.env`が適用されます。
+
+## dotenvの書き方
+
+```env
+# .envの例、シャープでコメントとして認識
+PY_PACKAGE_ROOT = C:/debug/python/packages
+PYTHONPATH = ${PYTHONPATH};${PY_PACKAGE_ROOT}/packageA/v1.0.0
+PYTHONPATH = ${PYTHONPATH};${PY_PACKAGE_ROOT}/packageB/v0.0.1
+PYTHONPATH = ${PYTHONPATH};${PY_PACKAGE_ROOT}/site-packages
+```
+
+`.env`はフワッとした情報しか無く、一番理解に役立ったのは`DotENV`というvscodeのエクステンションでした。
+`.env`の書き方。改行はコマンドの終了を意味するので、値に改行を含める場合はエスケープが必要です。
+
+batコマンドの`set`と違い、スペースは無視されます。
+スペースを使いたい場合は、シングル、またはダブルクォーテーションで囲ってください。
+
+環境変数を使いたい場合は、`${変数名}`で取得します。
+上から潤に一行ずつ定義されるので、`.env`内で定義した変数も使えます。
+`PYTHONPATH`など、複数行書きたい時に約にたつと思います。
+
+`.env`ファイルを作るメリットは、ワークスペースを切り替えた時に、環境変数を切り替える事が出来る点です。
+vscode起動用バッチファイルを作成し環境変数を定義した場合は、vscodeを起動したまま切り替えができません。
+バッチファイルでやるには、関係ないすべての環境変数を用意しないといけなく、現実的ではありません。
+
+また、デバッグ用のランチャー設定でも同じ様に`.env`ファイルが指定出来るので、作成するファイルも軽減します。
+`debug.env`みたいに、拡張子の前にファイル名を付けても構いません。
+
+ただ、各パッケージそれぞれで違う名前になってると、vscodeので設定ファイルでの記述が複雑になるので、
+デフォルトで読む`.env`ファイルの名前は統一しておいた方が良いかと思います。
+
+大事なのは、`${workspaceFolder}`から下が共通した場所に、`.env`ファイルを置くことです。
+
 ## pythonのデバッグが出来ない場合
 
 急に、F5を押しても、別コンソールが出てしまい、デバッグが始まらない事があった。
 launch.jsonの、 `"console": "none",` にしたら直った。
+
 noneだと赤く表示されるが、使えるらしい。
+この辺、バージョンで大きく変わるので過去の例です。
 
 ```json
     "configurations": [
         {
+            "cwd": "${workspaceFolder}",
             "name": "Python2",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
             "console": "none",
-            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "pythonPath": "${config:python.pythonPath}",
+            "stopOnEntry": true,
             "debugOptions": [
                 "RedirectOutput",
                 ]
