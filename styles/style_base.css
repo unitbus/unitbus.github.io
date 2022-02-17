@@ -62,26 +62,28 @@ h1 {
 }
 h2 {
     margin: 20px 20px 10px 20px;
+    padding: 0px 4px;
     color: var(--h2);
-    border-bottom: solid 2px var(--labelBgColor);
+    background-color: var(--labelBgColorB);
+    border-bottom: solid 4px var(--labelBgColor);
     font-size: 140%;
 }
 h3 {
     margin: 20px 22px 10px 22px;
     border-bottom: solid 1px var(--labelBgColor);
-    font-size:130%;
+    font-size: 120%;
 }
 h4 {
     margin-left: 24px;
-    font-size:120%;
+    font-size: 115%;
 }
 h5 {
     margin-left: 26px;
-    font-size:110%;
+    font-size: 110%;
 }
 h6 {
     margin-left: 28px;
-    font-size:105%;
+    font-size: 105%;
 }
 hr {
     border: solid 1px var(--labelBgColor);

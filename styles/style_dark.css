@@ -12,6 +12,7 @@
     --menuTextColor: var(--textColor);
     --menuBgColor: hsl(224, 8%, 20%);
     --labelBgColor: hsl(224, 40%, 40%);
+    --labelBgColorB: hsl(224, 40%, 20%);
     
     --linkColor: var(--textColor);
     --linkVisit: var(--textColor);
