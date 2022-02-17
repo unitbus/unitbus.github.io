@@ -63,11 +63,12 @@ h1 {
 h2 {
     margin: 20px 20px 10px 20px;
     color: var(--h2);
-    border-bottom: solid 1px var(--labelBgColor);
+    border-bottom: solid 2px var(--labelBgColor);
     font-size: 140%;
 }
 h3 {
     margin: 20px 22px 10px 22px;
+    border-bottom: solid 1px var(--labelBgColor);
     font-size:130%;
 }
 h4 {

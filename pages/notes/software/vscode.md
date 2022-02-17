@@ -136,6 +136,9 @@ APIの指す「ワークスペース」と、GUI的な意味の「ワークス�
 // 環境変数のPYTHONPATHとは関係ありません、EXEまでの絶対パスを書きます
 // たまにディレクトリ指定と書いてるサイトがあるが、アナライズでエラー出るので嘘
 "python.pythonPath": "${env:APP_ROOT}/python/v2.7.15/python.exe"
+
+// pythonエクステンション(v2021.12.1559732655)の更新でpythonPathが破棄されました
+"python.defaultInterpreterPath": "${env:APP_ROOT}/python/v2.7.15/python.exe"
 ```
 
 ## dotenvの指定
