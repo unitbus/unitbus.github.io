@@ -5,19 +5,20 @@ title: Download
 
 # Standalone
 
+## Python
+
+- [ubWidgetHierarchy.py](https://unitbus.github.io/data/standalone/python/ubWidgetHierarchy.py)
+
+## CSharp
+
+- [QuickLauncher](https://github.com/unitbus/QuickLauncher/releases)
+
 ## CPP
 
 古いデータですが置いておきます。
 
 - [ProcessLimiter_150704.7z](https://unitbus.github.io/data/standalone/cpp/ProcessLimiter_150704.7z)
 
-## CSharp
-
-- [QuickLauncher v0.1.0](https://github.com/unitbus/QuickLauncher/releases)
-
-## Python
-
-- [ubWidgetHierarchy.py](https://unitbus.github.io/data/standalone/python/ubWidgetHierarchy.py)
 
 # Maya
 
@@ -34,6 +35,7 @@ title: Download
 - [SeparateMaterialFace_ver1.2.7z](https://unitbus.github.io/data/maya/mel/SeparateMaterialFace_ver1.2.7z)
 - [UnitBusTextureEditor_ver1.7.7z](https://unitbus.github.io/data/maya/mel/UnitBusTextureEditor_ver1.7.7z)
 - [UnitBusUI_ver0.86.7z](https://unitbus.github.io/data/maya/mel/UnitBusUI_ver0.86.7z)
+
 
 # 利用規約
 
