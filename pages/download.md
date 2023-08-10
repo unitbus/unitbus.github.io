@@ -11,7 +11,7 @@ title: Download
 
 ## CSharp
 
-- [QuickLauncher](https://github.com/unitbus/QuickLauncher/releases)
+- [QuickLauncher](https://github.com/unitbus/QuickLauncher/releases) - [README](https://unitbus.github.io/pages/docs/QuickLauncher_readme)
 
 ## CPP
 
