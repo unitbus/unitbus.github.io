@@ -12,7 +12,8 @@ Windowsに昔からある"Quick Launch"フォルダから名前を取って、"Q
 Windows10以降にプリインストールされてるライブラリのみで作成されてるので、追加ランタイム等は不要です。
 ファイルサイズが20KBと、極端に小さいのも特徴です。
 
-<img src="https://github.com/unitbus/QuickLauncher/blob/main/docs/tasktray_sampleA.png">
+<img src="https://raw.githubusercontent.com/unitbus/QuickLauncher/main/docs/tasktray_sampleA.png">
+
 
 ## 特徴
 
@@ -33,7 +34,7 @@ https://github.com/unitbus/QuickLauncher/blob/main/LICENSE.txt
 
 ## システムメニュー
 
-<img src="https://github.com/unitbus/QuickLauncher/blob/main/docs/tasktray_sampleB.png">
+<img src="https://raw.githubusercontent.com/unitbus/QuickLauncher/main/docs/tasktray_sampleB.png">
 
 左クリックするとシステムメニューが表示されます(v0.1.2から)。
 アプリケーションを終了したい場合は`Exit`を押すとタスクトレイから消えます。
@@ -71,7 +72,7 @@ QuickLauncher.exe -json ".\samples\sample.json" -icon ".\samples\sample.ico"
 
 起動用のバッチファイルなど用意してもいいですが、気軽に使いたい場合は、
 ウインドウズのショートカット作成し、ここに入力して使うと便利です。
-<img src="https://github.com/unitbus/QuickLauncher/blob/main/docs/shortcut_property.png">
+<img src="https://raw.githubusercontent.com/unitbus/QuickLauncher/main/docs/shortcut_property.png">
 
 
 # 設定ファイル
