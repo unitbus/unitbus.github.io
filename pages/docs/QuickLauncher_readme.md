@@ -14,6 +14,7 @@ Windows10以降にプリインストールされてるライブラリのみで�
 
 <img src="https://raw.githubusercontent.com/unitbus/QuickLauncher/main/docs/tasktray_sampleA.png">
 
+
 ## 特徴
 
 - カスタマイズが容易(テキストエディタで編集可能)
