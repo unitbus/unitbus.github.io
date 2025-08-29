@@ -34,12 +34,12 @@ title: Download
 - [QuickVertexColor_ver4.2.7z](https://unitbus.github.io/data/maya/mel/QuickVertexColor_ver4.2.7z)
 - [SeparateMaterialFace_ver1.2.7z](https://unitbus.github.io/data/maya/mel/SeparateMaterialFace_ver1.2.7z)
 - [UnitBusTextureEditor_ver1.7.7z](https://unitbus.github.io/data/maya/mel/UnitBusTextureEditor_ver1.7.7z)
-- [UnitBusUI_ver0.86.7z](https://unitbus.github.io/data/maya/mel/UnitBusUI_ver0.86.7z)
+- [UnitBusUI_ver0.87.7z](https://unitbus.github.io/data/maya/mel/UnitBusUI_ver0.87.7z)
 
 
 # 利用規約
 
-(C) 2018-2023 Co, UnitBus.
+(C) 2018-2025 Co, UnitBus.
 
 ## 原則
 
